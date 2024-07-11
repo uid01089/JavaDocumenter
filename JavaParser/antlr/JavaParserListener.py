@@ -35,6 +35,15 @@ class JavaParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by JavaParser#typeDeclarationWithJavaDoc.
+    def enterTypeDeclarationWithJavaDoc(self, ctx:JavaParser.TypeDeclarationWithJavaDocContext):
+        pass
+
+    # Exit a parse tree produced by JavaParser#typeDeclarationWithJavaDoc.
+    def exitTypeDeclarationWithJavaDoc(self, ctx:JavaParser.TypeDeclarationWithJavaDocContext):
+        pass
+
+
     # Enter a parse tree produced by JavaParser#typeDeclaration.
     def enterTypeDeclaration(self, ctx:JavaParser.TypeDeclarationContext):
         pass
@@ -179,6 +188,15 @@ class JavaParserListener(ParseTreeListener):
         pass
 
 
+    # Enter a parse tree produced by JavaParser#memberDeclarationWithJavaDoc.
+    def enterMemberDeclarationWithJavaDoc(self, ctx:JavaParser.MemberDeclarationWithJavaDocContext):
+        pass
+
+    # Exit a parse tree produced by JavaParser#memberDeclarationWithJavaDoc.
+    def exitMemberDeclarationWithJavaDoc(self, ctx:JavaParser.MemberDeclarationWithJavaDocContext):
+        pass
+
+
     # Enter a parse tree produced by JavaParser#memberDeclaration.
     def enterMemberDeclaration(self, ctx:JavaParser.MemberDeclarationContext):
         pass
@@ -266,6 +284,15 @@ class JavaParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by JavaParser#interfaceBodyDeclaration.
     def exitInterfaceBodyDeclaration(self, ctx:JavaParser.InterfaceBodyDeclarationContext):
+        pass
+
+
+    # Enter a parse tree produced by JavaParser#interfaceMemberDeclarationWithJavaDoc.
+    def enterInterfaceMemberDeclarationWithJavaDoc(self, ctx:JavaParser.InterfaceMemberDeclarationWithJavaDocContext):
+        pass
+
+    # Exit a parse tree produced by JavaParser#interfaceMemberDeclarationWithJavaDoc.
+    def exitInterfaceMemberDeclarationWithJavaDoc(self, ctx:JavaParser.InterfaceMemberDeclarationWithJavaDocContext):
         pass
 
 
@@ -1139,6 +1166,15 @@ class JavaParserListener(ParseTreeListener):
 
     # Exit a parse tree produced by JavaParser#arguments.
     def exitArguments(self, ctx:JavaParser.ArgumentsContext):
+        pass
+
+
+    # Enter a parse tree produced by JavaParser#javadoc.
+    def enterJavadoc(self, ctx:JavaParser.JavadocContext):
+        pass
+
+    # Exit a parse tree produced by JavaParser#javadoc.
+    def exitJavadoc(self, ctx:JavaParser.JavadocContext):
         pass
 
 

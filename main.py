@@ -1,26 +1,19 @@
 from antlr4 import *
-from grammer.JavaLexer import JavaLexer
-from  grammer.JavaParser import JavaParser
-from  grammer.JavaParserListener import JavaParserListener
-
+from pprint import pprint
+from JavaParser.JavaReader import JavaReader
+from JavaParser.JavaListener import JavaListener
 
 
 def main():
 
     code = open('helloworld.java', 'r').read()
-    codeStream = InputStream(code)
-    
+    reader = JavaReader()
+    reader.parse(code)
 
-    lexer = JavaLexer(codeStream)
-    stream = CommonTokenStream(lexer)
-    parser = JavaParser(stream)
+    print()
 
-    tree = parser.compilationUnit()
+    # https://stackoverflow.com/questions/60578638/parsing-javadoc-with-antlr-python
 
-    print(tree.toStringTree(recog=parser))
 
-    walker = ParseTreeWalker()
-    walker.walk(JavaParserListener(), tree)
-
-if __name__=="__main__":
+if __name__ == "__main__":
     main()
