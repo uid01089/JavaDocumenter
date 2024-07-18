@@ -2,6 +2,13 @@ package test.bla;
 
 import test.myimport;
 
+interface MyInterface extends SuperDuperInterface, SuperSuperDuperInterface
+{
+    void HalloOperation();
+}
+
+
+
 /**
  * Ein Hello-World-Programm in Java.
  * Dies ist ein Javadoc-Kommentar.

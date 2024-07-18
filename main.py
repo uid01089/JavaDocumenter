@@ -1,14 +1,27 @@
-from antlr4 import *
-from pprint import pprint
-from JavaParser.JavaReader import JavaReader
-from JavaParser.JavaListener import JavaListener
+
+from pathlib import Path
+from Context import Context
+from ContextIf import ContextIf
+
+
+class JavaDocCreator:
+    def __init__(self, context: ContextIf) -> None:
+        self.context = context
+        self.javaProject = context.getJavaProject()
+        self.docWriter = context.createDocWriter(self.javaProject)
+
+    def parse(self, direcotry: Path) -> None:
+        self.javaProject.addClassPath(direcotry)
+        self.javaProject.parse()
+
+        self.docWriter.write(Path("docu.adoc"))
 
 
 def main():
 
-    code = open('helloworld.java', 'r').read()
-    reader = JavaReader()
-    reader.parse(code)
+    context = Context()
+    javaDocCreator = JavaDocCreator(context)
+    javaDocCreator.parse(Path("./javaExampleCode"))
 
     print()
 
