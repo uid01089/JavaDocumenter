@@ -1,7 +1,7 @@
 {
     "editor.wordWrap": "wordWrapColumn",
     "editor.wrappingIndent": "same",
-    "editor.wordWrapColumn": 180,
+    "editor.wordWrapColumn": 300,
     "python.testing.pytestArgs": [
         "."
     ],
@@ -13,7 +13,7 @@
     },
     "autopep8.args": [
         "--max-line-length",
-        "180",
+        "300",
         "--experimental",
         "--aggressive"
     ],

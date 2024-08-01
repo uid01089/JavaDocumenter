@@ -32,7 +32,11 @@ class JavaParserContextIf(ABC):
         pass
 
     @abstractmethod
-    def getMethodDeclaration(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
+    def getCassMethodDeclaration(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
+        pass
+
+    @abstractmethod
+    def getInterfaceMethodDeclaration(self, methodDeclarationContext: JavaParser.InterfaceMethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
         pass
 
     @abstractmethod

@@ -21,7 +21,7 @@ def main():
 
     context = Context()
     javaDocCreator = JavaDocCreator(context)
-    javaDocCreator.parse(Path("./javaExampleCode"))
+    javaDocCreator.parse(Path("./javaModelDb"))
 
     print()
 

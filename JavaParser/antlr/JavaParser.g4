@@ -468,6 +468,7 @@ blockStatement
     : localVariableDeclaration ';'
     | localTypeDeclaration
     | statement
+    | javadoc
     ;
 
 localVariableDeclaration
