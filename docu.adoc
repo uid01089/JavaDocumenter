@@ -1,1 +1,7481 @@
-ClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterPackageWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterInterfaceWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterInterfaceWriterPackageWriterClassWriterClassWriterPackageWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterPackageWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterClassWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterPackageWriterClassWriterClassWriterClassWriterClassWriterInterfaceWriterInterfaceWriterInterfaceWriterPackageWriterClassWriterInterfaceWriterPackageWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterClassWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterInterfaceWriterPackageWriterPackageWriterPackageWriterPackageWriterPackageWriter
+# Class `BetriebstundenRelais1`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.BetriebstundenRelais1", svg]
+....
+class BetriebstundenRelais1
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- BetriebstundenRelais1
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `BetriebstundenRelais2`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.BetriebstundenRelais2", svg]
+....
+class BetriebstundenRelais2
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- BetriebstundenRelais2
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `DeltaSolProtocolCatalogue`
+## Description
+This class represents a protocol catalogue for DeltaSol devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.DeltaSolProtocolCatalogue", svg]
+....
+class DeltaSolProtocolCatalogue
+{
+}
+class BaseProtocolCatalogue
+BaseProtocolCatalogue ^-- DeltaSolProtocolCatalogue
+....
+## Methods
+# Class `DrehzahlRelais1`
+## Description
+This class represents a Drehzahl Relais 1 protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.DrehzahlRelais1", svg]
+....
+class DrehzahlRelais1
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- DrehzahlRelais1
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `DrehzahlRelais2`
+## Description
+DrehzahlRelais2 is an extension of the Protocol66_120 class.
+It provides functionality for a device that can set and read data related to its rotational speed.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.DrehzahlRelais2", svg]
+....
+class DrehzahlRelais2
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- DrehzahlRelais2
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `KollektorNotTemperatur`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.KollektorNotTemperatur", svg]
+....
+class KollektorNotTemperatur
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- KollektorNotTemperatur
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `Programm`
+## Description
+Programm extends Protocol66_120.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Programm", svg]
+....
+class Programm
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- Programm
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns the message as an integer string.
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns the data as a string.
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data.
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares the programm with another SerielProtocol instance.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|Sets the data value.
+|Return|void|
+|setValue|String|
+|===
+# Class `Protocol66_120`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Protocol66_120", svg]
+....
+class Protocol66_120
+{
+getIdentifier():"int"
+convTemp(temperature: float):"float"
+getTimeStamp():"long"
+}
+interface SerielProtocol
+SerielProtocol <|.. Protocol66_120
+....
+## Methods
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: convTemp
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+float convTemp(float temperature) 
+----
+|Description 2+|
+|Return|float|
+|temperature|float|
+|===
+#### Method: getTimeStamp
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+long getTimeStamp() 
+----
+|Description 2+|
+|Return|long|
+|===
+# Class `R1Handbetrieb`
+## Description
+R1Handbetrieb class extends Protocol66_120 and represents the hand control protocol for a specific device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.R1Handbetrieb", svg]
+....
+class R1Handbetrieb
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- R1Handbetrieb
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `R2Handbetrieb`
+## Description
+This class implements a specific protocol for controlling a Delta Sole device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.R2Handbetrieb", svg]
+....
+class R2Handbetrieb
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- R2Handbetrieb
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `Sensor1Defekt`
+## Description
+This class represents a Sensor1 Defekt device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor1Defekt", svg]
+....
+class Sensor1Defekt
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- Sensor1Defekt
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a string representation of the sensor's defect status.
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the sensor's defect status.
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value stored in the sensor.
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares the raw data of this sensor with another protocol instance.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|Sets the sensor's defect status based on a given string value.
+|Return|void|
+|setValue|String|
+|===
+# Class `Sensor2Defekt`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor2Defekt", svg]
+....
+class Sensor2Defekt
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- Sensor2Defekt
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `Sensor3Defekt`
+## Description
+Class Sensor3Defekt extends Protocol66_120 and handles data from sensor 3.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor3Defekt", svg]
+....
+class Sensor3Defekt
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- Sensor3Defekt
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `Sensor4Defekt`
+## Description
+This class implements a protocol for a sensor that detects defects.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor4Defekt", svg]
+....
+class Sensor4Defekt
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- Sensor4Defekt
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `SpeicherNotTemperatur`
+## Description
+This class represents a protocol for storing not temperatures.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.SpeicherNotTemperatur", svg]
+....
+class SpeicherNotTemperatur
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- SpeicherNotTemperatur
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `Status`
+## Description
+Status class extends Protocol66_120 and provides methods to set, get, and compare status data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Status", svg]
+....
+class Status
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- Status
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns the message representation of the current status data.
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns the data value represented by this status object.
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value stored in this status object.
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares the current status data with the given protocol's data and returns true if they differ by more than the threshold.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|Sets the status data value.
+|Return|void|
+|setValue|String|
+|===
+# Class `TemperaturSensor1`
+## Description
+This class represents a temperature sensor that communicates using protocol 66/120.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor1", svg]
+....
+class TemperaturSensor1
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- TemperaturSensor1
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns the current temperature value as a string.
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns the current temperature value as a string.
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value read from the temperature sensor.
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares the current temperature reading with another protocol's temperature reading.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|Setter method for setting the temperature value.
+TODO Auto-generated method stub
+|Return|void|
+|setValue|String|
+|===
+# Class `TemperaturSensor2`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor2", svg]
+....
+class TemperaturSensor2
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- TemperaturSensor2
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `TemperaturSensor3`
+## Description
+This class represents a Temperature Sensor 3 protocol, which is an extension of the Protocol66_120.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor3", svg]
+....
+class TemperaturSensor3
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- TemperaturSensor3
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `TemperaturSensor4`
+## Description
+TemperaturSensor4 class extends Protocol66_120 and represents a temperature sensor.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor4", svg]
+....
+class TemperaturSensor4
+{
+getMessage():"String"
+getData():"String"
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+}
+class Protocol66_120
+Protocol66_120 ^-- TemperaturSensor4
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Getter method to retrieve the message string representation of the temperature value.
+|Return|String|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Getter method to retrieve the data string representation of the temperature value.
+|Return|String|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Getter method to retrieve the raw data value from the temperature sensor.
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Method to compare the raw data of this temperature sensor with another protocol object.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|Setter method to set the temperature value of this temperature sensor.
+|Return|void|
+|setValue|String|
+|===
+PackageWriter# Class `DeltaSole`
+## Description
+Represents a DeltaSole device in the home automatic system.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.DeltaSole", svg]
+....
+class DeltaSole
+{
+}
+class BaseDevice
+BaseDevice ^-- DeltaSole
+....
+## Methods
+# Class `ReceiveDeltaSoleFrame`
+## Description
+This class is responsible for receiving and processing Delta Sole frames.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.deltasole.ReceiveDeltaSoleFrame", svg]
+....
+class ReceiveDeltaSoleFrame
+{
+call():"Void"
+}
+interface Callable<Void>
+Callable<Void> <|.. ReceiveDeltaSoleFrame
+....
+## Methods
+#### Method: call
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Void call() throws Exception 
+----
+|Description 2+|
+|Return|Void|
+|===
+PackageWriter# Class `SelectMessMode`
+## Description
+The SelectMessMode class represents a sequence of messages that selects the messaging mode.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sequence.SelectMessMode", svg]
+....
+class SelectMessMode
+{
+getProtocol(device: Device):"SerielProtocol"
+}
+class SequenceImpl
+SequenceImpl ^-- SelectMessMode
+interface ManagedReceiveDeviceSequence
+ManagedReceiveDeviceSequence <|.. SelectMessMode
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(Device device) 
+----
+|Description 2+|This method gets the protocol from a device and selects the messaging mode based on the given parameters.
+|Return|SerielProtocol|
+|device|Device|
+|===
+# Class `Start`
+## Description
+This class implements the Start protocol sequence for a home automation device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sequence.Start", svg]
+....
+class Start
+{
+getProtocol(device: Device):"SerielProtocol"
+}
+class SequenceImpl
+SequenceImpl ^-- Start
+interface ManagedReceiveDeviceSequence
+ManagedReceiveDeviceSequence <|.. Start
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(Device device) 
+----
+|Description 2+|This method gets the serial protocol for a given device. It initiates the start protocol
+sequence by sending a SendFroelingFrame and waits for an acknowledge frame from the device.
+|Return|SerielProtocol|
+|device|Device|
+|===
+# Class `UpdateData`
+## Description
+This class updates data for a home automatic device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sequence.UpdateData", svg]
+....
+class UpdateData
+{
+getProtocol(device: Device):"SerielProtocol"
+}
+class SequenceImpl
+SequenceImpl ^-- UpdateData
+interface ManagedReceiveDeviceSequence
+ManagedReceiveDeviceSequence <|.. UpdateData
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(final Device device)    
+----
+|Description 2+|Gets the protocol for a given device.
+|Return|SerielProtocol|
+|device|Device|
+|===
+PackageWriter# Class `AbgasSw`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.AbgasSw", svg]
+....
+class AbgasSw
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- AbgasSw
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Getter for raw data. Calculates the raw data based on the constant index multiplied by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Getter for data. Returns a string representation of the raw data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Getter for message. Calls another method to retrieve the message based on the index.
+|Return|String|
+|===
+# Class `Abgastemp`
+## Description
+This class extends M1 and provides methods for processing abgastemp data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Abgastemp", svg]
+....
+class Abgastemp
+{
+getRawData():"int"
+getData():"String"
+getMessage(index: int):"String"
+}
+class M1
+M1 ^-- Abgastemp
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Override of getRawData() method. This method returns the raw data value multiplied by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Override of getData() method. This method returns a string representation of the raw data value.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int index) 
+----
+|Description 2+|Override of getMessage() method. This method returns a message based on the index value.
+|Return|String|
+|index|int|
+|===
+# Class `AussenTemp`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.AussenTemp", svg]
+....
+class AussenTemp
+{
+getRawData():"int"
+getData():"String"
+getMessage(index: int):"String"
+}
+class M1
+M1 ^-- AussenTemp
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value calculated by multiplying the index by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the raw data value.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int index) 
+----
+|Description 2+|Returns a message string based on the index value.
+|Return|String|
+|index|int|
+|===
+# Class `Betriebsart`
+## Description
+This class represents a specific type of protocol in the context of home automation.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Betriebsart", svg]
+....
+class Betriebsart
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Betriebsart
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data for this protocol. This method overrides the one in the superclass.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the data for this protocol. This method overrides the one in the superclass.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message for this protocol. This method overrides the one in the superclass.
+|Return|String|
+|===
+# Class `Betriebszustand`
+## Description
+Class to represent a specific operational status.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Betriebszustand", svg]
+....
+class Betriebszustand
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Betriebszustand
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data associated with this operational status. This is calculated by multiplying the index by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of this operational status. This is simply the raw data as a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message associated with this operational status. This is specific to the index of this operational status.
+|Return|String|
+|===
+# Class `BoardTemp`
+## Description
+This class represents a BoardTemp object that extends the M1 class.
+It provides methods to process and convert raw data into usable strings.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.BoardTemp", svg]
+....
+class BoardTemp
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- BoardTemp
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData()    
+----
+|Description 2+|Converts raw data to an integer value, using the constant INDEX * 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData()    
+----
+|Description 2+|Converts the processed raw data into a string format.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage()    
+----
+|Description 2+|Generates a message based on the index value.
+|Return|String|
+|===
+# Class `BrennSt`
+## Description
+This class represents a BrennSt device protocol subclass.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.BrennSt", svg]
+....
+class BrennSt
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- BrennSt
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value, which is calculated by multiplying the index value by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the data, which is simply the raw data value converted to a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message string, which is determined by the index value of this device protocol subclass.
+|Return|String|
+|===
+# Class `Einschub`
+## Description
+This class extends M1 and provides specific implementation for Einschub protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Einschub", svg]
+....
+class Einschub
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Einschub
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value, calculated by multiplying the INDEX constant with 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the data, which is simply the raw data converted to a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message specific to this Einschub protocol, using the INDEX constant.
+|Return|String|
+|===
+# Class `FeuerraumTemp`
+## Description
+This class represents a FeuerraumTemp device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.FeuerraumTemp", svg]
+....
+class FeuerraumTemp
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- FeuerraumTemp
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Gets the raw data from this FeuerraumTemp device.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Gets the data from this FeuerraumTemp device as a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Gets the message from this FeuerraumTemp device based on its index.
+|Return|String|
+|===
+# Class `Fuellst`
+## Description
+This class extends M1 and represents a Fuellst device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Fuellst", svg]
+....
+class Fuellst
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Fuellst
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Override of the getRawData method. Calculates raw data by multiplying the INDEX value by 2 and then converting it to an integer.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Override of the getData method. Simply returns a string representation of the raw data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Override of the getMessage method. Calls the getMessage method with the INDEX value as a parameter and returns the result.
+|Return|String|
+|===
+# Class `Kesseltemp`
+## Description
+Kesseltemp class extends M1 and handles kessel temperature-related protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Kesseltemp", svg]
+....
+class Kesseltemp
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Kesseltemp
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Method overriding M1's getRawData method, returns kessel temperature data converted from raw bytes.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Method overriding M1's getData method, returns a string representation of the kessel temperature data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Method overriding M1's getMessage method, returns a message related to the kessel temperature data.
+|Return|String|
+|===
+# Class `KessStellGr`
+## Description
+Kess Stell Gr class extends M1 and provides functionality related to Kess Stell Gr protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.KessStellGr", svg]
+....
+class KessStellGr
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- KessStellGr
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Method to get raw data. This method overrides the base class method and returns the result of conv2Int() function
+with the INDEX value multiplied by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Method to get data. This method overrides the base class method and returns a string representation of the raw data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Method to get message. This method overrides the base class method and returns a message based on the INDEX value.
+|Return|String|
+|===
+# Class `Kty6_h2`
+## Description
+This class extends M1 and is used to handle a specific protocol for Froeling devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Kty6_h2", svg]
+....
+class Kty6_h2
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Kty6_h2
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData()    
+----
+|Description 2+|This method overrides the getRawData() method from the superclass and returns the result of conv2Int(INDEX * 2).
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData()    
+----
+|Description 2+|This method overrides the getData() method from the superclass and returns a string representation of the result of getRawData().
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage()    
+----
+|Description 2+|This method overrides the getMessage() method from the superclass and returns a message specific to this class.
+|Return|String|
+|===
+# Class `Kty7_h2`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Kty7_h2", svg]
+....
+class Kty7_h2
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Kty7_h2
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+# Class `Laufzeit`
+## Description
+This class extends the M1 protocol and provides custom implementation for Laufzeit device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Laufzeit", svg]
+....
+class Laufzeit
+{
+getRawData():"int"
+getData():"String"
+getMessage(index: int):"String"
+}
+class M1
+M1 ^-- Laufzeit
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|This method overrides the getRawData() method from M1 protocol and returns the raw data value for Laufzeit device.
+The raw data is calculated as INDEX * 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|This method overrides the getData() method from M1 protocol and returns a string representation of the raw data for Laufzeit device.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int index) 
+----
+|Description 2+|This method overrides the getMessage() method from M1 protocol and returns a message string for Laufzeit device based on the INDEX value.
+|Return|String|
+|index|int|
+|===
+# Class `O2Regler`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.O2Regler", svg]
+....
+class O2Regler
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- O2Regler
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data, which is the index value multiplied by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the data, which is the raw data as a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message based on the index value.
+|Return|String|
+|===
+# Class `PufferTempOben`
+## Description
+This class extends M1 and is used to handle Puffer Temp Oben protocol data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.PufferTempOben", svg]
+....
+class PufferTempOben
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- PufferTempOben
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Override of getRawData(). This method returns an integer value that is twice the index.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Override of getData(). This method returns a string representation of the raw data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Override of getMessage(). This method returns a message that is based on the index.
+|Return|String|
+|===
+# Class `PufferTempUnten`
+## Description
+Purpose of this class: PufferTempUnten extends M1 and provides methods for processing temperature data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.PufferTempUnten", svg]
+....
+class PufferTempUnten
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- PufferTempUnten
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData()    
+----
+|Description 2+|Overridden method that returns the raw temperature data (INDEX * 2).
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData()    
+----
+|Description 2+|Overridden method that returns a string representation of the temperature data (getRawData()).
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage()    
+----
+|Description 2+|Overridden method that returns a message based on the given index (INDEX).
+|Return|String|
+|===
+# Class `RestO2`
+## Description
+This class extends the M1 class and provides functionality for REST O2 protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.RestO2", svg]
+....
+class RestO2
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- RestO2
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|This method returns the raw data value, which is calculated by multiplying the index value by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|This method returns a string representation of the raw data value.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|This method returns a message based on the index value.
+|Return|String|
+|===
+# Class `Rost`
+## Description
+This class represents a Rost device, which is a part of the home automatic system.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Rost", svg]
+....
+class Rost
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Rost
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value, which is calculated by multiplying the index value by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the raw data value.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message based on the index value of this Rost device.
+|Return|String|
+|===
+# Class `Saugzug`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Saugzug", svg]
+....
+class Saugzug
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Saugzug
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value, which is the product of the INDEX constant and 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of the data, which is simply the raw data value converted to a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message based on the INDEX constant.
+|Return|String|
+|===
+# Class `SollKesselTemp`
+## Description
+SollKesselTemp class extends M1 and handles the protocol for a specific device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.SollKesselTemp", svg]
+....
+class SollKesselTemp
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- SollKesselTemp
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData()    
+----
+|Description 2+|Override method for getting raw data. Converts the INDEX value to an integer multiplied by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData()    
+----
+|Description 2+|Override method for getting data. Returns a string representation of the raw data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage()    
+----
+|Description 2+|Override method for getting message. Calls another method with the INDEX value.
+|Return|String|
+|===
+# Class `Vorlauf1`
+## Description
+Class Vorlauf1 extends M1 and provides specific implementation for protocol processing.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf1", svg]
+....
+class Vorlauf1
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Vorlauf1
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Method to override getRawData() from the superclass. This method returns the result of conv2Int()
+multiplied by the INDEX constant (19).
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Method to override getData() from the superclass. This method returns a string representation of
+the getRawData() value.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Method to override getMessage() from the superclass. This method returns a message string based on the INDEX constant.
+|Return|String|
+|===
+# Class `Vorlauf1Sw`
+## Description
+This class extends M1 and represents a Vorlauf1Sw device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf1Sw", svg]
+....
+class Vorlauf1Sw
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Vorlauf1Sw
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Override of the getRawData method. Returns the raw data value calculated by multiplying the index value by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Override of the getData method. Returns a string representation of the raw data value.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Override of the getMessage method. Returns a message based on the index value.
+|Return|String|
+|===
+# Class `Vorlauf2`
+## Description
+Purpose: This class, Vorlauf2, extends the M1 class and provides specific methods for processing data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf2", svg]
+....
+class Vorlauf2
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Vorlauf2
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Method: Override of the getRawData method. Returns an integer value calculated by multiplying the INDEX constant by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Method: Override of the getData method. Returns a string representation of the raw data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Method: Override of the getMessage method. Returns a message string using the INDEX constant.
+|Return|String|
+|===
+# Class `Vorlauf2Sw`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf2Sw", svg]
+....
+class Vorlauf2Sw
+{
+getRawData():"int"
+getData():"String"
+getMessage(i: int):"String"
+}
+class M1
+M1 ^-- Vorlauf2Sw
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Gets the raw data value by multiplying the index value by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Converts the raw data value to a string representation.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int i) 
+----
+|Description 2+|Generates a message based on the index value.
+|Return|String|
+|i|int|
+|===
+# Class `ZuluftGebl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.ZuluftGebl", svg]
+....
+class ZuluftGebl
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- ZuluftGebl
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Getter method for raw data. Returns the value calculated by multiplying INDEX by 2.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Getter method for data. Returns the raw data as a string.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Getter method for message. Calls the getMessage method with INDEX as an argument.
+|Return|String|
+|===
+# Class `Zustand`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Zustand", svg]
+....
+class Zustand
+{
+getRawData():"int"
+getData():"String"
+getMessage():"String"
+}
+class M1
+M1 ^-- Zustand
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Returns the raw data value for this state.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Returns a string representation of this state's data.
+|Return|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message for this state.
+|Return|String|
+|===
+PackageWriter# Class `Acknowledge`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Acknowledge", svg]
+....
+class Acknowledge
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Acknowledge
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `DeselectMessMode`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.DeselectMessMode", svg]
+....
+class DeselectMessMode
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- DeselectMessMode
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `FroelingProtocolCatalogue`
+## Description
+This class extends the BaseProtocolCatalogue and provides a protocol catalogue for Froeling devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingProtocolCatalogue", svg]
+....
+class FroelingProtocolCatalogue
+{
+}
+class BaseProtocolCatalogue
+BaseProtocolCatalogue ^-- FroelingProtocolCatalogue
+....
+## Methods
+# Class `M1`
+## Description
+Messwerte
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.M1", svg]
+....
+class M1
+{
+compare(protocol: SerielProtocol):"boolean"
+conv2Int(index: int):"int"
+getMessage(index: int):"String"
+}
+class ProtocolBase
+ProtocolBase ^-- M1
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: conv2Int
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int conv2Int(int index) 
+----
+|Description 2+|Calculate the integer from the parameter pair
+|Return|int|
+|index|int|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int index) 
+----
+|Description 2+|Returns the Message description depending on the index
+|Return|String|
+|index|int|
+|===
+# Class `M2`
+## Description
+M2 protocol class for Home Automatic devices.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.M2", svg]
+....
+class M2
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- M2
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Ma`
+## Description
+Text Screen
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Ma", svg]
+....
+class Ma
+{
+compare(protocol: SerielProtocol):"boolean"
+doActionAfterCreation():"void"
+getData():"String"
+}
+class ProtocolBase
+ProtocolBase ^-- Ma
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: doActionAfterCreation
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void doActionAfterCreation() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+# Class `Mb`
+## Description
+This Java class represents the MB protocol.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mb", svg]
+....
+class Mb
+{
+compare(protocol: SerielProtocol):"boolean"
+doActionAfterCreation():"void"
+getData():"String"
+}
+class ProtocolBase
+ProtocolBase ^-- Mb
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compare this protocol with another one. Always update.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: doActionAfterCreation
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void doActionAfterCreation() 
+----
+|Description 2+|Perform an action after the creation of this protocol. If a specific parameter is 1,
+get the managed device and add a process state to it.
+/
+|Return|void|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|Get the data for this protocol. This method returns a string representation of
+the parameters.
+|Return|String|
+|===
+# Class `Mc`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mc", svg]
+....
+class Mc
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mc
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Md`
+## Description
+Text <EINSTELLUNG>-Menue incl ParamID
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Md", svg]
+....
+class Md
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Md
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Override the compare method from the SerielProtocol class. This method always returns true.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Me`
+## Description
+Description: A class representing a ME device protocol.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Me", svg]
+....
+class Me
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Me
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mf`
+## Description
+Betriebsarten
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mf", svg]
+....
+class Mf
+{
+compare(protocol: SerielProtocol):"boolean"
+doActionAfterCreation():"void"
+getData():"String"
+}
+class ProtocolBase
+ProtocolBase ^-- Mf
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: doActionAfterCreation
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void doActionAfterCreation() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+# Class `Mg`
+## Description
+Wochenprogramm Heizkreise
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mg", svg]
+....
+class Mg
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mg
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mh`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mh", svg]
+....
+class Mh
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mh
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mk`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mk", svg]
+....
+class Mk
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mk
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Override the compare method from ProtocolBase.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Ml`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Ml", svg]
+....
+class Ml
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Ml
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mm`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mm", svg]
+....
+class Mm
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mm
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares this protocol with another SerielProtocol instance. This method always updates and returns true.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Ms`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Ms", svg]
+....
+class Ms
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Ms
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compare method that always updates and returns true.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mt`
+## Description
+Error message texts.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mt", svg]
+....
+class Mt
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mt
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compare method that always returns true. This is likely an error message handler.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mu`
+## Description
+Last error class extending ProtocolBase.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mu", svg]
+....
+class Mu
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mu
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mw`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mw", svg]
+....
+class Mw
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mw
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `Mz`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mz", svg]
+....
+class Mz
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- Mz
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `NoAcknowledge`
+## Description
+This class represents a No Acknowledge protocol in home automatic devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.NoAcknowledge", svg]
+....
+class NoAcknowledge
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- NoAcknowledge
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Override the compare method from SerielProtocol. This method always updates and returns true.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `ProtocolBase`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.ProtocolBase", svg]
+....
+class ProtocolBase
+{
+getMessage():"String"
+getIdentifier():"int"
+getRawData():"int"
+getData():"String"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+getCommand():"List"
+getParameters():"List"
+getTimeStamp():"long"
+similar(other: ProtocolBase):"boolean"
+doActionAfterCreation():"void"
+addToLog(line: String):"void"
+}
+class FroelingFrame
+FroelingFrame ^-- ProtocolBase
+interface FroelingSerielProtocol
+FroelingSerielProtocol <|.. ProtocolBase
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+#### Method: getCommand
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getCommand() 
+----
+|Description 2+|
+|Return|List|
+|===
+#### Method: getParameters
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getParameters() 
+----
+|Description 2+|
+|Return|List|
+|===
+#### Method: getTimeStamp
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+long getTimeStamp() 
+----
+|Description 2+|
+|Return|long|
+|===
+#### Method: similar
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean similar(ProtocolBase other) 
+----
+|Description 2+|
+|Return|boolean|
+|other|ProtocolBase|
+|===
+#### Method: doActionAfterCreation
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void doActionAfterCreation() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: addToLog
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addToLog(String line) 
+----
+|Description 2+|
+|Return|void|
+|line|String|
+|===
+# Class `SelectMessModeProt`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.SelectMessModeProt", svg]
+....
+class SelectMessModeProt
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- SelectMessModeProt
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Class `StartProt`
+## Description
+The StartProt class is responsible for initializing a serial protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.StartProt", svg]
+....
+class StartProt
+{
+compare(protocol: SerielProtocol):"boolean"
+}
+class ProtocolBase
+ProtocolBase ^-- StartProt
+....
+## Methods
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares this serial protocol with another one. Always returns true, as it's not meaningful to compare these protocols.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+# Interface `FroelingSerielProtocol`
+## Description
+Interface for Froeling Seriel Protocol.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingSerielProtocol", svg]
+....
+interface FroelingSerielProtocol
+{
+getCommand():"List"
+getParameters():"List"
+similar(other: ProtocolBase):"boolean"
+doActionAfterCreation():"void"
+}
+interface SerielProtocol
+SerielProtocol ^-- FroelingSerielProtocol
+....
+## Methods
+#### Method: getCommand
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getCommand();
+----
+|Description 2+|Returns the command as a list of integers.
+|Return|List|
+|===
+#### Method: getParameters
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getParameters();
+----
+|Description 2+|Returns the parameters as a list of integers.
+|Return|List|
+|===
+#### Method: similar
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean similar(ProtocolBase other);
+----
+|Description 2+|Checks if this protocol is similar to another protocol.
+|Return|boolean|
+|other|ProtocolBase|
+|===
+#### Method: doActionAfterCreation
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void doActionAfterCreation();
+----
+|Description 2+|Activity performed after creation.
+/
+|Return|void|
+|===
+PackageWriter# Class `Froeling`
+## Description
+This class represents a Froeling device.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.Froeling", svg]
+....
+class Froeling
+{
+addMessage(message: String):"void"
+addProcessType(type: String):"void"
+addProcessState(state: String):"void"
+getMessage(i: int):"String"
+}
+class BaseDevice
+BaseDevice ^-- Froeling
+interface FroehlingPopulation
+FroehlingPopulation <|.. Froeling
+....
+## Methods
+#### Method: addMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addMessage(String message) 
+----
+|Description 2+|Adds a message to the device's list of messages.
+|Return|void|
+|message|String|
+|===
+#### Method: addProcessType
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addProcessType(String type) 
+----
+|Description 2+|Adds a process type to the device's list of process types.
+|Return|void|
+|type|String|
+|===
+#### Method: addProcessState
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addProcessState(String state) 
+----
+|Description 2+|Adds a process state to the device's list of process states.
+|Return|void|
+|state|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int i) 
+----
+|Description 2+|Retrieves a message from the device's list of messages at the given index.
+|Return|String|
+|i|int|
+|===
+# Class `FroelingFrame`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroelingFrame", svg]
+....
+class FroelingFrame
+{
+calcCheckSum(parameters: List):"List"
+updateCheckSum():"void"
+updateNrParameters():"void"
+maintain():"void"
+}
+....
+## Methods
+#### Method: calcCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> calcCheckSum(List<Integer> parameters) 
+----
+|Description 2+|Calculates the checksum for a given list of parameters.
+|Return|List|
+|parameters|List|
+|===
+#### Method: updateCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void updateCheckSum() 
+----
+|Description 2+|Updates the checksum by recalculating it based on the current command and parameters.
+/
+|Return|void|
+|===
+#### Method: updateNrParameters
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void updateNrParameters() 
+----
+|Description 2+|Updates the number of parameters.
+/
+|Return|void|
+|===
+#### Method: maintain
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void maintain() 
+----
+|Description 2+|Maintains the frame by updating the number of parameters and recalculating the checksum.
+/
+|Return|void|
+|===
+# Class `FroelingFrameException`
+## Description
+Exception class for Froeling Frame-related issues.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroelingFrameException", svg]
+....
+class FroelingFrameException
+{
+}
+class RuntimeException
+RuntimeException ^-- FroelingFrameException
+....
+## Methods
+# Class `ReceiveFroelingFrame`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.ReceiveFroelingFrame", svg]
+....
+class ReceiveFroelingFrame
+{
+call():"Void"
+}
+class FroelingFrame
+FroelingFrame ^-- ReceiveFroelingFrame
+interface Callable<Void>
+Callable<Void> <|.. ReceiveFroelingFrame
+....
+## Methods
+#### Method: call
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Void call() throws Exception 
+----
+|Description 2+|
+|Return|Void|
+|===
+# Class `SendFroelingFrame`
+## Description
+SendFroelingFrame class is responsible for sending frames to a Froeling device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.SendFroelingFrame", svg]
+....
+class SendFroelingFrame
+{
+setProtocolIdentifier(identifier: int):"void"
+setData(data: int):"void"
+getFrameValues():"List"
+}
+class FroelingFrame
+FroelingFrame ^-- SendFroelingFrame
+interface SendFrame
+SendFrame <|.. SendFroelingFrame
+....
+## Methods
+#### Method: setProtocolIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setProtocolIdentifier(int[] identifier)    
+----
+|Description 2+|Setter method for setting the protocol identifier. Adds the identifier values to the command list and updates the checksum.
+|Return|void|
+|identifier|int|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(int[] data)    
+----
+|Description 2+|Setter method for setting the data values. Adds the data values to the parameters list and updates the number of parameters and checksum.
+|Return|void|
+|data|int|
+|===
+#### Method: getFrameValues
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getFrameValues()    
+----
+|Description 2+|Getter method for getting the frame values. Returns a list of integers containing the command, number of parameters, and checksum values.
+|Return|List|
+|===
+# Interface `FroehlingPopulation`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroehlingPopulation", svg]
+....
+interface FroehlingPopulation
+{
+addMessage(message: String):"void"
+addProcessType(type: String):"void"
+addProcessState(state: String):"void"
+getMessage(i: int):"String"
+}
+....
+## Methods
+#### Method: addMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addMessage(String message);
+----
+|Description 2+|Adds a receive message to the message catalog.
+|Return|void|
+|message|String|
+|===
+#### Method: addProcessType
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addProcessType(String type);
+----
+|Description 2+|Adds a process type to the population's process types.
+/
+|Return|void|
+|type|String|
+|===
+#### Method: addProcessState
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addProcessState(String state);
+----
+|Description 2+|Adds a process state to the population's process states.
+/
+|Return|void|
+|state|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int i);
+----
+|Description 2+|Retrieves a receive message from the message catalog by its index (0-based).
+|Return|String|
+|i|int|
+|===
+PackageWriter# Class `Client`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.client.Client", svg]
+....
+class Client
+{
+main(args: String):"void"
+}
+....
+## Methods
+#### Method: main
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void main(String[] args) 
+----
+|Description 2+|Main method that establishes a connection to the server and sends/receives data.
+|Return|void|
+|args|String|
+|===
+# Class `ClientException`
+## Description
+ClientException class represents custom exceptions for the Vallox client.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.client.ClientException", svg]
+....
+class ClientException
+{
+}
+class RuntimeException
+RuntimeException ^-- ClientException
+....
+## Methods
+PackageWriter# Class `RequestAndGet`
+## Description
+This class extends the SequenceImpl and implements ManagedReceiveDeviceSequence.
+It is used to request a frame from a device, wait for the data, and get the serial protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.sequence.RequestAndGet", svg]
+....
+class RequestAndGet
+{
+getProtocol(device: Device):"SerielProtocol"
+}
+class SequenceImpl
+SequenceImpl ^-- RequestAndGet
+interface ManagedReceiveDeviceSequence
+ManagedReceiveDeviceSequence <|.. RequestAndGet
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(Device device) 
+----
+|Description 2+|This method gets the serial protocol from a device.
+|Return|SerielProtocol|
+|device|Device|
+|===
+# Class `TransmitAndGet`
+## Description
+This class represents a sequence that transmits a given frame and waits for the response.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.sequence.TransmitAndGet", svg]
+....
+class TransmitAndGet
+{
+setData(device: Deviceparameter: String):"String"
+}
+class SequenceImpl
+SequenceImpl ^-- TransmitAndGet
+interface ManagedTransmitDeviceSequence
+ManagedTransmitDeviceSequence <|.. TransmitAndGet
+....
+## Methods
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(Device device, String parameter) 
+----
+|Description 2+|Sets data for a given device. This method sends the specified frame and waits for the response.
+|Return|String|
+|device|Device|
+|parameter|String|
+|===
+PackageWriter# Class `Co2AdjustState`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.Co2AdjustState", svg]
+....
+class Co2AdjustState
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- Co2AdjustState
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|Calculate the CO2 adjustment state based on raw data.
+/
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `ExhaustTemp`
+## Description
+Class that extends Temperator and handles exhaust temperature data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ExhaustTemp", svg]
+....
+class ExhaustTemp
+{
+getMessage():"String"
+getIdentifier():"int"
+}
+class Temperator
+Temperator ^-- ExhaustTemp
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|Returns a message string representing the exhaust temperature. The temperature is calculated by calling the rawValueToTemp method on the rawData property.
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|Returns an identifier for this device. This is a constant value of 0x33.
+|Return|int|
+|===
+# Class `FanSpeed`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.FanSpeed", svg]
+....
+class FanSpeed
+{
+init():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- FanSpeed
+....
+## Methods
+#### Method: init
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void init() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `FaultIndicator`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.FaultIndicator", svg]
+....
+class FaultIndicator
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- FaultIndicator
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `FilterguardIndicator`
+## Description
+This class represents a filter guard indicator protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.FilterguardIndicator", svg]
+....
+class FilterguardIndicator
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- FilterguardIndicator
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|Calculates the filter guard indicator based on the given raw data.
+/
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `HeatingIndicator`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.HeatingIndicator", svg]
+....
+class HeatingIndicator
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- HeatingIndicator
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `HeatingState`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.HeatingState", svg]
+....
+class HeatingState
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- HeatingState
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|Calculates the heating state based on the raw data.
+/
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `IncomingTemp`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.IncomingTemp", svg]
+....
+class IncomingTemp
+{
+getMessage():"String"
+getIdentifier():"int"
+}
+class Temperator
+Temperator ^-- IncomingTemp
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+# Class `InsideTemp`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.InsideTemp", svg]
+....
+class InsideTemp
+{
+getMessage():"String"
+getIdentifier():"int"
+}
+class Temperator
+Temperator ^-- InsideTemp
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+# Class `OutSideTemp`
+## Description
+Represents an outside temperature sensor.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.OutSideTemp", svg]
+....
+class OutSideTemp
+{
+getMessage():"String"
+getIdentifier():"int"
+}
+class Temperator
+Temperator ^-- OutSideTemp
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+# Class `PowerState`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.PowerState", svg]
+....
+class PowerState
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- PowerState
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|Calculates the power state from the raw data.
+/
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `ProtocolBase`
+## Description
+Abstract base class for home automatic devices' protocols.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ProtocolBase", svg]
+....
+class ProtocolBase
+{
+getRawData():"int"
+compare(protocol: SerielProtocol):"boolean"
+getTimeStamp():"long"
+}
+interface SerielProtocol
+SerielProtocol <|.. ProtocolBase
+....
+## Methods
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData() 
+----
+|Description 2+|Gets the raw data stored in this protocol.
+|Return|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|Compares the raw data of this protocol with another SerielProtocol object.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: getTimeStamp
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+long getTimeStamp() 
+----
+|Description 2+|Gets the timestamp of when this protocol was created.
+|Return|long|
+|===
+# Class `RhAdjustState`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.RhAdjustState", svg]
+....
+class RhAdjustState
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- RhAdjustState
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|Calculates the rh-adjust state based on the raw data.
+/
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `ServicReminder`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ServicReminder", svg]
+....
+class ServicReminder
+{
+calc():"void"
+getMessage():"String"
+getIdentifier():"int"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- ServicReminder
+....
+## Methods
+#### Method: calc
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void calc() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier() 
+----
+|Description 2+|
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `Temperator`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.Temperator", svg]
+....
+class Temperator
+{
+rawValueToTemp(rawValue: int):"int"
+compare(protocol: SerielProtocol):"boolean"
+getData():"String"
+setData(setValue: String):"void"
+}
+class ProtocolBase
+ProtocolBase ^-- Temperator
+....
+## Methods
+#### Method: rawValueToTemp
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int rawValueToTemp(int rawValue) 
+----
+|Description 2+|Convert raw value to temperature based on the provided mapping (curve).
+|Return|int|
+|rawValue|int|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol) 
+----
+|Description 2+|
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData() 
+----
+|Description 2+|
+|Return|String|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue) 
+----
+|Description 2+|
+|Return|void|
+|setValue|String|
+|===
+# Class `ValloxProtocolCatalogue`
+## Description
+Class responsible for managing and storing protocol classes for Vallox devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ValloxProtocolCatalogue", svg]
+....
+class ValloxProtocolCatalogue
+{
+}
+class BaseProtocolCatalogue
+BaseProtocolCatalogue ^-- ValloxProtocolCatalogue
+....
+## Methods
+PackageWriter# Class `ReflectionUtil`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.util.ReflectionUtil", svg]
+....
+class ReflectionUtil
+{
+getAllClasses():"List"
+getAnnotatedClasses(annotationClass: Class):"List"
+}
+....
+## Methods
+#### Method: getAllClasses
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Class<?>> getAllClasses() 
+----
+|Description 2+|Returns a list of all classes loaded by the current thread's context class loader.
+|Return|List|
+|===
+#### Method: getAnnotatedClasses
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Class<?>> getAnnotatedClasses(Class<Annotation> annotationClass) 
+----
+|Description 2+|Returns a list of classes that are annotated with the given annotation class.
+|Return|List|
+|annotationClass|Class|
+|===
+# Class `ReflectionUtilException`
+## Description
+This class represents a custom exception type used in the ReflectionUtil.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.util.ReflectionUtilException", svg]
+....
+class ReflectionUtilException
+{
+}
+class RuntimeException
+RuntimeException ^-- ReflectionUtilException
+....
+## Methods
+PackageWriter# Class `ReceiveValloxFrame`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.ReceiveValloxFrame", svg]
+....
+class ReceiveValloxFrame
+{
+goOn():"boolean"
+call():"Void"
+frameRecognized(validFrame: List):"void"
+checkCheckSum(frameElements: Deque):"List"
+}
+class ValloxFrame
+ValloxFrame ^-- ReceiveValloxFrame
+interface Callable<Void>
+Callable<Void> <|.. ReceiveValloxFrame
+....
+## Methods
+#### Method: goOn
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean goOn() 
+----
+|Description 2+|
+|Return|boolean|
+|===
+#### Method: call
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Void call() throws Exception 
+----
+|Description 2+|
+|Return|Void|
+|===
+#### Method: frameRecognized
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void frameRecognized(List<Integer> validFrame) 
+----
+|Description 2+|
+|Return|void|
+|validFrame|List|
+|===
+#### Method: checkCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> checkCheckSum(Deque<Integer> frameElements) 
+----
+|Description 2+|
+|Return|List|
+|frameElements|Deque|
+|===
+# Class `SendValoxFrame`
+## Description
+This class represents a send frame for the Valox device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.SendValoxFrame", svg]
+....
+class SendValoxFrame
+{
+setProtocolIdentifier(identifier: int):"void"
+setData(data: int):"void"
+getFrameValues():"List"
+}
+class ValloxFrame
+ValloxFrame ^-- SendValoxFrame
+interface SendFrame
+SendFrame <|.. SendValoxFrame
+....
+## Methods
+#### Method: setProtocolIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setProtocolIdentifier(int[] identifier) 
+----
+|Description 2+|Sets the protocol identifier for this send frame.
+|Return|void|
+|identifier|int|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(int[] data) 
+----
+|Description 2+|Sets the data for this send frame.
+|Return|void|
+|data|int|
+|===
+#### Method: getFrameValues
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getFrameValues() 
+----
+|Description 2+|Returns a list of frame values, including domain, sender, receiver, and frame variable.
+|Return|List|
+|===
+# Class `Vallox`
+## Description
+This Java class represents a Vallox device in the Home Automatic system.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.Vallox", svg]
+....
+class Vallox
+{
+}
+class BaseDevice
+BaseDevice ^-- Vallox
+....
+## Methods
+# Class `ValloxFrame`
+## Description
+This class represents a VALLOX frame, which is used in home automation.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.ValloxFrame", svg]
+....
+class ValloxFrame
+{
+calcCheckSum(values: List):"int"
+updateCheckSum():"void"
+}
+....
+## Methods
+#### Method: calcCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int calcCheckSum(List<Integer> values) 
+----
+|Description 2+|Calculates the checksum of the given values.
+|Return|int|
+|values|List|
+|===
+#### Method: updateCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void updateCheckSum() 
+----
+|Description 2+|Updates the checksum based on the current values.
+/
+|Return|void|
+|===
+# Class `ValloxFrameException`
+## Description
+The ValloxFrameException class represents an exception that occurs when interacting with a Vallox device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.vallox.ValloxFrameException", svg]
+....
+class ValloxFrameException
+{
+}
+class RuntimeException
+RuntimeException ^-- ValloxFrameException
+....
+## Methods
+PackageWriter# Class `BaseDevice`
+## Description
+Abstract base class for devices that use the home automatic protocol.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.BaseDevice", svg]
+....
+class BaseDevice
+{
+init():"void"
+getSerialPortSendBuffer():"SerialPortSendBuffer"
+getSerialPortReceiveBuffer():"SerialPortReceiveBuffer"
+getProtocolClazzes():"Set"
+getData(protClazz: Class):"SerielProtocol"
+getData(className: String):"SerielProtocol"
+send(sendProtocol: SendFrame):"void"
+getProtocolIdentifier(className: String):"Integer"
+getProtocolClazz(className: String):"Class"
+sendWaitGetData(sendProtocol: SendFrameprotClazzName: Stringdeadline: long):"SerielProtocol"
+sendWaitGetData(sendProtocol: SendFramedeadline: long):"SerielProtocol"
+getConsecutiveData(predecessor: SerielProtocoldeadline: long):"SerielProtocol"
+registerCallBack(callBack: ReceivedMessageCallBack):"void"
+deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
+received(detectedProtocol: SerielProtocol):"void"
+}
+interface Device
+Device <|.. BaseDevice
+interface ReceivedMessageCallBack
+ReceivedMessageCallBack <|.. BaseDevice
+....
+## Methods
+#### Method: init
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void init() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: getSerialPortSendBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerialPortSendBuffer getSerialPortSendBuffer() 
+----
+|Description 2+|
+|Return|SerialPortSendBuffer|
+|===
+#### Method: getSerialPortReceiveBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerialPortReceiveBuffer getSerialPortReceiveBuffer() 
+----
+|Description 2+|
+|Return|SerialPortReceiveBuffer|
+|===
+#### Method: getProtocolClazzes
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Set<Class<? extends SerielProtocol>> getProtocolClazzes() 
+----
+|Description 2+|
+|Return|Set|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getData(Class<? extends SerielProtocol> protClazz) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|protClazz|Class|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getData(String className) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|className|String|
+|===
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame sendProtocol) 
+----
+|Description 2+|
+|Return|void|
+|sendProtocol|SendFrame|
+|===
+#### Method: getProtocolIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Integer getProtocolIdentifier(String className) 
+----
+|Description 2+|
+|Return|Integer|
+|className|String|
+|===
+#### Method: getProtocolClazz
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Class<? extends SerielProtocol> getProtocolClazz(String className) 
+----
+|Description 2+|
+|Return|Class|
+|className|String|
+|===
+#### Method: sendWaitGetData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol sendWaitGetData(SendFrame sendProtocol, String protClazzName, long deadline) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|sendProtocol|SendFrame|
+|protClazzName|String|
+|deadline|long|
+|===
+#### Method: sendWaitGetData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol sendWaitGetData(SendFrame sendProtocol, long deadline) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|sendProtocol|SendFrame|
+|deadline|long|
+|===
+#### Method: getConsecutiveData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getConsecutiveData(SerielProtocol predecessor, long deadline) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|predecessor|SerielProtocol|
+|deadline|long|
+|===
+#### Method: registerCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void registerCallBack(ReceivedMessageCallBack callBack) 
+----
+|Description 2+|
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+#### Method: deRegisterCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void deRegisterCallBack(ReceivedMessageCallBack callBack) 
+----
+|Description 2+|
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+#### Method: received
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void received(SerielProtocol detectedProtocol) 
+----
+|Description 2+|
+|Return|void|
+|detectedProtocol|SerielProtocol|
+|===
+# Class `DeviceException`
+## Description
+Custom exception class for handling device-related errors.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.DeviceException", svg]
+....
+class DeviceException
+{
+}
+class RuntimeException
+RuntimeException ^-- DeviceException
+....
+## Methods
+# Class `DeviceStore`
+## Description
+This class serves as a central store for devices in a home automation system.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.DeviceStore", svg]
+....
+class DeviceStore
+{
+getInstance():"DeviceStore"
+register(device: Device):"void"
+get(device: Class):"Device"
+getMangedDevice(device: Class):"ManagedDevice"
+}
+....
+## Methods
+#### Method: getInstance
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+DeviceStore getInstance() 
+----
+|Description 2+|Returns the sole instance of this class.
+|Return|DeviceStore|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device) 
+----
+|Description 2+|Registers a device and its managed equivalent in the store.
+|Return|void|
+|device|Device|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Device get(Class<? extends Device> device) 
+----
+|Description 2+|Retrieves the managed device equivalent for a given device class.
+|Return|Device|
+|device|Class|
+|===
+#### Method: getMangedDevice
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+ManagedDevice getMangedDevice(Class<? extends Device> device) 
+----
+|Description 2+|Retrieves the managed device instance for a given device class.
+|Return|ManagedDevice|
+|device|Class|
+|===
+# Class `ManagedDeviceImp`
+## Description
+ManagedDeviceImp is an implementation of the ManagedDevice interface.
+It manages a Device instance and provides methods to set data and retrieve serial protocols.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.ManagedDeviceImp", svg]
+....
+class ManagedDeviceImp
+{
+getDevice():"Device"
+setData(managedDeviceSequence: ManagedTransmitDeviceSequenceparameter: String):"String"
+getProtocol(managedDeviceSequence: ManagedReceiveDeviceSequence):"SerielProtocol"
+}
+interface ManagedDevice
+ManagedDevice <|.. ManagedDeviceImp
+....
+## Methods
+#### Method: getDevice
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Device getDevice() 
+----
+|Description 2+|Returns the managed Device instance.
+|Return|Device|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(ManagedTransmitDeviceSequence managedDeviceSequence, String parameter) 
+----
+|Description 2+|Sets data for the managed Device using a ManagedTransmitDeviceSequence and a parameter.
+|Return|String|
+|managedDeviceSequence|ManagedTransmitDeviceSequence|
+|parameter|String|
+|===
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(ManagedReceiveDeviceSequence managedDeviceSequence) 
+----
+|Description 2+|Retrieves a SerielProtocol for the managed Device using a ManagedReceiveDeviceSequence.
+|Return|SerielProtocol|
+|managedDeviceSequence|ManagedReceiveDeviceSequence|
+|===
+# Interface `Device`
+## Description
+Interface for devices that communicate via serial protocol.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.Device", svg]
+....
+interface Device
+{
+getSerialPortSendBuffer():"SerialPortSendBuffer"
+getSerialPortReceiveBuffer():"SerialPortReceiveBuffer"
+getProtocolClazzes():"Set"
+getData(protClazz: Class):"SerielProtocol"
+getData(className: String):"SerielProtocol"
+getConsecutiveData(predecessor: SerielProtocoldeadline: long):"SerielProtocol"
+getProtocolIdentifier(className: String):"Integer"
+send(sendProtocol: SendFrame):"void"
+getProtocolClazz(className: String):"Class"
+sendWaitGetData(sendProtocol: SendFrameprotClazzName: Stringdeadline: long):"SerielProtocol"
+sendWaitGetData(sendProtocol: SendFramedeadline: long):"SerielProtocol"
+registerCallBack(callBack: ReceivedMessageCallBack):"void"
+deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
+}
+....
+## Methods
+#### Method: getSerialPortSendBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerialPortSendBuffer getSerialPortSendBuffer();
+----
+|Description 2+|Returns the serial port send buffer used by this device.
+|Return|SerialPortSendBuffer|
+|===
+#### Method: getSerialPortReceiveBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerialPortReceiveBuffer getSerialPortReceiveBuffer();
+----
+|Description 2+|Returns the serial port receive buffer used by this device.
+|Return|SerialPortReceiveBuffer|
+|===
+#### Method: getProtocolClazzes
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Set<Class<? extends SerielProtocol>> getProtocolClazzes();
+----
+|Description 2+|Returns a set of protocol classes supported by this device.
+|Return|Set|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getData(Class<? extends SerielProtocol> protClazz);
+----
+|Description 2+|Returns a specific protocol instance based on the given class name.
+|Return|SerielProtocol|
+|protClazz|Class|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getData(String className);
+----
+|Description 2+|Returns a specific protocol instance based on its class name.
+|Return|SerielProtocol|
+|className|String|
+|===
+#### Method: getConsecutiveData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getConsecutiveData(SerielProtocol predecessor, long deadline);
+----
+|Description 2+|Returns the protocol that follows the given predecessor.
+|Return|SerielProtocol|
+|predecessor|SerielProtocol|
+|deadline|long|
+|===
+#### Method: getProtocolIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Integer getProtocolIdentifier(String className);
+----
+|Description 2+|Returns the identifier of a protocol class given its name.
+|Return|Integer|
+|className|String|
+|===
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame sendProtocol);
+----
+|Description 2+|Sends a frame and waits for a response.
+|Return|void|
+|sendProtocol|SendFrame|
+|===
+#### Method: getProtocolClazz
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Class<? extends SerielProtocol> getProtocolClazz(String className);
+----
+|Description 2+|Returns the protocol class corresponding to the given class name.
+|Return|Class|
+|className|String|
+|===
+#### Method: sendWaitGetData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol sendWaitGetData(SendFrame sendProtocol, String protClazzName, long deadline);
+----
+|Description 2+|Sends a frame and waits for the specified protocol to be received, within a deadline.
+|Return|SerielProtocol|
+|sendProtocol|SendFrame|
+|protClazzName|String|
+|deadline|long|
+|===
+#### Method: sendWaitGetData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol sendWaitGetData(SendFrame sendProtocol, long deadline);
+----
+|Description 2+|Sends a frame and waits for any valid protocol to be received, within a deadline.
+|Return|SerielProtocol|
+|sendProtocol|SendFrame|
+|deadline|long|
+|===
+#### Method: registerCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void registerCallBack(ReceivedMessageCallBack callBack);
+----
+|Description 2+|Registers a callback that will be called when a protocol is received.
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+#### Method: deRegisterCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void deRegisterCallBack(ReceivedMessageCallBack callBack);
+----
+|Description 2+|De-registers the given callback.
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+# Interface `ManagedDevice`
+## Description
+This interface represents a managed device in the home automatic system.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.ManagedDevice", svg]
+....
+interface ManagedDevice
+{
+getDevice():"Device"
+setData(managedDeviceSequence: ManagedTransmitDeviceSequenceparameter: String):"String"
+getProtocol(managedDeviceSequence: ManagedReceiveDeviceSequence):"SerielProtocol"
+}
+....
+## Methods
+#### Method: getDevice
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Device getDevice();
+----
+|Description 2+|Retrieves the underlying device for this managed device.
+|Return|Device|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(ManagedTransmitDeviceSequence managedDeviceSequence, String parameter);
+----
+|Description 2+|Sets data on the managed device using the provided sequence and parameter.
+|Return|String|
+|managedDeviceSequence|ManagedTransmitDeviceSequence|
+|parameter|String|
+|===
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(ManagedReceiveDeviceSequence managedDeviceSequence);
+----
+|Description 2+|Retrieves the SerielProtocol associated with this managed receive device.
+|Return|SerielProtocol|
+|managedDeviceSequence|ManagedReceiveDeviceSequence|
+|===
+# Interface `ManagedReceiveDeviceSequence`
+## Description
+This interface defines a managed receive device sequence.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.ManagedReceiveDeviceSequence", svg]
+....
+interface ManagedReceiveDeviceSequence
+{
+getProtocol(device: Device):"SerielProtocol"
+}
+interface ReceiveSequence
+ReceiveSequence ^-- ManagedReceiveDeviceSequence
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(Device device);
+----
+|Description 2+|Returns the serial protocol associated with the given device.
+|Return|SerielProtocol|
+|device|Device|
+|===
+# Interface `ManagedTransmitDeviceSequence`
+## Description
+ManagedTransmitDeviceSequence interface extends TransmitSequence and provides methods for managing transmission sequences of home automation devices.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.ManagedTransmitDeviceSequence", svg]
+....
+interface ManagedTransmitDeviceSequence
+{
+setData(device: Deviceparameter: String):"String"
+}
+interface TransmitSequence
+TransmitSequence ^-- ManagedTransmitDeviceSequence
+....
+## Methods
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(Device device, String parameter);
+----
+|Description 2+|Sets the data parameter for a given device, returning the updated string value.
+|Return|String|
+|device|Device|
+|parameter|String|
+|===
+PackageWriter# Class `DeltaSoleProtocol`
+## Description
+REST endpoint for DeltaSole devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.rest.DeltaSoleProtocol", svg]
+....
+class DeltaSoleProtocol
+{
+getValue(className: String):"String"
+}
+....
+## Methods
+#### Method: getValue
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getValue(@PathParam("className") String className) 
+----
+|Description 2+|Returns the value of a specific property for a DeltaSole device.
+|Return|String|
+|className|String|
+|===
+# Class `Jersey`
+## Description
+Jersey server implementation.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.rest.Jersey", svg]
+....
+class Jersey
+{
+register(device: Device):"void"
+start():"void"
+}
+interface Server
+Server <|.. Jersey
+....
+## Methods
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device) 
+----
+|Description 2+|Registers a device with the server.
+|Return|void|
+|device|Device|
+|===
+#### Method: start
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void start() 
+----
+|Description 2+|Starts the HTTP server.
+/
+|Return|void|
+|===
+# Class `JerseyException`
+## Description
+Custom exception class for Jersey RESTful services.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.rest.JerseyException", svg]
+....
+class JerseyException
+{
+}
+class RuntimeException
+RuntimeException ^-- JerseyException
+....
+## Methods
+# Class `ValloxProtocol`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.rest.ValloxProtocol", svg]
+....
+class ValloxProtocol
+{
+getValue(className: String):"String"
+postMessage(className: Stringparameter: String):"Response"
+}
+....
+## Methods
+#### Method: getValue
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getValue(@PathParam("className") String className) 
+----
+|Description 2+|
+|Return|String|
+|className|String|
+|===
+#### Method: postMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Response postMessage(@PathParam("className") String className, @PathParam("parameter") String parameter) 
+----
+|Description 2+|
+|Return|Response|
+|className|String|
+|parameter|String|
+|===
+# Class `ValloxSummary`
+## Description
+Handles REST requests for Vallox devices.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.rest.ValloxSummary", svg]
+....
+class ValloxSummary
+{
+getValue():"String"
+}
+....
+## Methods
+#### Method: getValue
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getValue() 
+----
+|Description 2+|Returns a plain text representation of the protocols supported by the Vallox device.
+|Return|String|
+|===
+PackageWriter# Class `NetProtocol2SerProtocolImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol2SerProtocolImpl", svg]
+....
+class NetProtocol2SerProtocolImpl
+{
+getProtocolClass(identifier: String):"Entry"
+register(device: Device):"void"
+}
+interface NetProtocol2SerProtocol
+NetProtocol2SerProtocol <|.. NetProtocol2SerProtocolImpl
+....
+## Methods
+#### Method: getProtocolClass
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Entry<Class<? extends SerielProtocol>, Device> getProtocolClass(String identifier) 
+----
+|Description 2+|Retrieves the protocol class and device entry for a given identifier.
+|Return|Entry|
+|identifier|String|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device) 
+----
+|Description 2+|Registers a device with its associated protocol classes.
+|Return|void|
+|device|Device|
+|===
+# Class `NetProtocolDecoderImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolDecoderImpl", svg]
+....
+class NetProtocolDecoderImpl
+{
+getProtocol(inString: String):"NetProtocol"
+}
+interface NetProtocolDecoder
+NetProtocolDecoder <|.. NetProtocolDecoderImpl
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+NetProtocol getProtocol(String inString) 
+----
+|Description 2+|Decodes a given string into a NetProtocol object.
+|Return|NetProtocol|
+|inString|String|
+|===
+# Class `NetProtocolImpl`
+## Description
+This class implements the NetProtocol interface.
+It provides methods to get and set direction, command, and set value.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolImpl", svg]
+....
+class NetProtocolImpl
+{
+getDirection():"DIRECTION"
+getCommand():"String"
+getSetValue():"String"
+}
+interface NetProtocol
+NetProtocol <|.. NetProtocolImpl
+....
+## Methods
+#### Method: getDirection
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+DIRECTION getDirection() 
+----
+|Description 2+|Getter for the direction.
+|Return|DIRECTION|
+|===
+#### Method: getCommand
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getCommand() 
+----
+|Description 2+|Getter for the command.
+|Return|String|
+|===
+#### Method: getSetValue
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getSetValue() 
+----
+|Description 2+|Getter for the set value.
+|Return|String|
+|===
+# Class `TcpServer`
+## Description
+This class represents a TCP server that handles incoming and outgoing
+messages according to the home automatic protocol.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.TcpServer", svg]
+....
+class TcpServer
+{
+run():"void"
+error(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):"void"
+out2client(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):"void"
+inFromClient(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):"void"
+register(device: Device):"void"
+}
+class Thread
+Thread ^-- TcpServer
+interface Server
+Server <|.. TcpServer
+....
+## Methods
+#### Method: run
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void run() 
+----
+|Description 2+|
+|Return|void|
+|===
+#### Method: error
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void error(NetProtocol netProtocol, BufferedReader in, PrintStream out) 
+----
+|Description 2+|
+|Return|void|
+|netProtocol|NetProtocol|
+|in|BufferedReader|
+|out|PrintStream|
+|===
+#### Method: out2client
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void out2client(NetProtocol netProtocol, BufferedReader in, PrintStream out) 
+----
+|Description 2+|
+|Return|void|
+|netProtocol|NetProtocol|
+|in|BufferedReader|
+|out|PrintStream|
+|===
+#### Method: inFromClient
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void inFromClient(NetProtocol netProtocol, BufferedReader in, PrintStream out) 
+----
+|Description 2+|
+|Return|void|
+|netProtocol|NetProtocol|
+|in|BufferedReader|
+|out|PrintStream|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device) 
+----
+|Description 2+|
+|Return|void|
+|device|Device|
+|===
+# Interface `NetProtocol`
+## Description
+This interface defines a network protocol that handles TCP-based communication.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol", svg]
+....
+interface NetProtocol
+{
+getDirection():"DIRECTION"
+getCommand():"String"
+getSetValue():"String"
+}
+....
+## Methods
+#### Method: getDirection
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+DIRECTION getDirection();
+----
+|Description 2+|Retrieves the direction of the current network packet.
+|Return|DIRECTION|
+|===
+#### Method: getCommand
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getCommand();
+----
+|Description 2+|Gets the command associated with the current network packet.
+|Return|String|
+|===
+#### Method: getSetValue
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getSetValue();
+----
+|Description 2+|Retrieves the set value associated with the current network packet.
+|Return|String|
+|===
+# Interface `NetProtocol2SerProtocol`
+## Description
+This interface defines the NetProtocol2SerProtocol, which is responsible for mapping
+network protocol identifiers to SerielProtocol classes and registering devices.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol2SerProtocol", svg]
+....
+interface NetProtocol2SerProtocol
+{
+getProtocolClass(identifier: String):"Entry"
+register(device: Device):"void"
+}
+....
+## Methods
+#### Method: getProtocolClass
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Entry<Class<? extends SerielProtocol>, Device> getProtocolClass(String identifier);
+----
+|Description 2+|Returns an entry in a map that maps a class implementing SerielProtocol to a Device.
+|Return|Entry|
+|identifier|String|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device);
+----
+|Description 2+|Registers a device with this NetProtocol2SerProtocol.
+|Return|void|
+|device|Device|
+|===
+# Interface `NetProtocolDecoder`
+## Description
+Defines an interface for decoding network protocols.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolDecoder", svg]
+....
+interface NetProtocolDecoder
+{
+getProtocol(inString: String):"NetProtocol"
+}
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+NetProtocol getProtocol(String inString);
+----
+|Description 2+|Decodes a given string into a specific protocol object.
+|Return|NetProtocol|
+|inString|String|
+|===
+PackageWriter# Class `ServerException`
+## Description
+This class represents a custom exception for the home automation server.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.ServerException", svg]
+....
+class ServerException
+{
+}
+class RuntimeException
+RuntimeException ^-- ServerException
+....
+## Methods
+# Interface `Server`
+## Description
+Interface representing a home automatic server that manages devices.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.Server", svg]
+....
+interface Server
+{
+register(device: Device):"void"
+start():"void"
+}
+....
+## Methods
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device);
+----
+|Description 2+|Registers a device with the server, allowing it to be controlled remotely.
+|Return|void|
+|device|Device|
+|===
+#### Method: start
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void start();
+----
+|Description 2+|Starts the server, enabling its functionality.
+/
+|Return|void|
+|===
+PackageWriter# Class `BaseProtocolCatalogue`
+## Description
+Base protocol catalogue class that implements ProtocolCatalogue.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.BaseProtocolCatalogue", svg]
+....
+class BaseProtocolCatalogue
+{
+getProtocolClazzes():"Set"
+}
+interface ProtocolCatalogue
+ProtocolCatalogue <|.. BaseProtocolCatalogue
+....
+## Methods
+#### Method: getProtocolClazzes
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Set<Class<? extends SerialProtocol>> getProtocolClazzes() 
+----
+|Description 2+|
+|Return|Set|
+|===
+# Class `Factory`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.Factory", svg]
+....
+class Factory
+{
+get(identifier: intframe: List):"Set"
+}
+....
+## Methods
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Set<SerielProtocol> get(int identifier, List<Integer> frame) 
+----
+|Description 2+|Returns a set of SerielProtocol instances for the given identifier and frame.
+|Return|Set|
+|identifier|int|
+|frame|List|
+|===
+# Class `HomeAutoMatic`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.HomeAutoMatic", svg]
+....
+class HomeAutoMatic
+{
+main(args: String):"void"
+}
+....
+## Methods
+#### Method: main
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void main(String[] args) 
+----
+|Description 2+|Main method: This is the entry point of the program, which initializes and starts the Home Automation system.
+|Return|void|
+|args|String|
+|===
+# Class `ProtocolException`
+## Description
+Class representing a ProtocolException, which extends the RuntimeException class.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.ProtocolException", svg]
+....
+class ProtocolException
+{
+}
+class RuntimeException
+RuntimeException ^-- ProtocolException
+....
+## Methods
+# Class `SequenceException`
+## Description
+This class represents a sequence exception that can be thrown in home automation scenarios.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SequenceException", svg]
+....
+class SequenceException
+{
+}
+class RuntimeException
+RuntimeException ^-- SequenceException
+....
+## Methods
+# Class `SequenceImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SequenceImpl", svg]
+....
+class SequenceImpl
+{
+setData(parameter: String):"String"
+getProtocol():"SerialProtocol"
+}
+....
+## Methods
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(String parameter) 
+----
+|Description 2+|Sets data using the managed device's setData method, passing the current sequence as a parameter.
+|Return|String|
+|parameter|String|
+|===
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerialProtocol getProtocol() 
+----
+|Description 2+|Retrieves the serial protocol from the managed device using the getProtocol method, passing the current sequence as a parameter.
+|Return|SerialProtocol|
+|===
+# Class `SerialPortEventDispatcherImpl`
+## Description
+Serial Port Event Dispatcher Implementation.
+This class implements the SerialPortEventDispatcher interface and 
+provides event handling for serial port events. It also registers 
+send and receive handlers to process incoming and outgoing data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortEventDispatcherImpl", svg]
+....
+class SerialPortEventDispatcherImpl
+{
+serialEvent(serialPortEvent: SerialPortEvent):"void"
+register(portSend: SerialPortSend):"void"
+register(portReceive: SerialPortReceive):"void"
+}
+interface SerialPortEventDispatcher
+SerialPortEventDispatcher <|.. SerialPortEventDispatcherImpl
+interface SerialPortEventListener
+SerialPortEventListener <|.. SerialPortEventDispatcherImpl
+....
+## Methods
+#### Method: serialEvent
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void serialEvent(SerialPortEvent serialPortEvent) 
+----
+|Description 2+|
+|Return|void|
+|serialPortEvent|SerialPortEvent|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(SerialPortSend portSend) 
+----
+|Description 2+|
+|Return|void|
+|portSend|SerialPortSend|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(SerialPortReceive portReceive) 
+----
+|Description 2+|
+|Return|void|
+|portReceive|SerialPortReceive|
+|===
+# Class `SerialPortReceiveBufferImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveBufferImpl", svg]
+....
+class SerialPortReceiveBufferImpl
+{
+add(detectedProtocol: SerielProtocol):"void"
+get(clazz: Class):"SerielProtocol"
+getByName(className: String):"SerielProtocol"
+getClassByName(className: String):"Class"
+get():"SerielProtocol"
+getSuccessor(predecessor: SerielProtocol):"SerielProtocol"
+registerCallBack(callBack: ReceivedMessageCallBack):"void"
+deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
+}
+interface SerialPortReceiveBuffer
+SerialPortReceiveBuffer <|.. SerialPortReceiveBufferImpl
+....
+## Methods
+#### Method: add
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void add(SerielProtocol detectedProtocol) 
+----
+|Description 2+|
+|Return|void|
+|detectedProtocol|SerielProtocol|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol get(Class<? extends SerielProtocol> clazz) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|clazz|Class|
+|===
+#### Method: getByName
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getByName(String className) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|className|String|
+|===
+#### Method: getClassByName
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Class<? extends SerielProtocol> getClassByName(String className) 
+----
+|Description 2+|
+|Return|Class|
+|className|String|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol get() 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|===
+#### Method: getSuccessor
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getSuccessor(SerielProtocol predecessor) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|predecessor|SerielProtocol|
+|===
+#### Method: registerCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void registerCallBack(ReceivedMessageCallBack callBack) 
+----
+|Description 2+|
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+#### Method: deRegisterCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void deRegisterCallBack(ReceivedMessageCallBack callBack) 
+----
+|Description 2+|
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+# Class `SerialPortReceiveImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveImpl", svg]
+....
+class SerialPortReceiveImpl
+{
+serialEvent(event: SerialPortEvent):"void"
+setBuffer(serialPortReceiveBuffer: SerialPortReceiveBuffer):"void"
+run():"void"
+}
+interface SerialPortReceive
+SerialPortReceive <|.. SerialPortReceiveImpl
+interface Runnable
+Runnable <|.. SerialPortReceiveImpl
+....
+## Methods
+#### Method: serialEvent
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void serialEvent(SerialPortEvent event) 
+----
+|Description 2+|
+|Return|void|
+|event|SerialPortEvent|
+|===
+#### Method: setBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setBuffer(SerialPortReceiveBuffer serialPortReceiveBuffer) 
+----
+|Description 2+|
+|Return|void|
+|serialPortReceiveBuffer|SerialPortReceiveBuffer|
+|===
+#### Method: run
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void run() 
+----
+|Description 2+|
+|Return|void|
+|===
+# Class `SerialPortSendBufferImpl`
+## Description
+Implements a send buffer for serial port communication.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendBufferImpl", svg]
+....
+class SerialPortSendBufferImpl
+{
+send(sendFrame: SendFrame):"void"
+}
+interface SerialPortSendBuffer
+SerialPortSendBuffer <|.. SerialPortSendBufferImpl
+....
+## Methods
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame sendFrame) 
+----
+|Description 2+|Sends a send frame through the serial port.
+|Return|void|
+|sendFrame|SendFrame|
+|===
+# Class `SerialPortSendImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendImpl", svg]
+....
+class SerialPortSendImpl
+{
+serialEvent(event: SerialPortEvent):"void"
+send(frame: SendFrame):"void"
+}
+interface SerialPortSend
+SerialPortSend <|.. SerialPortSendImpl
+....
+## Methods
+#### Method: serialEvent
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void serialEvent(SerialPortEvent event) 
+----
+|Description 2+|
+|Return|void|
+|event|SerialPortEvent|
+|===
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame frame) 
+----
+|Description 2+|
+|Return|void|
+|frame|SendFrame|
+|===
+# Interface `ProtocolCatalogue`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.ProtocolCatalogue", svg]
+....
+interface ProtocolCatalogue
+{
+getProtocolClazzes():"Set"
+}
+....
+## Methods
+#### Method: getProtocolClazzes
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Set<Class<? extends SerialProtocol>> getProtocolClazzes();
+----
+|Description 2+|Returns the protocol class.
+|Return|Set|
+|===
+# Interface `ReceivedMessageCallBack`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.ReceivedMessageCallBack", svg]
+....
+interface ReceivedMessageCallBack
+{
+received(detectedProtocol: SerielProtocol):"void"
+}
+....
+## Methods
+#### Method: received
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void received(SerielProtocol detectedProtocol);
+----
+|Description 2+|This operation is called when a protocol is received.
+|Return|void|
+|detectedProtocol|SerielProtocol|
+|===
+# Interface `ReceiveFrameFactory`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.ReceiveFrameFactory", svg]
+....
+interface ReceiveFrameFactory
+{
+create(inputBuffer: DequedataContainer: SerialPortReceiveBufferprotocolCatalogue: ProtocolCatalogue):"Callable"
+}
+....
+## Methods
+#### Method: create
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Callable<Void> create(Deque<Integer> inputBuffer, SerialPortReceiveBuffer dataContainer,            ProtocolCatalogue protocolCatalogue);
+----
+|Description 2+|Creates a thread handling the receive protocol.
+|Return|Callable|
+|inputBuffer|Deque|
+|dataContainer|SerialPortReceiveBuffer|
+|protocolCatalogue|ProtocolCatalogue|
+|===
+# Interface `ReceiveSequence`
+## Description
+This interface represents a receive sequence.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.ReceiveSequence", svg]
+....
+interface ReceiveSequence
+{
+getProtocol():"SerielProtocol"
+}
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol();
+----
+|Description 2+|Returns the protocol associated with this receive sequence.
+|Return|SerielProtocol|
+|===
+# Interface `SendFrame`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SendFrame", svg]
+....
+interface SendFrame
+{
+setProtocolIdentifier(identifier: int):"void"
+setData(data: int):"void"
+getFrameValues():"List"
+}
+....
+## Methods
+#### Method: setProtocolIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setProtocolIdentifier(int[] identifier);
+----
+|Description 2+|Sets the identifier based on the protocol.
+|Return|void|
+|identifier|int|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(int[] data);
+----
+|Description 2+|Sets the data, not the raw data.
+|Return|void|
+|data|int|
+|===
+#### Method: getFrameValues
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getFrameValues();
+----
+|Description 2+|Returns the values of the frame, which can be sent.
+|Return|List|
+|===
+# Interface `SerialPortEventDispatcher`
+## Description
+SerialPortEventDispatcher interface provides methods to register Send and Receive events.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortEventDispatcher", svg]
+....
+interface SerialPortEventDispatcher
+{
+register(portSend: SerialPortSend):"void"
+register(portReceive: SerialPortReceive):"void"
+}
+....
+## Methods
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(SerialPortSend portSend);
+----
+|Description 2+|Register the Send event.
+|Return|void|
+|portSend|SerialPortSend|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(SerialPortReceive portReceive);
+----
+|Description 2+|Register the Receive event.
+|Return|void|
+|portReceive|SerialPortReceive|
+|===
+# Interface `SerialPortReceive`
+## Description
+Interface for receiving data through a serial port.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceive", svg]
+....
+interface SerialPortReceive
+{
+setBuffer(serialPortReceiveBuffer: SerialPortReceiveBuffer):"void"
+}
+interface SerialPortEventListener
+SerialPortEventListener ^-- SerialPortReceive
+....
+## Methods
+#### Method: setBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setBuffer(SerialPortReceiveBuffer serialPortReceiveBuffer);
+----
+|Description 2+|Register the receive buffer.
+|Return|void|
+|serialPortReceiveBuffer|SerialPortReceiveBuffer|
+|===
+# Interface `SerialPortReceiveBuffer`
+## Description
+This interface represents a buffer for serial port receive data.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveBuffer", svg]
+....
+interface SerialPortReceiveBuffer
+{
+add(detectedProtocol: SerielProtocol):"void"
+get(clazz: Class):"SerielProtocol"
+getByName(className: String):"SerielProtocol"
+getClassByName(className: String):"Class"
+get():"SerielProtocol"
+getSuccessor(predecessor: SerielProtocol):"SerielProtocol"
+registerCallBack(callBack: ReceivedMessageCallBack):"void"
+deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
+}
+....
+## Methods
+#### Method: add
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void add(SerielProtocol detectedProtocol);
+----
+|Description 2+|Adds the protocol to the buffer.
+|Return|void|
+|detectedProtocol|SerielProtocol|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol get(Class<? extends SerielProtocol> clazz);
+----
+|Description 2+|Returns the head from the buffer of a specific class type.
+|Return|SerielProtocol|
+|clazz|Class|
+|===
+#### Method: getByName
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getByName(String className);
+----
+|Description 2+|Returns the head from the buffer of a specific class type specified by name.
+|Return|SerielProtocol|
+|className|String|
+|===
+#### Method: getClassByName
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Class<? extends SerielProtocol> getClassByName(String className);
+----
+|Description 2+|Returns the class with the given name.
+|Return|Class|
+|className|String|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol get();
+----
+|Description 2+|Returns the last received message protocol.
+|Return|SerielProtocol|
+|===
+#### Method: getSuccessor
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getSuccessor(SerielProtocol predecessor);
+----
+|Description 2+|Returns the successor of a given predecessor protocol.
+|Return|SerielProtocol|
+|predecessor|SerielProtocol|
+|===
+#### Method: registerCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void registerCallBack(ReceivedMessageCallBack callBack);
+----
+|Description 2+|Registers a callback which is called when a new protocol is received.
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+#### Method: deRegisterCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void deRegisterCallBack(ReceivedMessageCallBack callBack);
+----
+|Description 2+|De-registers a previously registered callback.
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+# Interface `SerialPortSend`
+## Description
+Interface for sending frames over a serial connection.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortSend", svg]
+....
+interface SerialPortSend
+{
+send(frame: SendFrame):"void"
+}
+interface SerialPortEventListener
+SerialPortEventListener ^-- SerialPortSend
+....
+## Methods
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame frame);
+----
+|Description 2+|Sends the frame to the serial port.
+|Return|void|
+|frame|SendFrame|
+|===
+# Interface `SerialPortSendBuffer`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendBuffer", svg]
+....
+interface SerialPortSendBuffer
+{
+send(sendFrame: SendFrame):"void"
+}
+....
+## Methods
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame sendFrame);
+----
+|Description 2+|Sends the frame.
+|Return|void|
+|sendFrame|SendFrame|
+|===
+# Interface `SerielProtocol`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.SerielProtocol", svg]
+....
+interface SerielProtocol
+{
+getMessage():"String"
+getIdentifier():"int"
+getRawData():"int"
+getData():"String"
+compare(protocol: SerielProtocol):"boolean"
+setData(setValue: String):"void"
+getTimeStamp():"long"
+}
+....
+## Methods
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage();
+----
+|Description 2+|Returns the message containing the data.
+|Return|String|
+|===
+#### Method: getIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getIdentifier();
+----
+|Description 2+|Returns the message ID.
+|Return|int|
+|===
+#### Method: getRawData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+int getRawData();
+----
+|Description 2+|Returns the raw data.
+|Return|int|
+|===
+#### Method: getData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getData();
+----
+|Description 2+|Returns the data, not the raw data.
+|Return|String|
+|===
+#### Method: compare
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean compare(SerielProtocol protocol);
+----
+|Description 2+|Compares two protocols and returns true if they are not equal.
+|Return|boolean|
+|protocol|SerielProtocol|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(String setValue);
+----
+|Description 2+|Sets the data, not the raw data.
+|Return|void|
+|setValue|String|
+|===
+#### Method: getTimeStamp
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+long getTimeStamp();
+----
+|Description 2+|Returns the timestamp when the message was received.
+|Return|long|
+|===
+# Interface `TransmitSequence`
+## Description
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.TransmitSequence", svg]
+....
+interface TransmitSequence
+{
+setData(parameter: String):"String"
+}
+....
+## Methods
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(String parameter);
+----
+|Description 2+|Set the parameter which shall be sent.
+|Return|String|
+|parameter|String|
+|===
+PackageWriterPackageWriterPackageWriterPackageWriterPackageWriter

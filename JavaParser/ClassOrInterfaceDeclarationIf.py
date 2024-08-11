@@ -21,3 +21,7 @@ class ClassOrInterfaceDeclarationIf(ABC):
     @abstractmethod
     def getImplementedClasses(self) -> List[str]:
         pass
+
+    @abstractmethod
+    def getDescription(self) -> str:
+        pass

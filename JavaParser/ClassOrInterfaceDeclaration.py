@@ -1,10 +1,10 @@
-from types import NoneType
 from typing import List
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.ClassOrInterfaceDeclarationIf import ClassOrInterfaceDeclarationIf
 from JavaParser.CompilationUnitIf import CompilationUnitIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from JavaParser.JavaParserContextIf import JavaParserContextIf
+from JavaParser.JavaTreeElement import JavaTreeElement
 from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 from JavaParser.antlr.JavaParser import JavaParser
@@ -12,16 +12,22 @@ from PythonLib.JOptional import JOptional
 from PythonLib.Stream import Stream
 
 
-class ClassOrInterfaceDeclaration(ClassOrInterfaceDeclarationIf, JavaTreeElementIf):
-    def __init__(self, intClassDeclarationContext: InterfaceDeclarationIf | ClassDeclarationIf, parent: CompilationUnitIf, context: JavaParserContextIf) -> None:
+class ClassOrInterfaceDeclaration(JavaTreeElement, ClassOrInterfaceDeclarationIf):
+    def __init__(self, intClassDeclarationContext: InterfaceDeclarationIf | ClassDeclarationIf, javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf, context: JavaParserContextIf) -> None:
+        JavaTreeElement.__init__(self, parent)
+
         self.intClassDeclarationContext = intClassDeclarationContext
         self.context = context
-        self.parent = parent
         self.identifier = ""
+        self.javadocContext = JOptional(javadocContext).map(lambda ctx: ctx.getText()).orElse("")
         self.implementedClasses: List[str] = []
         self.methods: List[MethodDeclarationIf] = []
+        self.description = ""
 
     def parse(self) -> None:
+
+        self.description = self.context.createJavaDoc(self.javadocContext).parse().getDescription()
+
         self.identifier = JOptional(self.intClassDeclarationContext.identifier()) \
             .map(lambda identifierContext: identifierContext.getText()) \
             .orElse("")
@@ -48,3 +54,6 @@ class ClassOrInterfaceDeclaration(ClassOrInterfaceDeclarationIf, JavaTreeElement
         return JOptional(self.parent.getPackageDeclaration()) \
             .map(lambda package: f'{package}.{self.getShortName()}') \
             .orElse(self.getShortName())
+
+    def getDescription(self) -> str:
+        return self.description

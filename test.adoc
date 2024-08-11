@@ -1,0 +1,24 @@
+[cols="s,a,a"]
+|===
+|Description
+2+|My description
+|Return|String| My Return value
+|===
+
+[plantuml, "test", svg]
+....
+
+interface BetriebstundenRelais2
+{
+    getMessage():String
+    getData():String
+    getRawData():int
+    compare(protocol: SerielProtocol):boolean
+    setData(setValue: String):void
+}
+        
+        class Protocol66_120
+BetriebstundenRelais2 ^-- Protocol66_120
+
+        
+....

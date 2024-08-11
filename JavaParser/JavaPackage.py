@@ -3,12 +3,14 @@ from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.JavaPackageIf import JavaPackageIf
 from JavaParser.JavaParserContextIf import JavaParserContextIf
+from JavaParser.JavaTreeElement import JavaTreeElement
 from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 
 
-class JavaPackage(JavaPackageIf, JavaTreeElementIf):
-    def __init__(self, name: str, context: JavaParserContextIf, root: Optional[JavaPackageIf] = None) -> None:
-        self.root = root
+class JavaPackage(JavaTreeElement, JavaPackageIf):
+    def __init__(self, name: str, context: JavaParserContextIf, parent: JavaTreeElementIf) -> None:
+        JavaTreeElement.__init__(self, parent)
+
         self.name = name
         self.context = context
 
@@ -21,7 +23,7 @@ class JavaPackage(JavaPackageIf, JavaTreeElementIf):
         if name in self.subPackages:
             return self.subPackages[name]
         else:
-            newPackage = JavaPackage(name, root)
+            newPackage = self.context.createJavaPackage(name, root)
             self.subPackages[name] = newPackage
             return newPackage
 

@@ -4,6 +4,7 @@ from JavaParser.CompilationUnitIf import CompilationUnitIf
 from JavaParser.InterfaceDeclaration import InterfaceDeclaration
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from JavaParser.InterfaceMethodDeclaration import InterfaceMethodDeclaration
+from JavaParser.JavaDoc.JavaDocContext import JavaDocContext
 from JavaParser.JavaPackage import JavaPackage
 from JavaParser.JavaPackageIf import JavaPackageIf
 from JavaParser.JavaParserContextIf import JavaParserContextIf
@@ -14,36 +15,37 @@ from JavaParser.JavaFileIf import JavaFileIf
 from JavaParser.JavaProject import JavaProject
 from JavaParser.JavaProjectIf import JavaProjectIf
 from JavaParser.ClassMethodDeclaration import ClassMethodDeclaration
+from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 from JavaParser.antlr.JavaParser import JavaParser
 
 
-class JavaParserContext(JavaParserContextIf):
+class JavaParserContext(JavaDocContext, JavaParserContextIf):
     def __init__(self) -> None:
-        pass
+        JavaDocContext.__init__(self)
 
-    def getJavaFile(self) -> JavaFileIf:
-        return JavaFile(self)
+    def createJavaFile(self, parent: JavaTreeElementIf) -> JavaFileIf:
+        return JavaFile(parent, self)
 
-    def getCompilationUnit(self, compilationUnitContext: JavaParser.CompilationUnitContext) -> CompilationUnitIf:
-        return CompilationUnit(compilationUnitContext, self)
+    def createCompilationUnit(self, compilationUnitContext: JavaParser.CompilationUnitContext, parent: JavaTreeElementIf) -> CompilationUnitIf:
+        return CompilationUnit(compilationUnitContext, parent, self)
 
-    def getClassDeclaration(self, classDeclarationContext: JavaParser.ClassDeclarationContext,
-                            javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf) -> ClassDeclarationIf:
+    def createClassDeclaration(self, classDeclarationContext: JavaParser.ClassDeclarationContext,
+                               javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> ClassDeclarationIf:
         return ClassDeclaration(classDeclarationContext, javadocContext, parent, self)
 
-    def getInterfaceDeclaration(self, interfaceDeclarationContext: JavaParser.InterfaceDeclarationContext,
-                                javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf) -> InterfaceDeclarationIf:
+    def createInterfaceDeclaration(self, interfaceDeclarationContext: JavaParser.InterfaceDeclarationContext,
+                                   javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> InterfaceDeclarationIf:
         return InterfaceDeclaration(interfaceDeclarationContext, javadocContext, parent, self)
 
-    def getCassMethodDeclaration(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
-        return ClassMethodDeclaration(methodDeclarationContext, javadocContext, self)
+    def createCassMethodDeclaration(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> MethodDeclarationIf:
+        return ClassMethodDeclaration(methodDeclarationContext, javadocContext, parent, self)
 
-    def getInterfaceMethodDeclaration(self, methodDeclarationContext: JavaParser.InterfaceMethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
-        return InterfaceMethodDeclaration(methodDeclarationContext, javadocContext, self)
+    def createInterfaceMethodDeclaration(self, methodDeclarationContext: JavaParser.InterfaceMethodDeclarationContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> MethodDeclarationIf:
+        return InterfaceMethodDeclaration(methodDeclarationContext, javadocContext, parent, self)
 
-    def getJavaProject(self) -> JavaProjectIf:
+    def createJavaProject(self) -> JavaProjectIf:
         return JavaProject(self)
 
-    def getJavaPackage(self, name: str, root: Optional[JavaPackageIf] = None) -> JavaPackageIf:
+    def createJavaPackage(self, name: str, root: Optional[JavaPackageIf] = None) -> JavaPackageIf:
         return JavaPackage(name, self, root)

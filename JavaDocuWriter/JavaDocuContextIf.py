@@ -1,10 +1,12 @@
 from abc import ABC, abstractmethod
 
+from JavaDocuWriter.AsciiDocIf import AsciiDocIf
 from JavaDocuWriter.ClassWriterIf import ClassWriterIf
 from JavaDocuWriter.DocWriterIf import DocWriterIf
 from JavaDocuWriter.InterfaceWriterIf import InterfaceWriterIf
 from JavaDocuWriter.MethodWriterIf import MethodWriterIf
 from JavaDocuWriter.PackageWriterIf import PackageWriterIf
+from JavaDocuWriter.PlantUmlIf import PlantUmlIf
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from JavaParser.JavaPackageIf import JavaPackageIf
@@ -31,4 +33,12 @@ class JavaDocuContextIf(ABC):
 
     @abstractmethod
     def createMethodWriter(self, javaMethod: MethodDeclarationIf) -> MethodWriterIf:
+        pass
+
+    @abstractmethod
+    def getPlantUml(self) -> PlantUmlIf:
+        pass
+
+    @abstractmethod
+    def getAsciiDoc(self) -> AsciiDocIf:
         pass

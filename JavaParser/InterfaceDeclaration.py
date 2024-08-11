@@ -1,8 +1,8 @@
 from types import NoneType
 from JavaParser.ClassOrInterfaceDeclaration import ClassOrInterfaceDeclaration
-from JavaParser.CompilationUnitIf import CompilationUnitIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from JavaParser.JavaParserContextIf import JavaParserContextIf
+from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from JavaParser.antlr.JavaParser import JavaParser
 from PythonLib.JOptional import JOptional
 from PythonLib.Stream import Stream
@@ -10,12 +10,11 @@ from PythonLib.Stream import Stream
 
 class InterfaceDeclaration(ClassOrInterfaceDeclaration, InterfaceDeclarationIf):
     def __init__(self, interfaceDeclarationContext: JavaParser.InterfaceDeclarationContext,
-                 javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf, context: JavaParserContextIf) -> None:
+                 javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
 
-        ClassOrInterfaceDeclaration.__init__(self, interfaceDeclarationContext, parent, context)
+        ClassOrInterfaceDeclaration.__init__(self, interfaceDeclarationContext, javadocContext, parent, context)
 
         self.interfaceDeclarationContext = interfaceDeclarationContext
-        self.javadocContext = javadocContext
 
         self.parse()
 
@@ -33,7 +32,7 @@ class InterfaceDeclaration(ClassOrInterfaceDeclaration, InterfaceDeclarationIf):
             .map(lambda interfaceMemberDeclarationWithJavaDocContexts: (interfaceMemberDeclarationWithJavaDocContexts.interfaceMemberDeclaration(), interfaceMemberDeclarationWithJavaDocContexts.javadoc())) \
             .map(lambda memDecContJavadocCont: (memDecContJavadocCont[0].interfaceMethodDeclaration(), memDecContJavadocCont[1])) \
             .filter(lambda methDecContextJavadocCont: not isinstance(methDecContextJavadocCont[0], NoneType)) \
-            .map(lambda methDecContextJavadocCont: self.context.getInterfaceMethodDeclaration(methDecContextJavadocCont[0], methDecContextJavadocCont[1])) \
+            .map(lambda methDecContextJavadocCont: self.context.createInterfaceMethodDeclaration(methDecContextJavadocCont[0], methDecContextJavadocCont[1], self)) \
             .collectToList()
 
         self.methods = self.methods + Stream(interfaceMemberDeclarationWithJavaDocContexts) \
@@ -42,7 +41,7 @@ class InterfaceDeclaration(ClassOrInterfaceDeclaration, InterfaceDeclarationIf):
             .filter(lambda genMethDecContextJavadocCont: not isinstance(genMethDecContextJavadocCont[0], NoneType)) \
             .map(lambda genMethDecContextJavadocCont: (genMethDecContextJavadocCont[0].interfaceMethodDeclaration(), genMethDecContextJavadocCont[1])) \
             .filter(lambda methDecContextJavadocCont: not isinstance(methDecContextJavadocCont[0], NoneType)) \
-            .map(lambda methDecContextJavadocCont: self.context.getInterfaceMethodDeclaration(methDecContextJavadocCont[0], methDecContextJavadocCont[1])) \
+            .map(lambda methDecContextJavadocCont: self.context.createInterfaceMethodDeclaration(methDecContextJavadocCont[0], methDecContextJavadocCont[1], self)) \
             .collectToList()
 
         Stream(self.methods).foreach(lambda method: method.parse())

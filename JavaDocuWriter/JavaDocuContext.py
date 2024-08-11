@@ -1,3 +1,5 @@
+from JavaDocuWriter.AsciiDoc import AsciiDoc
+from JavaDocuWriter.AsciiDocIf import AsciiDocIf
 from JavaDocuWriter.ClassWriter import ClassWriter
 from JavaDocuWriter.DocWriter import DocWriter
 from JavaDocuWriter.DocWriterIf import DocWriterIf
@@ -5,6 +7,8 @@ from JavaDocuWriter.InterfaceWriter import InterfaceWriter
 from JavaDocuWriter.JavaDocuContextIf import JavaDocuContextIf
 from JavaDocuWriter.MethodWriter import MethodWriter
 from JavaDocuWriter.PackageWriter import PackageWriter
+from JavaDocuWriter.PlantUml import PlantUml
+from JavaDocuWriter.PlantUmlIf import PlantUmlIf
 from JavaParser.JavaProjectIf import JavaProjectIf
 
 
@@ -19,6 +23,11 @@ from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 
 
 class JavaDocuContext(JavaDocuContextIf):
+
+    def __init__(self) -> None:
+        self.plantUml = PlantUml(self)
+        self.asciiDoc = AsciiDoc(self)
+
     def createDocWriter(self, javaProject: JavaProjectIf) -> DocWriterIf:
         return DocWriter(javaProject, self)
 
@@ -33,3 +42,9 @@ class JavaDocuContext(JavaDocuContextIf):
 
     def createMethodWriter(self, javaMethod: MethodDeclarationIf) -> MethodWriterIf:
         return MethodWriter(javaMethod, self)
+
+    def getPlantUml(self) -> PlantUmlIf:
+        return self.plantUml
+
+    def getAsciiDoc(self) -> AsciiDocIf:
+        return self.asciiDoc

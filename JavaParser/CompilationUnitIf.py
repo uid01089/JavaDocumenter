@@ -12,11 +12,11 @@ class CompilationUnitIf(ABC):
         pass
 
     @abstractmethod
-    def getClassDeclarations(self) -> List[ClassDeclarationIf]:
+    def createClassDeclarations(self) -> List[ClassDeclarationIf]:
         pass
 
     @abstractmethod
-    def getInterfaceDeclaration(self) -> List[InterfaceDeclarationIf]:
+    def createInterfaceDeclaration(self) -> List[InterfaceDeclarationIf]:
         pass
 
     @abstractmethod

@@ -7,7 +7,7 @@ from ContextIf import ContextIf
 class JavaDocCreator:
     def __init__(self, context: ContextIf) -> None:
         self.context = context
-        self.javaProject = context.getJavaProject()
+        self.javaProject = context.createJavaProject()
         self.docWriter = context.createDocWriter(self.javaProject)
 
     def parse(self, direcotry: Path) -> None:

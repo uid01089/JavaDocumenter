@@ -4,45 +4,47 @@ from typing import Optional
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.CompilationUnitIf import CompilationUnitIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
+from JavaParser.JavaDoc.JavaDocContextIf import JavaDocContextIf
 from JavaParser.JavaFileIf import JavaFileIf
 from JavaParser.JavaPackageIf import JavaPackageIf
 from JavaParser.JavaProjectIf import JavaProjectIf
+from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 from JavaParser.antlr.JavaParser import JavaParser
 
 
-class JavaParserContextIf(ABC):
+class JavaParserContextIf(JavaDocContextIf):
 
     @abstractmethod
-    def getJavaFile(self) -> JavaFileIf:
+    def createJavaFile(self, parent: JavaTreeElementIf) -> JavaFileIf:
         pass
 
     @abstractmethod
-    def getCompilationUnit(self, compilationUnitContext: JavaParser.CompilationUnitContext) -> CompilationUnitIf:
+    def createCompilationUnit(self, compilationUnitContext: JavaParser.CompilationUnitContext, parent: JavaTreeElementIf) -> CompilationUnitIf:
         pass
 
     @abstractmethod
-    def getClassDeclaration(self, classDeclarationContext: JavaParser.ClassDeclarationContext,
-                            javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf) -> ClassDeclarationIf:
+    def createClassDeclaration(self, classDeclarationContext: JavaParser.ClassDeclarationContext,
+                               javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> ClassDeclarationIf:
         pass
 
     @abstractmethod
-    def getInterfaceDeclaration(self, interfaceDeclarationContext: JavaParser.InterfaceDeclarationContext,
-                                javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf) -> InterfaceDeclarationIf:
+    def createInterfaceDeclaration(self, interfaceDeclarationContext: JavaParser.InterfaceDeclarationContext,
+                                   javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> InterfaceDeclarationIf:
         pass
 
     @abstractmethod
-    def getCassMethodDeclaration(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
+    def createCassMethodDeclaration(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> MethodDeclarationIf:
         pass
 
     @abstractmethod
-    def getInterfaceMethodDeclaration(self, methodDeclarationContext: JavaParser.InterfaceMethodDeclarationContext, javadocContext: JavaParser.JavadocContext) -> MethodDeclarationIf:
+    def createInterfaceMethodDeclaration(self, methodDeclarationContext: JavaParser.InterfaceMethodDeclarationContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf) -> MethodDeclarationIf:
         pass
 
     @abstractmethod
-    def getJavaProject(self) -> JavaProjectIf:
+    def createJavaProject(self) -> JavaProjectIf:
         pass
 
     @abstractmethod
-    def getJavaPackage(self, name: str, root: Optional[JavaPackageIf] = None) -> JavaPackageIf:
+    def createJavaPackage(self, name: str, root: Optional[JavaPackageIf] = None) -> JavaPackageIf:
         pass

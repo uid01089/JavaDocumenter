@@ -23,3 +23,7 @@ class JavaFileIf(ABC):
     @abstractmethod
     def getPackageDeclaration(self) -> str:
         pass
+
+    @abstractmethod
+    def getJavaCode(self) -> str:
+        pass

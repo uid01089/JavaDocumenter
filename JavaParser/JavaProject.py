@@ -4,6 +4,7 @@ from typing import Dict, List
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from JavaParser.JavaPackageIf import JavaPackageIf
+from JavaParser.JavaTreeElement import JavaTreeElement
 from PythonLib.FileUtil import FileOperations
 from JavaParser.JavaParserContextIf import JavaParserContextIf
 from JavaParser.JavaProjectIf import JavaProjectIf
@@ -11,12 +12,14 @@ from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from PythonLib.Stream import Stream
 
 
-class JavaProject(JavaProjectIf, JavaTreeElementIf):
+class JavaProject(JavaTreeElement, JavaProjectIf):
 
     def __init__(self, context: JavaParserContextIf) -> None:
+        JavaTreeElement.__init__(self, None)
+
         self.pathCollection: List[Path] = []
         self.context = context
-        self.rootPackage = context.getJavaPackage("")
+        self.rootPackage = context.createJavaPackage("")
         self.allClasses: Dict[str, ClassDeclarationIf] = {}
         self.allInterfaces: Dict[str, InterfaceDeclarationIf] = {}
 
@@ -32,7 +35,7 @@ class JavaProject(JavaProjectIf, JavaTreeElementIf):
 
     def _fileVisitor(self, path: Path) -> None:
         if path.suffix.lower() == ".java":
-            reader = self.context.getJavaFile()
+            reader = self.context.createJavaFile(self)
             print("Open " + str(path))
             javaFile = reader.parse(path)
 

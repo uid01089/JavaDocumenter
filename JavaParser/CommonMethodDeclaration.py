@@ -1,28 +1,51 @@
 from typing import List
+from JavaParser.JavaDoc.BlockTag import BlockTag, ParamTag, ReturnTag
+from JavaParser.JavaDoc.JavaDocIf import JavaDocIf
+from JavaParser.JavaTreeElement import JavaTreeElement
+from JavaParser.ParameterDeclarationIf import ParameterDeclarationIf
 from JavaParser.JavaParserContextIf import JavaParserContextIf
 from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 from JavaParser.antlr.JavaParser import JavaParser
 from PythonLib.JOptional import JOptional
+from PythonLib.Stream import Stream
 
 
-class ParameterDeclaration(JavaTreeElementIf):
-    def __init__(self, paramType: str, identifier: str) -> None:
+class ParameterDeclaration(JavaTreeElement, ParameterDeclarationIf):
+    def __init__(self, paramType: str, identifier: str, description: str, parent: JavaTreeElement) -> None:
+        JavaTreeElement.__init__(self, parent)
+
         self.paramType = paramType
         self.idintifier = identifier
+        self.description = description
 
     def getChildren(self) -> List[JavaTreeElementIf]:
         return []
 
+    def getType(self) -> str:
+        return self.paramType
 
-class CommonMethodDeclaration(MethodDeclarationIf):
+    def getName(self) -> str:
+        return self.idintifier
 
-    def __init__(self, context: JavaParserContextIf) -> None:
+    def getDescription(self) -> str:
+        return self.description
+
+
+class CommonMethodDeclaration(JavaTreeElement, MethodDeclarationIf):
+
+    def __init__(self, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
+        JavaTreeElement.__init__(self, parent)
         self.context = context
+        self.javaDocAsString = JOptional(javadocContext).map(lambda ctx: ctx.getText()).orElse("")
 
         self.identifier = ""
-        self.returnValue = ""
-        self.parameters: List[ParameterDeclaration] = []
+        self.returnType = ""
+        self.parameters: List[ParameterDeclarationIf] = []
+        self.javaDoc: JavaDocIf = None
+
+    def parse(self) -> None:
+        self.javaDoc = self.context.createJavaDoc(self.javaDocAsString).parse()
 
     def _getType(self, typeTypeContext: JavaParser.TypeTypeContext) -> str:
         return JOptional(typeTypeContext) \
@@ -44,4 +67,30 @@ class CommonMethodDeclaration(MethodDeclarationIf):
             .map(lambda identifierContext: identifierContext.getText()) \
             .orElse("")
 
-        self.parameters.append(ParameterDeclaration(paramType, name))
+        paramJavaDoc = Stream(self.javaDoc.getTagsByType(ParamTag)) \
+            .filter(lambda param: param.getName() == name) \
+            .collectToList()
+
+        paramDescription = ""
+        if paramJavaDoc:
+            paramDescription = paramJavaDoc[0]
+
+        self.parameters.append(ParameterDeclaration(paramType, name, paramDescription, self))
+
+    def getIdentifier(self) -> str:
+        return self.identifier
+
+    def getReturnType(self) -> str:
+        return self.returnType
+
+    def getParameters(self) -> List[ParameterDeclarationIf]:
+        return self.parameters
+
+    def getDescription(self) -> str:
+        return self.javaDoc.getDescription()
+
+    def getReturnDescription(self) -> str:
+        returnTags = self.javaDoc.getTagsByType(ReturnTag)
+        if returnTags:
+            return returnTags[0]
+        return ""
