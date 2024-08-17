@@ -1,13 +1,15 @@
+from ContextIf import ContextIf
 from JavaDocuWriter.ClassWriterIf import ClassWriterIf
 from JavaDocuWriter.JavaDocuContextIf import JavaDocuContextIf
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
+from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
 from PythonLib.StringUtil import StringUtil
 
 
 class ClassWriter(ClassWriterIf):
     def __init__(self, javaClass: ClassDeclarationIf, context: JavaDocuContextIf) -> None:
         self.javaClass = javaClass
-        self.context = context
+        self.context: ContextIf = context
 
     def getDocu(self) -> str:
         doc = StringUtil.dedent(f'''
@@ -15,43 +17,22 @@ class ClassWriter(ClassWriterIf):
         # Class `{self.javaClass.getShortName()}`
 
         ## Description
+
         {self.javaClass.getDescription()}
 
         ## Super Classes
-        {self.__getSuperClassesDiagram()}
+
+        {self.context.getPlantUml().getSuperClassesDiagram(self.javaClass)}
 
         ## Methods
+
         {self.context.getAsciiDoc().getMethodTable(self.javaClass.getMethods())}
 
+        ## Uses
+
+        {self.context.getPlantUml().getUsedTypesDiagram(self.javaClass)}
 
 
-        ''')
-
-        return doc
-
-    def __getSuperClassesDiagram(self) -> str:
-
-        thisClass = self.context.getPlantUml().getFullClass(self.javaClass)
-        thisShortName = self.javaClass.getShortName()
-
-        superClass = self.javaClass.getSuperClass()
-        superClassesStr = ""
-        if superClass:
-            superClassesStr = superClassesStr + f"class {superClass}\n"
-            superClassesStr = superClassesStr + f"{superClass} ^-- {thisShortName}\n"
-
-        implementedInterfaces = ""
-        for interfaze in self.javaClass.getImplementedClasses():
-            implementedInterfaces = implementedInterfaces + f"interface {interfaze}\n"
-            implementedInterfaces = implementedInterfaces + f"{interfaze} <|.. {thisShortName}\n"
-
-        doc = StringUtil.dedent(f'''
-        [plantuml, "{self.context.getPlantUml().getValidPictureName(self.javaClass.getFullQualifiedName())}", svg]
-        ....
-        {thisClass}
-        {superClassesStr}
-        {implementedInterfaces}
-        ....
 
         ''')
 

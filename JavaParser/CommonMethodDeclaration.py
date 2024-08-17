@@ -1,4 +1,6 @@
 from typing import List
+
+from antlr4 import ParserRuleContext
 from JavaParser.JavaDoc.BlockTag import BlockTag, ParamTag, ReturnTag
 from JavaParser.JavaDoc.JavaDocIf import JavaDocIf
 from JavaParser.JavaTreeElement import JavaTreeElement
@@ -13,7 +15,7 @@ from PythonLib.Stream import Stream
 
 class ParameterDeclaration(JavaTreeElement, ParameterDeclarationIf):
     def __init__(self, paramType: str, identifier: str, description: str, parent: JavaTreeElement) -> None:
-        JavaTreeElement.__init__(self, parent)
+        JavaTreeElement.__init__(self, None, parent)
 
         self.paramType = paramType
         self.idintifier = identifier
@@ -34,8 +36,8 @@ class ParameterDeclaration(JavaTreeElement, ParameterDeclarationIf):
 
 class CommonMethodDeclaration(JavaTreeElement, MethodDeclarationIf):
 
-    def __init__(self, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
-        JavaTreeElement.__init__(self, parent)
+    def __init__(self, this: ParserRuleContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
+        JavaTreeElement.__init__(self, this, parent)
         self.context = context
         self.javaDocAsString = JOptional(javadocContext).map(lambda ctx: ctx.getText()).orElse("")
 

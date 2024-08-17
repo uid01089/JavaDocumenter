@@ -14,13 +14,14 @@ from PythonLib.Stream import Stream
 class CompilationUnit(JavaTreeElement, CompilationUnitIf):
     def __init__(self, compilationUnitContext: JavaParser.CompilationUnitContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
 
-        JavaTreeElement.__init__(self, parent)
+        JavaTreeElement.__init__(self, compilationUnitContext, parent)
 
         self.compilationUnitContext = compilationUnitContext
         self.context = context
         self.packageDeclaration = None
         self.classDeclaration: List[ClassDeclarationIf] = []
         self.interfaceDeclaration: List[InterfaceDeclarationIf] = []
+        self.importDeclarations: List[str] = []
 
     def parse(self) -> None:
 
@@ -45,6 +46,15 @@ class CompilationUnit(JavaTreeElement, CompilationUnitIf):
             .map(lambda interfaceDecContJavaDocCont: self.context.createInterfaceDeclaration(interfaceDecContJavaDocCont[0], interfaceDecContJavaDocCont[1], self)) \
             .collectToList()
 
+        self.importDeclarations = Stream.of(self.compilationUnitContext) \
+            .flatMap(lambda compilationUnitContext: Stream(compilationUnitContext.importDeclaration())) \
+            .map(lambda importDeclarationContext: importDeclarationContext.qualifiedName()) \
+            .map(lambda qualifiedNameContext: qualifiedNameContext.identifier()) \
+            .map(lambda identifierContextList: ".".join(Stream(identifierContextList)
+                                                        .map(lambda idenifierContext: idenifierContext.getText())
+                                                        .collectToList())) \
+            .collectToList()
+
     def createClassDeclarations(self) -> List[ClassDeclarationIf]:
         return self.classDeclaration
 
@@ -53,6 +63,9 @@ class CompilationUnit(JavaTreeElement, CompilationUnitIf):
 
     def getPackageDeclaration(self) -> Optional[str]:
         return self.packageDeclaration
+
+    def getImportDeclarations(self) -> List[str]:
+        return self.importDeclarations
 
     def getChildren(self) -> List[JavaTreeElementIf]:
         return self.classDeclaration + self.interfaceDeclaration

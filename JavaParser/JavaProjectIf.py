@@ -3,9 +3,10 @@ from abc import ABC, abstractmethod
 from pathlib import Path
 
 from JavaParser.JavaPackageIf import JavaPackageIf
+from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 
 
-class JavaProjectIf(ABC):
+class JavaProjectIf(JavaTreeElementIf):
     @abstractmethod
     def addClassPath(self, directory: Path) -> JavaProjectIf:
         pass
@@ -16,4 +17,8 @@ class JavaProjectIf(ABC):
 
     @abstractmethod
     def getRootPackage(self) -> JavaPackageIf:
+        pass
+
+    @abstractmethod
+    def getElementByFullQualName(self, fullQualName: str) -> JavaTreeElementIf:
         pass

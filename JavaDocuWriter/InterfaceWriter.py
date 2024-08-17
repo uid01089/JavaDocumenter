@@ -15,36 +15,18 @@ class InterfaceWriter(InterfaceWriterIf):
         # Interface `{self.javaInterface.getShortName()}`
 
         ## Description
+
         {self.javaInterface.getDescription()}
 
         ## Super interfaces
-        {self.__getSuperInterfacesDiagram()}
+
+        {self.context.getPlantUml().getSuperInterfaceDiagram(self.javaInterface)}
 
         ## Methods
+
         {self.context.getAsciiDoc().getMethodTable(self.javaInterface.getMethods())}
 
 
 
         ''')
-        return doc
-
-    def __getSuperInterfacesDiagram(self) -> str:
-
-        thisInterface = self.context.getPlantUml().getFullInterface(self.javaInterface)
-        thisShortName = self.javaInterface.getShortName()
-
-        superInterfaces = ""
-        for interfaze in self.javaInterface.getImplementedClasses():
-            superInterfaces = superInterfaces + f"interface {interfaze}\n"
-            superInterfaces = superInterfaces + f"{interfaze} ^-- {thisShortName}\n"
-
-        doc = StringUtil.dedent(f'''
-        [plantuml, "{self.context.getPlantUml().getValidPictureName(self.javaInterface.getFullQualifiedName())}", svg]
-        ....
-        {thisInterface}
-        {superInterfaces}
-        ....
-
-        ''')
-
         return doc

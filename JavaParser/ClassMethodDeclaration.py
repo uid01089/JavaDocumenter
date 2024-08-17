@@ -12,7 +12,7 @@ from PythonLib.TreeStream import TreeElement, TreeStream
 
 class ClassMethodDeclaration(CommonMethodDeclaration, JavaTreeElementIf):
     def __init__(self, methodDeclarationContext: JavaParser.MethodDeclarationContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
-        CommonMethodDeclaration.__init__(self, javadocContext, parent, context)
+        CommonMethodDeclaration.__init__(self, methodDeclarationContext, javadocContext, parent, context)
         self.methodDeclarationContext = methodDeclarationContext
 
     def parse(self) -> None:
@@ -32,8 +32,6 @@ class ClassMethodDeclaration(CommonMethodDeclaration, JavaTreeElementIf):
             .map(lambda formalParametersContext: formalParametersContext.formalParameterList()) \
             .flatMap(lambda formalParameterListContext: Stream(formalParameterListContext.formalParameter())) \
             .foreach(lambda formalParameterContext: self._handleFormalParameter(formalParameterContext))
-
-        self.getCallOuts()
 
     def getChildren(self) -> List[JavaTreeElementIf]:
         return self.parameters

@@ -14,7 +14,7 @@ from PythonLib.Stream import Stream
 
 class ClassOrInterfaceDeclaration(JavaTreeElement, ClassOrInterfaceDeclarationIf):
     def __init__(self, intClassDeclarationContext: InterfaceDeclarationIf | ClassDeclarationIf, javadocContext: JavaParser.JavadocContext, parent: CompilationUnitIf, context: JavaParserContextIf) -> None:
-        JavaTreeElement.__init__(self, parent)
+        JavaTreeElement.__init__(self, intClassDeclarationContext, parent)
 
         self.intClassDeclarationContext = intClassDeclarationContext
         self.context = context

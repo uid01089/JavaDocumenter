@@ -24,6 +24,8 @@ class JavaParserContext(JavaDocContext, JavaParserContextIf):
     def __init__(self) -> None:
         JavaDocContext.__init__(self)
 
+        self.javaProject: JavaProjectIf = None
+
     def createJavaFile(self, parent: JavaTreeElementIf) -> JavaFileIf:
         return JavaFile(parent, self)
 
@@ -45,7 +47,11 @@ class JavaParserContext(JavaDocContext, JavaParserContextIf):
         return InterfaceMethodDeclaration(methodDeclarationContext, javadocContext, parent, self)
 
     def createJavaProject(self) -> JavaProjectIf:
-        return JavaProject(self)
+        self.javaProject = JavaProject(self)
+        return self.javaProject
+
+    def getJavaProject(self) -> JavaProjectIf:
+        return self.javaProject
 
     def createJavaPackage(self, name: str, root: Optional[JavaPackageIf] = None) -> JavaPackageIf:
         return JavaPackage(name, self, root)

@@ -11,7 +11,7 @@ from PythonLib.StringUtil import StringUtil
 
 class InterfaceMethodDeclaration(CommonMethodDeclaration, JavaTreeElementIf):
     def __init__(self, methodDeclarationContext: JavaParser.InterfaceMethodDeclarationContext, javadocContext: JavaParser.JavadocContext, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
-        CommonMethodDeclaration.__init__(self, javadocContext, parent, context)
+        CommonMethodDeclaration.__init__(self, methodDeclarationContext, javadocContext, parent, context)
 
         self.methodDeclarationContext = methodDeclarationContext
 

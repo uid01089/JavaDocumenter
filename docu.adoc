@@ -3,16 +3,16 @@
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.BetriebstundenRelais1", svg]
 ....
-class BetriebstundenRelais1
+class "BetriebstundenRelais1"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- BetriebstundenRelais1
+class "Protocol66_120"
+"Protocol66_120" ^-- "BetriebstundenRelais1"
 ....
 ## Methods
 #### Method: getMessage
@@ -72,21 +72,36 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name0", svg]
+....
+class BetriebstundenRelais1
+interface "SerielProtocol"
+"BetriebstundenRelais1" --> "SerielProtocol"
+class "java.util.List"
+"BetriebstundenRelais1" --> "java.util.List"
+class "String"
+"BetriebstundenRelais1" --> "String"
+class "Integer"
+"BetriebstundenRelais1" --> "Integer"
+class "Protocol66_120"
+"BetriebstundenRelais1" --> "Protocol66_120"
+....
 # Class `BetriebstundenRelais2`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.BetriebstundenRelais2", svg]
 ....
-class BetriebstundenRelais2
+class "BetriebstundenRelais2"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- BetriebstundenRelais2
+class "Protocol66_120"
+"Protocol66_120" ^-- "BetriebstundenRelais2"
 ....
 ## Methods
 #### Method: getMessage
@@ -146,6 +161,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name1", svg]
+....
+class BetriebstundenRelais2
+interface "SerielProtocol"
+"BetriebstundenRelais2" --> "SerielProtocol"
+class "java.util.List"
+"BetriebstundenRelais2" --> "java.util.List"
+class "String"
+"BetriebstundenRelais2" --> "String"
+class "Integer"
+"BetriebstundenRelais2" --> "Integer"
+class "Protocol66_120"
+"BetriebstundenRelais2" --> "Protocol66_120"
+....
 # Class `DeltaSolProtocolCatalogue`
 ## Description
 This class represents a protocol catalogue for DeltaSol devices.
@@ -153,13 +183,56 @@ This class represents a protocol catalogue for DeltaSol devices.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.DeltaSolProtocolCatalogue", svg]
 ....
-class DeltaSolProtocolCatalogue
+class "DeltaSolProtocolCatalogue"
 {
 }
-class BaseProtocolCatalogue
-BaseProtocolCatalogue ^-- DeltaSolProtocolCatalogue
+class "BaseProtocolCatalogue"
+"BaseProtocolCatalogue" ^-- "DeltaSolProtocolCatalogue"
 ....
 ## Methods
+## Uses
+[plantuml, "name2", svg]
+....
+class DeltaSolProtocolCatalogue
+class "TemperaturSensor4"
+"DeltaSolProtocolCatalogue" --> "TemperaturSensor4"
+class "Sensor4Defekt"
+"DeltaSolProtocolCatalogue" --> "Sensor4Defekt"
+class "Sensor1Defekt"
+"DeltaSolProtocolCatalogue" --> "Sensor1Defekt"
+class "Status"
+"DeltaSolProtocolCatalogue" --> "Status"
+class "Sensor2Defekt"
+"DeltaSolProtocolCatalogue" --> "Sensor2Defekt"
+class "SpeicherNotTemperatur"
+"DeltaSolProtocolCatalogue" --> "SpeicherNotTemperatur"
+class "R1Handbetrieb"
+"DeltaSolProtocolCatalogue" --> "R1Handbetrieb"
+class "Sensor3Defekt"
+"DeltaSolProtocolCatalogue" --> "Sensor3Defekt"
+class "DrehzahlRelais1"
+"DeltaSolProtocolCatalogue" --> "DrehzahlRelais1"
+class "BaseProtocolCatalogue"
+"DeltaSolProtocolCatalogue" --> "BaseProtocolCatalogue"
+class "TemperaturSensor2"
+"DeltaSolProtocolCatalogue" --> "TemperaturSensor2"
+class "Programm"
+"DeltaSolProtocolCatalogue" --> "Programm"
+class "DrehzahlRelais2"
+"DeltaSolProtocolCatalogue" --> "DrehzahlRelais2"
+class "BetriebstundenRelais1"
+"DeltaSolProtocolCatalogue" --> "BetriebstundenRelais1"
+class "BetriebstundenRelais2"
+"DeltaSolProtocolCatalogue" --> "BetriebstundenRelais2"
+class "TemperaturSensor3"
+"DeltaSolProtocolCatalogue" --> "TemperaturSensor3"
+class "TemperaturSensor1"
+"DeltaSolProtocolCatalogue" --> "TemperaturSensor1"
+class "KollektorNotTemperatur"
+"DeltaSolProtocolCatalogue" --> "KollektorNotTemperatur"
+class "R2Handbetrieb"
+"DeltaSolProtocolCatalogue" --> "R2Handbetrieb"
+....
 # Class `DrehzahlRelais1`
 ## Description
 This class represents a Drehzahl Relais 1 protocol.
@@ -167,16 +240,16 @@ This class represents a Drehzahl Relais 1 protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.DrehzahlRelais1", svg]
 ....
-class DrehzahlRelais1
+class "DrehzahlRelais1"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- DrehzahlRelais1
+class "Protocol66_120"
+"Protocol66_120" ^-- "DrehzahlRelais1"
 ....
 ## Methods
 #### Method: getMessage
@@ -236,6 +309,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name3", svg]
+....
+class DrehzahlRelais1
+interface "SerielProtocol"
+"DrehzahlRelais1" --> "SerielProtocol"
+class "java.util.List"
+"DrehzahlRelais1" --> "java.util.List"
+class "String"
+"DrehzahlRelais1" --> "String"
+class "Integer"
+"DrehzahlRelais1" --> "Integer"
+class "Protocol66_120"
+"DrehzahlRelais1" --> "Protocol66_120"
+....
 # Class `DrehzahlRelais2`
 ## Description
 DrehzahlRelais2 is an extension of the Protocol66_120 class.
@@ -244,16 +332,16 @@ It provides functionality for a device that can set and read data related to its
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.DrehzahlRelais2", svg]
 ....
-class DrehzahlRelais2
+class "DrehzahlRelais2"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- DrehzahlRelais2
+class "Protocol66_120"
+"Protocol66_120" ^-- "DrehzahlRelais2"
 ....
 ## Methods
 #### Method: getMessage
@@ -313,21 +401,36 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name4", svg]
+....
+class DrehzahlRelais2
+interface "SerielProtocol"
+"DrehzahlRelais2" --> "SerielProtocol"
+class "java.util.List"
+"DrehzahlRelais2" --> "java.util.List"
+class "String"
+"DrehzahlRelais2" --> "String"
+class "Integer"
+"DrehzahlRelais2" --> "Integer"
+class "Protocol66_120"
+"DrehzahlRelais2" --> "Protocol66_120"
+....
 # Class `KollektorNotTemperatur`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.KollektorNotTemperatur", svg]
 ....
-class KollektorNotTemperatur
+class "KollektorNotTemperatur"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- KollektorNotTemperatur
+class "Protocol66_120"
+"Protocol66_120" ^-- "KollektorNotTemperatur"
 ....
 ## Methods
 #### Method: getMessage
@@ -387,6 +490,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name5", svg]
+....
+class KollektorNotTemperatur
+interface "SerielProtocol"
+"KollektorNotTemperatur" --> "SerielProtocol"
+class "java.util.List"
+"KollektorNotTemperatur" --> "java.util.List"
+class "String"
+"KollektorNotTemperatur" --> "String"
+class "Integer"
+"KollektorNotTemperatur" --> "Integer"
+class "Protocol66_120"
+"KollektorNotTemperatur" --> "Protocol66_120"
+....
 # Class `Programm`
 ## Description
 Programm extends Protocol66_120.
@@ -394,16 +512,16 @@ Programm extends Protocol66_120.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Programm", svg]
 ....
-class Programm
+class "Programm"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- Programm
+class "Protocol66_120"
+"Protocol66_120" ^-- "Programm"
 ....
 ## Methods
 #### Method: getMessage
@@ -463,19 +581,34 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name6", svg]
+....
+class Programm
+interface "SerielProtocol"
+"Programm" --> "SerielProtocol"
+class "java.util.List"
+"Programm" --> "java.util.List"
+class "String"
+"Programm" --> "String"
+class "Integer"
+"Programm" --> "Integer"
+class "Protocol66_120"
+"Programm" --> "Protocol66_120"
+....
 # Class `Protocol66_120`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Protocol66_120", svg]
 ....
-class Protocol66_120
+class "Protocol66_120"
 {
-getIdentifier():"int"
-convTemp(temperature: float):"float"
-getTimeStamp():"long"
+getIdentifier():int
+convTemp(temperature: float):float
+getTimeStamp():long
 }
-interface SerielProtocol
-SerielProtocol <|.. Protocol66_120
+interface "SerielProtocol"
+"SerielProtocol" <|.. "Protocol66_120"
 ....
 ## Methods
 #### Method: getIdentifier
@@ -512,6 +645,17 @@ long getTimeStamp()
 |Description 2+|
 |Return|long|
 |===
+## Uses
+[plantuml, "name7", svg]
+....
+class Protocol66_120
+interface "SerielProtocol"
+"Protocol66_120" --> "SerielProtocol"
+class "java.util.List"
+"Protocol66_120" --> "java.util.List"
+class "Integer"
+"Protocol66_120" --> "Integer"
+....
 # Class `R1Handbetrieb`
 ## Description
 R1Handbetrieb class extends Protocol66_120 and represents the hand control protocol for a specific device.
@@ -519,16 +663,16 @@ R1Handbetrieb class extends Protocol66_120 and represents the hand control proto
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.R1Handbetrieb", svg]
 ....
-class R1Handbetrieb
+class "R1Handbetrieb"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- R1Handbetrieb
+class "Protocol66_120"
+"Protocol66_120" ^-- "R1Handbetrieb"
 ....
 ## Methods
 #### Method: getMessage
@@ -588,6 +732,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name8", svg]
+....
+class R1Handbetrieb
+interface "SerielProtocol"
+"R1Handbetrieb" --> "SerielProtocol"
+class "java.util.List"
+"R1Handbetrieb" --> "java.util.List"
+class "String"
+"R1Handbetrieb" --> "String"
+class "Integer"
+"R1Handbetrieb" --> "Integer"
+class "Protocol66_120"
+"R1Handbetrieb" --> "Protocol66_120"
+....
 # Class `R2Handbetrieb`
 ## Description
 This class implements a specific protocol for controlling a Delta Sole device.
@@ -595,16 +754,16 @@ This class implements a specific protocol for controlling a Delta Sole device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.R2Handbetrieb", svg]
 ....
-class R2Handbetrieb
+class "R2Handbetrieb"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- R2Handbetrieb
+class "Protocol66_120"
+"Protocol66_120" ^-- "R2Handbetrieb"
 ....
 ## Methods
 #### Method: getMessage
@@ -664,6 +823,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name9", svg]
+....
+class R2Handbetrieb
+interface "SerielProtocol"
+"R2Handbetrieb" --> "SerielProtocol"
+class "java.util.List"
+"R2Handbetrieb" --> "java.util.List"
+class "String"
+"R2Handbetrieb" --> "String"
+class "Integer"
+"R2Handbetrieb" --> "Integer"
+class "Protocol66_120"
+"R2Handbetrieb" --> "Protocol66_120"
+....
 # Class `Sensor1Defekt`
 ## Description
 This class represents a Sensor1 Defekt device.
@@ -671,16 +845,16 @@ This class represents a Sensor1 Defekt device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor1Defekt", svg]
 ....
-class Sensor1Defekt
+class "Sensor1Defekt"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- Sensor1Defekt
+class "Protocol66_120"
+"Protocol66_120" ^-- "Sensor1Defekt"
 ....
 ## Methods
 #### Method: getMessage
@@ -740,21 +914,36 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name10", svg]
+....
+class Sensor1Defekt
+interface "SerielProtocol"
+"Sensor1Defekt" --> "SerielProtocol"
+class "java.util.List"
+"Sensor1Defekt" --> "java.util.List"
+class "String"
+"Sensor1Defekt" --> "String"
+class "Integer"
+"Sensor1Defekt" --> "Integer"
+class "Protocol66_120"
+"Sensor1Defekt" --> "Protocol66_120"
+....
 # Class `Sensor2Defekt`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor2Defekt", svg]
 ....
-class Sensor2Defekt
+class "Sensor2Defekt"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- Sensor2Defekt
+class "Protocol66_120"
+"Protocol66_120" ^-- "Sensor2Defekt"
 ....
 ## Methods
 #### Method: getMessage
@@ -814,6 +1003,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name11", svg]
+....
+class Sensor2Defekt
+interface "SerielProtocol"
+"Sensor2Defekt" --> "SerielProtocol"
+class "java.util.List"
+"Sensor2Defekt" --> "java.util.List"
+class "String"
+"Sensor2Defekt" --> "String"
+class "Integer"
+"Sensor2Defekt" --> "Integer"
+class "Protocol66_120"
+"Sensor2Defekt" --> "Protocol66_120"
+....
 # Class `Sensor3Defekt`
 ## Description
 Class Sensor3Defekt extends Protocol66_120 and handles data from sensor 3.
@@ -821,16 +1025,16 @@ Class Sensor3Defekt extends Protocol66_120 and handles data from sensor 3.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor3Defekt", svg]
 ....
-class Sensor3Defekt
+class "Sensor3Defekt"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- Sensor3Defekt
+class "Protocol66_120"
+"Protocol66_120" ^-- "Sensor3Defekt"
 ....
 ## Methods
 #### Method: getMessage
@@ -890,6 +1094,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name12", svg]
+....
+class Sensor3Defekt
+interface "SerielProtocol"
+"Sensor3Defekt" --> "SerielProtocol"
+class "java.util.List"
+"Sensor3Defekt" --> "java.util.List"
+class "String"
+"Sensor3Defekt" --> "String"
+class "Integer"
+"Sensor3Defekt" --> "Integer"
+class "Protocol66_120"
+"Sensor3Defekt" --> "Protocol66_120"
+....
 # Class `Sensor4Defekt`
 ## Description
 This class implements a protocol for a sensor that detects defects.
@@ -897,16 +1116,16 @@ This class implements a protocol for a sensor that detects defects.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Sensor4Defekt", svg]
 ....
-class Sensor4Defekt
+class "Sensor4Defekt"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- Sensor4Defekt
+class "Protocol66_120"
+"Protocol66_120" ^-- "Sensor4Defekt"
 ....
 ## Methods
 #### Method: getMessage
@@ -966,6 +1185,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name13", svg]
+....
+class Sensor4Defekt
+interface "SerielProtocol"
+"Sensor4Defekt" --> "SerielProtocol"
+class "java.util.List"
+"Sensor4Defekt" --> "java.util.List"
+class "String"
+"Sensor4Defekt" --> "String"
+class "Integer"
+"Sensor4Defekt" --> "Integer"
+class "Protocol66_120"
+"Sensor4Defekt" --> "Protocol66_120"
+....
 # Class `SpeicherNotTemperatur`
 ## Description
 This class represents a protocol for storing not temperatures.
@@ -973,16 +1207,16 @@ This class represents a protocol for storing not temperatures.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.SpeicherNotTemperatur", svg]
 ....
-class SpeicherNotTemperatur
+class "SpeicherNotTemperatur"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- SpeicherNotTemperatur
+class "Protocol66_120"
+"Protocol66_120" ^-- "SpeicherNotTemperatur"
 ....
 ## Methods
 #### Method: getMessage
@@ -1042,6 +1276,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name14", svg]
+....
+class SpeicherNotTemperatur
+interface "SerielProtocol"
+"SpeicherNotTemperatur" --> "SerielProtocol"
+class "java.util.List"
+"SpeicherNotTemperatur" --> "java.util.List"
+class "String"
+"SpeicherNotTemperatur" --> "String"
+class "Integer"
+"SpeicherNotTemperatur" --> "Integer"
+class "Protocol66_120"
+"SpeicherNotTemperatur" --> "Protocol66_120"
+....
 # Class `Status`
 ## Description
 Status class extends Protocol66_120 and provides methods to set, get, and compare status data.
@@ -1049,16 +1298,16 @@ Status class extends Protocol66_120 and provides methods to set, get, and compar
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.Status", svg]
 ....
-class Status
+class "Status"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- Status
+class "Protocol66_120"
+"Protocol66_120" ^-- "Status"
 ....
 ## Methods
 #### Method: getMessage
@@ -1118,6 +1367,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name15", svg]
+....
+class Status
+interface "SerielProtocol"
+"Status" --> "SerielProtocol"
+class "java.util.List"
+"Status" --> "java.util.List"
+class "String"
+"Status" --> "String"
+class "Integer"
+"Status" --> "Integer"
+class "Protocol66_120"
+"Status" --> "Protocol66_120"
+....
 # Class `TemperaturSensor1`
 ## Description
 This class represents a temperature sensor that communicates using protocol 66/120.
@@ -1125,16 +1389,16 @@ This class represents a temperature sensor that communicates using protocol 66/1
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor1", svg]
 ....
-class TemperaturSensor1
+class "TemperaturSensor1"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- TemperaturSensor1
+class "Protocol66_120"
+"Protocol66_120" ^-- "TemperaturSensor1"
 ....
 ## Methods
 #### Method: getMessage
@@ -1195,21 +1459,36 @@ TODO Auto-generated method stub
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name16", svg]
+....
+class TemperaturSensor1
+interface "SerielProtocol"
+"TemperaturSensor1" --> "SerielProtocol"
+class "java.util.List"
+"TemperaturSensor1" --> "java.util.List"
+class "String"
+"TemperaturSensor1" --> "String"
+class "Integer"
+"TemperaturSensor1" --> "Integer"
+class "Protocol66_120"
+"TemperaturSensor1" --> "Protocol66_120"
+....
 # Class `TemperaturSensor2`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor2", svg]
 ....
-class TemperaturSensor2
+class "TemperaturSensor2"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- TemperaturSensor2
+class "Protocol66_120"
+"Protocol66_120" ^-- "TemperaturSensor2"
 ....
 ## Methods
 #### Method: getMessage
@@ -1269,6 +1548,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name17", svg]
+....
+class TemperaturSensor2
+interface "SerielProtocol"
+"TemperaturSensor2" --> "SerielProtocol"
+class "java.util.List"
+"TemperaturSensor2" --> "java.util.List"
+class "String"
+"TemperaturSensor2" --> "String"
+class "Integer"
+"TemperaturSensor2" --> "Integer"
+class "Protocol66_120"
+"TemperaturSensor2" --> "Protocol66_120"
+....
 # Class `TemperaturSensor3`
 ## Description
 This class represents a Temperature Sensor 3 protocol, which is an extension of the Protocol66_120.
@@ -1276,16 +1570,16 @@ This class represents a Temperature Sensor 3 protocol, which is an extension of 
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor3", svg]
 ....
-class TemperaturSensor3
+class "TemperaturSensor3"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- TemperaturSensor3
+class "Protocol66_120"
+"Protocol66_120" ^-- "TemperaturSensor3"
 ....
 ## Methods
 #### Method: getMessage
@@ -1345,6 +1639,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name18", svg]
+....
+class TemperaturSensor3
+interface "SerielProtocol"
+"TemperaturSensor3" --> "SerielProtocol"
+class "java.util.List"
+"TemperaturSensor3" --> "java.util.List"
+class "String"
+"TemperaturSensor3" --> "String"
+class "Integer"
+"TemperaturSensor3" --> "Integer"
+class "Protocol66_120"
+"TemperaturSensor3" --> "Protocol66_120"
+....
 # Class `TemperaturSensor4`
 ## Description
 TemperaturSensor4 class extends Protocol66_120 and represents a temperature sensor.
@@ -1352,16 +1661,16 @@ TemperaturSensor4 class extends Protocol66_120 and represents a temperature sens
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.protocol.TemperaturSensor4", svg]
 ....
-class TemperaturSensor4
+class "TemperaturSensor4"
 {
-getMessage():"String"
-getData():"String"
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
+getMessage():String
+getData():String
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
 }
-class Protocol66_120
-Protocol66_120 ^-- TemperaturSensor4
+class "Protocol66_120"
+"Protocol66_120" ^-- "TemperaturSensor4"
 ....
 ## Methods
 #### Method: getMessage
@@ -1421,6 +1730,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name19", svg]
+....
+class TemperaturSensor4
+interface "SerielProtocol"
+"TemperaturSensor4" --> "SerielProtocol"
+class "java.util.List"
+"TemperaturSensor4" --> "java.util.List"
+class "String"
+"TemperaturSensor4" --> "String"
+class "Integer"
+"TemperaturSensor4" --> "Integer"
+class "Protocol66_120"
+"TemperaturSensor4" --> "Protocol66_120"
+....
 PackageWriter# Class `DeltaSole`
 ## Description
 Represents a DeltaSole device in the home automatic system.
@@ -1428,25 +1752,46 @@ Represents a DeltaSole device in the home automatic system.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.DeltaSole", svg]
 ....
-class DeltaSole
+class "DeltaSole"
 {
 }
-class BaseDevice
-BaseDevice ^-- DeltaSole
+class "BaseDevice"
+"BaseDevice" ^-- "DeltaSole"
 ....
 ## Methods
+## Uses
+[plantuml, "name20", svg]
+....
+class DeltaSole
+interface "ProtocolCatalogue"
+"DeltaSole" --> "ProtocolCatalogue"
+class "Void"
+"DeltaSole" --> "Void"
+class "String"
+"DeltaSole" --> "String"
+class "java.util.Deque"
+"DeltaSole" --> "java.util.Deque"
+class "BaseDevice"
+"DeltaSole" --> "BaseDevice"
+class "Integer"
+"DeltaSole" --> "Integer"
+class "java.util.concurrent.Callable"
+"DeltaSole" --> "java.util.concurrent.Callable"
+interface "SerialPortReceiveBuffer"
+"DeltaSole" --> "SerialPortReceiveBuffer"
+....
 # Class `ReceiveDeltaSoleFrame`
 ## Description
 This class is responsible for receiving and processing Delta Sole frames.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.deltasole.ReceiveDeltaSoleFrame", svg]
 ....
-class ReceiveDeltaSoleFrame
+class "ReceiveDeltaSoleFrame"
 {
-call():"Void"
+call():Void
 }
-interface Callable<Void>
-Callable<Void> <|.. ReceiveDeltaSoleFrame
+interface "Callable<Void>"
+"Callable<Void>" <|.. "ReceiveDeltaSoleFrame"
 ....
 ## Methods
 #### Method: call
@@ -1460,6 +1805,33 @@ Void call() throws Exception
 |Description 2+|
 |Return|Void|
 |===
+## Uses
+[plantuml, "name21", svg]
+....
+class ReceiveDeltaSoleFrame
+interface "SerielProtocol"
+"ReceiveDeltaSoleFrame" --> "SerielProtocol"
+class "java.util.List"
+"ReceiveDeltaSoleFrame" --> "java.util.List"
+interface "ProtocolCatalogue"
+"ReceiveDeltaSoleFrame" --> "ProtocolCatalogue"
+class "Void"
+"ReceiveDeltaSoleFrame" --> "Void"
+class "java.util.Deque"
+"ReceiveDeltaSoleFrame" --> "java.util.Deque"
+class "Factory"
+"ReceiveDeltaSoleFrame" --> "Factory"
+class "Mode"
+"ReceiveDeltaSoleFrame" --> "Mode"
+class "Integer"
+"ReceiveDeltaSoleFrame" --> "Integer"
+class "java.util.concurrent.Callable"
+"ReceiveDeltaSoleFrame" --> "java.util.concurrent.Callable"
+class "java.util.Set"
+"ReceiveDeltaSoleFrame" --> "java.util.Set"
+interface "SerialPortReceiveBuffer"
+"ReceiveDeltaSoleFrame" --> "SerialPortReceiveBuffer"
+....
 PackageWriter# Class `SelectMessMode`
 ## Description
 The SelectMessMode class represents a sequence of messages that selects the messaging mode.
@@ -1467,14 +1839,14 @@ The SelectMessMode class represents a sequence of messages that selects the mess
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sequence.SelectMessMode", svg]
 ....
-class SelectMessMode
+class "SelectMessMode"
 {
-getProtocol(device: Device):"SerielProtocol"
+getProtocol(device: Device):SerielProtocol
 }
-class SequenceImpl
-SequenceImpl ^-- SelectMessMode
-interface ManagedReceiveDeviceSequence
-ManagedReceiveDeviceSequence <|.. SelectMessMode
+class "SequenceImpl"
+"SequenceImpl" ^-- "SelectMessMode"
+interface "ManagedReceiveDeviceSequence"
+"ManagedReceiveDeviceSequence" <|.. "SelectMessMode"
 ....
 ## Methods
 #### Method: getProtocol
@@ -1489,6 +1861,27 @@ SerielProtocol getProtocol(Device device)
 |Return|SerielProtocol|
 |device|Device|
 |===
+## Uses
+[plantuml, "name22", svg]
+....
+class SelectMessMode
+interface "SerielProtocol"
+"SelectMessMode" --> "SerielProtocol"
+class "SendFroelingFrame"
+"SelectMessMode" --> "SendFroelingFrame"
+interface "Device"
+"SelectMessMode" --> "Device"
+interface "ManagedDevice"
+"SelectMessMode" --> "ManagedDevice"
+class "SequenceImpl"
+"SelectMessMode" --> "SequenceImpl"
+interface "FroelingSerielProtocol"
+"SelectMessMode" --> "FroelingSerielProtocol"
+class "SelectMessModeProt"
+"SelectMessMode" --> "SelectMessModeProt"
+interface "ManagedReceiveDeviceSequence"
+"SelectMessMode" --> "ManagedReceiveDeviceSequence"
+....
 # Class `Start`
 ## Description
 This class implements the Start protocol sequence for a home automation device.
@@ -1496,14 +1889,14 @@ This class implements the Start protocol sequence for a home automation device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sequence.Start", svg]
 ....
-class Start
+class "Start"
 {
-getProtocol(device: Device):"SerielProtocol"
+getProtocol(device: Device):SerielProtocol
 }
-class SequenceImpl
-SequenceImpl ^-- Start
-interface ManagedReceiveDeviceSequence
-ManagedReceiveDeviceSequence <|.. Start
+class "SequenceImpl"
+"SequenceImpl" ^-- "Start"
+interface "ManagedReceiveDeviceSequence"
+"ManagedReceiveDeviceSequence" <|.. "Start"
 ....
 ## Methods
 #### Method: getProtocol
@@ -1519,6 +1912,27 @@ sequence by sending a SendFroelingFrame and waits for an acknowledge frame from 
 |Return|SerielProtocol|
 |device|Device|
 |===
+## Uses
+[plantuml, "name23", svg]
+....
+class Start
+interface "SerielProtocol"
+"Start" --> "SerielProtocol"
+class "SendFroelingFrame"
+"Start" --> "SendFroelingFrame"
+interface "Device"
+"Start" --> "Device"
+interface "ManagedDevice"
+"Start" --> "ManagedDevice"
+class "SequenceImpl"
+"Start" --> "SequenceImpl"
+interface "FroelingSerielProtocol"
+"Start" --> "FroelingSerielProtocol"
+class "StartProt"
+"Start" --> "StartProt"
+interface "ManagedReceiveDeviceSequence"
+"Start" --> "ManagedReceiveDeviceSequence"
+....
 # Class `UpdateData`
 ## Description
 This class updates data for a home automatic device.
@@ -1526,14 +1940,14 @@ This class updates data for a home automatic device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sequence.UpdateData", svg]
 ....
-class UpdateData
+class "UpdateData"
 {
-getProtocol(device: Device):"SerielProtocol"
+getProtocol(device: Device):SerielProtocol
 }
-class SequenceImpl
-SequenceImpl ^-- UpdateData
-interface ManagedReceiveDeviceSequence
-ManagedReceiveDeviceSequence <|.. UpdateData
+class "SequenceImpl"
+"SequenceImpl" ^-- "UpdateData"
+interface "ManagedReceiveDeviceSequence"
+"ManagedReceiveDeviceSequence" <|.. "UpdateData"
 ....
 ## Methods
 #### Method: getProtocol
@@ -1548,19 +1962,44 @@ SerielProtocol getProtocol(final Device device)
 |Return|SerielProtocol|
 |device|Device|
 |===
+## Uses
+[plantuml, "name24", svg]
+....
+class UpdateData
+interface "SerielProtocol"
+"UpdateData" --> "SerielProtocol"
+class "SendFroelingFrame"
+"UpdateData" --> "SendFroelingFrame"
+interface "Device"
+"UpdateData" --> "Device"
+interface "ManagedDevice"
+"UpdateData" --> "ManagedDevice"
+class "SequenceImpl"
+"UpdateData" --> "SequenceImpl"
+interface "FroelingSerielProtocol"
+"UpdateData" --> "FroelingSerielProtocol"
+class "java.util.concurrent.atomic.AtomicBoolean"
+"UpdateData" --> "java.util.concurrent.atomic.AtomicBoolean"
+interface "ReceivedMessageCallBack"
+"UpdateData" --> "ReceivedMessageCallBack"
+interface "ReceiveSequence"
+"UpdateData" --> "ReceiveSequence"
+interface "ManagedReceiveDeviceSequence"
+"UpdateData" --> "ManagedReceiveDeviceSequence"
+....
 PackageWriter# Class `AbgasSw`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.AbgasSw", svg]
 ....
-class AbgasSw
+class "AbgasSw"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- AbgasSw
+class "M1"
+"M1" ^-- "AbgasSw"
 ....
 ## Methods
 #### Method: getRawData
@@ -1596,6 +2035,19 @@ String getMessage()
 |Description 2+|Getter for message. Calls another method to retrieve the message based on the index.
 |Return|String|
 |===
+## Uses
+[plantuml, "name25", svg]
+....
+class AbgasSw
+class "java.util.List"
+"AbgasSw" --> "java.util.List"
+class "M1"
+"AbgasSw" --> "M1"
+class "String"
+"AbgasSw" --> "String"
+class "Integer"
+"AbgasSw" --> "Integer"
+....
 # Class `Abgastemp`
 ## Description
 This class extends M1 and provides methods for processing abgastemp data.
@@ -1603,14 +2055,14 @@ This class extends M1 and provides methods for processing abgastemp data.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Abgastemp", svg]
 ....
-class Abgastemp
+class "Abgastemp"
 {
-getRawData():"int"
-getData():"String"
-getMessage(index: int):"String"
+getRawData():int
+getData():String
+getMessage(index: int):String
 }
-class M1
-M1 ^-- Abgastemp
+class "M1"
+"M1" ^-- "Abgastemp"
 ....
 ## Methods
 #### Method: getRawData
@@ -1647,19 +2099,32 @@ String getMessage(int index)
 |Return|String|
 |index|int|
 |===
+## Uses
+[plantuml, "name26", svg]
+....
+class Abgastemp
+class "java.util.List"
+"Abgastemp" --> "java.util.List"
+class "M1"
+"Abgastemp" --> "M1"
+class "String"
+"Abgastemp" --> "String"
+class "Integer"
+"Abgastemp" --> "Integer"
+....
 # Class `AussenTemp`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.AussenTemp", svg]
 ....
-class AussenTemp
+class "AussenTemp"
 {
-getRawData():"int"
-getData():"String"
-getMessage(index: int):"String"
+getRawData():int
+getData():String
+getMessage(index: int):String
 }
-class M1
-M1 ^-- AussenTemp
+class "M1"
+"M1" ^-- "AussenTemp"
 ....
 ## Methods
 #### Method: getRawData
@@ -1696,6 +2161,19 @@ String getMessage(int index)
 |Return|String|
 |index|int|
 |===
+## Uses
+[plantuml, "name27", svg]
+....
+class AussenTemp
+class "java.util.List"
+"AussenTemp" --> "java.util.List"
+class "M1"
+"AussenTemp" --> "M1"
+class "String"
+"AussenTemp" --> "String"
+class "Integer"
+"AussenTemp" --> "Integer"
+....
 # Class `Betriebsart`
 ## Description
 This class represents a specific type of protocol in the context of home automation.
@@ -1703,14 +2181,14 @@ This class represents a specific type of protocol in the context of home automat
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Betriebsart", svg]
 ....
-class Betriebsart
+class "Betriebsart"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Betriebsart
+class "M1"
+"M1" ^-- "Betriebsart"
 ....
 ## Methods
 #### Method: getRawData
@@ -1746,6 +2224,19 @@ String getMessage()
 |Description 2+|Returns a message for this protocol. This method overrides the one in the superclass.
 |Return|String|
 |===
+## Uses
+[plantuml, "name28", svg]
+....
+class Betriebsart
+class "java.util.List"
+"Betriebsart" --> "java.util.List"
+class "M1"
+"Betriebsart" --> "M1"
+class "String"
+"Betriebsart" --> "String"
+class "Integer"
+"Betriebsart" --> "Integer"
+....
 # Class `Betriebszustand`
 ## Description
 Class to represent a specific operational status.
@@ -1753,14 +2244,14 @@ Class to represent a specific operational status.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Betriebszustand", svg]
 ....
-class Betriebszustand
+class "Betriebszustand"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Betriebszustand
+class "M1"
+"M1" ^-- "Betriebszustand"
 ....
 ## Methods
 #### Method: getRawData
@@ -1796,6 +2287,19 @@ String getMessage()
 |Description 2+|Returns a message associated with this operational status. This is specific to the index of this operational status.
 |Return|String|
 |===
+## Uses
+[plantuml, "name29", svg]
+....
+class Betriebszustand
+class "java.util.List"
+"Betriebszustand" --> "java.util.List"
+class "M1"
+"Betriebszustand" --> "M1"
+class "String"
+"Betriebszustand" --> "String"
+class "Integer"
+"Betriebszustand" --> "Integer"
+....
 # Class `BoardTemp`
 ## Description
 This class represents a BoardTemp object that extends the M1 class.
@@ -1804,14 +2308,14 @@ It provides methods to process and convert raw data into usable strings.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.BoardTemp", svg]
 ....
-class BoardTemp
+class "BoardTemp"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- BoardTemp
+class "M1"
+"M1" ^-- "BoardTemp"
 ....
 ## Methods
 #### Method: getRawData
@@ -1847,6 +2351,19 @@ String getMessage()
 |Description 2+|Generates a message based on the index value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name30", svg]
+....
+class BoardTemp
+class "java.util.List"
+"BoardTemp" --> "java.util.List"
+class "M1"
+"BoardTemp" --> "M1"
+class "String"
+"BoardTemp" --> "String"
+class "Integer"
+"BoardTemp" --> "Integer"
+....
 # Class `BrennSt`
 ## Description
 This class represents a BrennSt device protocol subclass.
@@ -1854,14 +2371,14 @@ This class represents a BrennSt device protocol subclass.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.BrennSt", svg]
 ....
-class BrennSt
+class "BrennSt"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- BrennSt
+class "M1"
+"M1" ^-- "BrennSt"
 ....
 ## Methods
 #### Method: getRawData
@@ -1897,6 +2414,19 @@ String getMessage()
 |Description 2+|Returns a message string, which is determined by the index value of this device protocol subclass.
 |Return|String|
 |===
+## Uses
+[plantuml, "name31", svg]
+....
+class BrennSt
+class "java.util.List"
+"BrennSt" --> "java.util.List"
+class "M1"
+"BrennSt" --> "M1"
+class "String"
+"BrennSt" --> "String"
+class "Integer"
+"BrennSt" --> "Integer"
+....
 # Class `Einschub`
 ## Description
 This class extends M1 and provides specific implementation for Einschub protocol.
@@ -1904,14 +2434,14 @@ This class extends M1 and provides specific implementation for Einschub protocol
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Einschub", svg]
 ....
-class Einschub
+class "Einschub"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Einschub
+class "M1"
+"M1" ^-- "Einschub"
 ....
 ## Methods
 #### Method: getRawData
@@ -1947,6 +2477,19 @@ String getMessage()
 |Description 2+|Returns a message specific to this Einschub protocol, using the INDEX constant.
 |Return|String|
 |===
+## Uses
+[plantuml, "name32", svg]
+....
+class Einschub
+class "java.util.List"
+"Einschub" --> "java.util.List"
+class "M1"
+"Einschub" --> "M1"
+class "String"
+"Einschub" --> "String"
+class "Integer"
+"Einschub" --> "Integer"
+....
 # Class `FeuerraumTemp`
 ## Description
 This class represents a FeuerraumTemp device.
@@ -1954,14 +2497,14 @@ This class represents a FeuerraumTemp device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.FeuerraumTemp", svg]
 ....
-class FeuerraumTemp
+class "FeuerraumTemp"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- FeuerraumTemp
+class "M1"
+"M1" ^-- "FeuerraumTemp"
 ....
 ## Methods
 #### Method: getRawData
@@ -1997,6 +2540,19 @@ String getMessage()
 |Description 2+|Gets the message from this FeuerraumTemp device based on its index.
 |Return|String|
 |===
+## Uses
+[plantuml, "name33", svg]
+....
+class FeuerraumTemp
+class "java.util.List"
+"FeuerraumTemp" --> "java.util.List"
+class "M1"
+"FeuerraumTemp" --> "M1"
+class "String"
+"FeuerraumTemp" --> "String"
+class "Integer"
+"FeuerraumTemp" --> "Integer"
+....
 # Class `Fuellst`
 ## Description
 This class extends M1 and represents a Fuellst device.
@@ -2004,14 +2560,14 @@ This class extends M1 and represents a Fuellst device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Fuellst", svg]
 ....
-class Fuellst
+class "Fuellst"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Fuellst
+class "M1"
+"M1" ^-- "Fuellst"
 ....
 ## Methods
 #### Method: getRawData
@@ -2047,6 +2603,19 @@ String getMessage()
 |Description 2+|Override of the getMessage method. Calls the getMessage method with the INDEX value as a parameter and returns the result.
 |Return|String|
 |===
+## Uses
+[plantuml, "name34", svg]
+....
+class Fuellst
+class "java.util.List"
+"Fuellst" --> "java.util.List"
+class "M1"
+"Fuellst" --> "M1"
+class "String"
+"Fuellst" --> "String"
+class "Integer"
+"Fuellst" --> "Integer"
+....
 # Class `Kesseltemp`
 ## Description
 Kesseltemp class extends M1 and handles kessel temperature-related protocol.
@@ -2054,14 +2623,14 @@ Kesseltemp class extends M1 and handles kessel temperature-related protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Kesseltemp", svg]
 ....
-class Kesseltemp
+class "Kesseltemp"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Kesseltemp
+class "M1"
+"M1" ^-- "Kesseltemp"
 ....
 ## Methods
 #### Method: getRawData
@@ -2097,6 +2666,19 @@ String getMessage()
 |Description 2+|Method overriding M1's getMessage method, returns a message related to the kessel temperature data.
 |Return|String|
 |===
+## Uses
+[plantuml, "name35", svg]
+....
+class Kesseltemp
+class "java.util.List"
+"Kesseltemp" --> "java.util.List"
+class "M1"
+"Kesseltemp" --> "M1"
+class "String"
+"Kesseltemp" --> "String"
+class "Integer"
+"Kesseltemp" --> "Integer"
+....
 # Class `KessStellGr`
 ## Description
 Kess Stell Gr class extends M1 and provides functionality related to Kess Stell Gr protocol.
@@ -2104,14 +2686,14 @@ Kess Stell Gr class extends M1 and provides functionality related to Kess Stell 
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.KessStellGr", svg]
 ....
-class KessStellGr
+class "KessStellGr"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- KessStellGr
+class "M1"
+"M1" ^-- "KessStellGr"
 ....
 ## Methods
 #### Method: getRawData
@@ -2148,6 +2730,19 @@ String getMessage()
 |Description 2+|Method to get message. This method overrides the base class method and returns a message based on the INDEX value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name36", svg]
+....
+class KessStellGr
+class "java.util.List"
+"KessStellGr" --> "java.util.List"
+class "M1"
+"KessStellGr" --> "M1"
+class "String"
+"KessStellGr" --> "String"
+class "Integer"
+"KessStellGr" --> "Integer"
+....
 # Class `Kty6_h2`
 ## Description
 This class extends M1 and is used to handle a specific protocol for Froeling devices.
@@ -2155,14 +2750,14 @@ This class extends M1 and is used to handle a specific protocol for Froeling dev
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Kty6_h2", svg]
 ....
-class Kty6_h2
+class "Kty6_h2"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Kty6_h2
+class "M1"
+"M1" ^-- "Kty6_h2"
 ....
 ## Methods
 #### Method: getRawData
@@ -2198,19 +2793,32 @@ String getMessage()
 |Description 2+|This method overrides the getMessage() method from the superclass and returns a message specific to this class.
 |Return|String|
 |===
+## Uses
+[plantuml, "name37", svg]
+....
+class Kty6_h2
+class "java.util.List"
+"Kty6_h2" --> "java.util.List"
+class "M1"
+"Kty6_h2" --> "M1"
+class "String"
+"Kty6_h2" --> "String"
+class "Integer"
+"Kty6_h2" --> "Integer"
+....
 # Class `Kty7_h2`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Kty7_h2", svg]
 ....
-class Kty7_h2
+class "Kty7_h2"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Kty7_h2
+class "M1"
+"M1" ^-- "Kty7_h2"
 ....
 ## Methods
 #### Method: getRawData
@@ -2246,6 +2854,19 @@ String getMessage()
 |Description 2+|
 |Return|String|
 |===
+## Uses
+[plantuml, "name38", svg]
+....
+class Kty7_h2
+class "java.util.List"
+"Kty7_h2" --> "java.util.List"
+class "M1"
+"Kty7_h2" --> "M1"
+class "String"
+"Kty7_h2" --> "String"
+class "Integer"
+"Kty7_h2" --> "Integer"
+....
 # Class `Laufzeit`
 ## Description
 This class extends the M1 protocol and provides custom implementation for Laufzeit device.
@@ -2253,14 +2874,14 @@ This class extends the M1 protocol and provides custom implementation for Laufze
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Laufzeit", svg]
 ....
-class Laufzeit
+class "Laufzeit"
 {
-getRawData():"int"
-getData():"String"
-getMessage(index: int):"String"
+getRawData():int
+getData():String
+getMessage(index: int):String
 }
-class M1
-M1 ^-- Laufzeit
+class "M1"
+"M1" ^-- "Laufzeit"
 ....
 ## Methods
 #### Method: getRawData
@@ -2298,19 +2919,32 @@ String getMessage(int index)
 |Return|String|
 |index|int|
 |===
+## Uses
+[plantuml, "name39", svg]
+....
+class Laufzeit
+class "java.util.List"
+"Laufzeit" --> "java.util.List"
+class "M1"
+"Laufzeit" --> "M1"
+class "String"
+"Laufzeit" --> "String"
+class "Integer"
+"Laufzeit" --> "Integer"
+....
 # Class `O2Regler`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.O2Regler", svg]
 ....
-class O2Regler
+class "O2Regler"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- O2Regler
+class "M1"
+"M1" ^-- "O2Regler"
 ....
 ## Methods
 #### Method: getRawData
@@ -2346,6 +2980,19 @@ String getMessage()
 |Description 2+|Returns a message based on the index value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name40", svg]
+....
+class O2Regler
+class "java.util.List"
+"O2Regler" --> "java.util.List"
+class "M1"
+"O2Regler" --> "M1"
+class "String"
+"O2Regler" --> "String"
+class "Integer"
+"O2Regler" --> "Integer"
+....
 # Class `PufferTempOben`
 ## Description
 This class extends M1 and is used to handle Puffer Temp Oben protocol data.
@@ -2353,14 +3000,14 @@ This class extends M1 and is used to handle Puffer Temp Oben protocol data.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.PufferTempOben", svg]
 ....
-class PufferTempOben
+class "PufferTempOben"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- PufferTempOben
+class "M1"
+"M1" ^-- "PufferTempOben"
 ....
 ## Methods
 #### Method: getRawData
@@ -2396,6 +3043,19 @@ String getMessage()
 |Description 2+|Override of getMessage(). This method returns a message that is based on the index.
 |Return|String|
 |===
+## Uses
+[plantuml, "name41", svg]
+....
+class PufferTempOben
+class "java.util.List"
+"PufferTempOben" --> "java.util.List"
+class "M1"
+"PufferTempOben" --> "M1"
+class "String"
+"PufferTempOben" --> "String"
+class "Integer"
+"PufferTempOben" --> "Integer"
+....
 # Class `PufferTempUnten`
 ## Description
 Purpose of this class: PufferTempUnten extends M1 and provides methods for processing temperature data.
@@ -2403,14 +3063,14 @@ Purpose of this class: PufferTempUnten extends M1 and provides methods for proce
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.PufferTempUnten", svg]
 ....
-class PufferTempUnten
+class "PufferTempUnten"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- PufferTempUnten
+class "M1"
+"M1" ^-- "PufferTempUnten"
 ....
 ## Methods
 #### Method: getRawData
@@ -2446,6 +3106,19 @@ String getMessage()
 |Description 2+|Overridden method that returns a message based on the given index (INDEX).
 |Return|String|
 |===
+## Uses
+[plantuml, "name42", svg]
+....
+class PufferTempUnten
+class "java.util.List"
+"PufferTempUnten" --> "java.util.List"
+class "M1"
+"PufferTempUnten" --> "M1"
+class "String"
+"PufferTempUnten" --> "String"
+class "Integer"
+"PufferTempUnten" --> "Integer"
+....
 # Class `RestO2`
 ## Description
 This class extends the M1 class and provides functionality for REST O2 protocol.
@@ -2453,14 +3126,14 @@ This class extends the M1 class and provides functionality for REST O2 protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.RestO2", svg]
 ....
-class RestO2
+class "RestO2"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- RestO2
+class "M1"
+"M1" ^-- "RestO2"
 ....
 ## Methods
 #### Method: getRawData
@@ -2496,6 +3169,19 @@ String getMessage()
 |Description 2+|This method returns a message based on the index value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name43", svg]
+....
+class RestO2
+class "java.util.List"
+"RestO2" --> "java.util.List"
+class "M1"
+"RestO2" --> "M1"
+class "String"
+"RestO2" --> "String"
+class "Integer"
+"RestO2" --> "Integer"
+....
 # Class `Rost`
 ## Description
 This class represents a Rost device, which is a part of the home automatic system.
@@ -2503,14 +3189,14 @@ This class represents a Rost device, which is a part of the home automatic syste
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Rost", svg]
 ....
-class Rost
+class "Rost"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Rost
+class "M1"
+"M1" ^-- "Rost"
 ....
 ## Methods
 #### Method: getRawData
@@ -2546,19 +3232,32 @@ String getMessage()
 |Description 2+|Returns a message based on the index value of this Rost device.
 |Return|String|
 |===
+## Uses
+[plantuml, "name44", svg]
+....
+class Rost
+class "java.util.List"
+"Rost" --> "java.util.List"
+class "M1"
+"Rost" --> "M1"
+class "String"
+"Rost" --> "String"
+class "Integer"
+"Rost" --> "Integer"
+....
 # Class `Saugzug`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Saugzug", svg]
 ....
-class Saugzug
+class "Saugzug"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Saugzug
+class "M1"
+"M1" ^-- "Saugzug"
 ....
 ## Methods
 #### Method: getRawData
@@ -2594,6 +3293,19 @@ String getMessage()
 |Description 2+|Returns a message based on the INDEX constant.
 |Return|String|
 |===
+## Uses
+[plantuml, "name45", svg]
+....
+class Saugzug
+class "java.util.List"
+"Saugzug" --> "java.util.List"
+class "M1"
+"Saugzug" --> "M1"
+class "String"
+"Saugzug" --> "String"
+class "Integer"
+"Saugzug" --> "Integer"
+....
 # Class `SollKesselTemp`
 ## Description
 SollKesselTemp class extends M1 and handles the protocol for a specific device.
@@ -2601,14 +3313,14 @@ SollKesselTemp class extends M1 and handles the protocol for a specific device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.SollKesselTemp", svg]
 ....
-class SollKesselTemp
+class "SollKesselTemp"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- SollKesselTemp
+class "M1"
+"M1" ^-- "SollKesselTemp"
 ....
 ## Methods
 #### Method: getRawData
@@ -2644,6 +3356,19 @@ String getMessage()
 |Description 2+|Override method for getting message. Calls another method with the INDEX value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name46", svg]
+....
+class SollKesselTemp
+class "java.util.List"
+"SollKesselTemp" --> "java.util.List"
+class "M1"
+"SollKesselTemp" --> "M1"
+class "String"
+"SollKesselTemp" --> "String"
+class "Integer"
+"SollKesselTemp" --> "Integer"
+....
 # Class `Vorlauf1`
 ## Description
 Class Vorlauf1 extends M1 and provides specific implementation for protocol processing.
@@ -2651,14 +3376,14 @@ Class Vorlauf1 extends M1 and provides specific implementation for protocol proc
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf1", svg]
 ....
-class Vorlauf1
+class "Vorlauf1"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Vorlauf1
+class "M1"
+"M1" ^-- "Vorlauf1"
 ....
 ## Methods
 #### Method: getRawData
@@ -2696,6 +3421,19 @@ String getMessage()
 |Description 2+|Method to override getMessage() from the superclass. This method returns a message string based on the INDEX constant.
 |Return|String|
 |===
+## Uses
+[plantuml, "name47", svg]
+....
+class Vorlauf1
+class "java.util.List"
+"Vorlauf1" --> "java.util.List"
+class "M1"
+"Vorlauf1" --> "M1"
+class "String"
+"Vorlauf1" --> "String"
+class "Integer"
+"Vorlauf1" --> "Integer"
+....
 # Class `Vorlauf1Sw`
 ## Description
 This class extends M1 and represents a Vorlauf1Sw device.
@@ -2703,14 +3441,14 @@ This class extends M1 and represents a Vorlauf1Sw device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf1Sw", svg]
 ....
-class Vorlauf1Sw
+class "Vorlauf1Sw"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Vorlauf1Sw
+class "M1"
+"M1" ^-- "Vorlauf1Sw"
 ....
 ## Methods
 #### Method: getRawData
@@ -2746,6 +3484,19 @@ String getMessage()
 |Description 2+|Override of the getMessage method. Returns a message based on the index value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name48", svg]
+....
+class Vorlauf1Sw
+class "java.util.List"
+"Vorlauf1Sw" --> "java.util.List"
+class "M1"
+"Vorlauf1Sw" --> "M1"
+class "String"
+"Vorlauf1Sw" --> "String"
+class "Integer"
+"Vorlauf1Sw" --> "Integer"
+....
 # Class `Vorlauf2`
 ## Description
 Purpose: This class, Vorlauf2, extends the M1 class and provides specific methods for processing data.
@@ -2753,14 +3504,14 @@ Purpose: This class, Vorlauf2, extends the M1 class and provides specific method
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf2", svg]
 ....
-class Vorlauf2
+class "Vorlauf2"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Vorlauf2
+class "M1"
+"M1" ^-- "Vorlauf2"
 ....
 ## Methods
 #### Method: getRawData
@@ -2796,19 +3547,32 @@ String getMessage()
 |Description 2+|Method: Override of the getMessage method. Returns a message string using the INDEX constant.
 |Return|String|
 |===
+## Uses
+[plantuml, "name49", svg]
+....
+class Vorlauf2
+class "java.util.List"
+"Vorlauf2" --> "java.util.List"
+class "M1"
+"Vorlauf2" --> "M1"
+class "String"
+"Vorlauf2" --> "String"
+class "Integer"
+"Vorlauf2" --> "Integer"
+....
 # Class `Vorlauf2Sw`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Vorlauf2Sw", svg]
 ....
-class Vorlauf2Sw
+class "Vorlauf2Sw"
 {
-getRawData():"int"
-getData():"String"
-getMessage(i: int):"String"
+getRawData():int
+getData():String
+getMessage(i: int):String
 }
-class M1
-M1 ^-- Vorlauf2Sw
+class "M1"
+"M1" ^-- "Vorlauf2Sw"
 ....
 ## Methods
 #### Method: getRawData
@@ -2845,19 +3609,32 @@ String getMessage(int i)
 |Return|String|
 |i|int|
 |===
+## Uses
+[plantuml, "name50", svg]
+....
+class Vorlauf2Sw
+class "java.util.List"
+"Vorlauf2Sw" --> "java.util.List"
+class "M1"
+"Vorlauf2Sw" --> "M1"
+class "String"
+"Vorlauf2Sw" --> "String"
+class "Integer"
+"Vorlauf2Sw" --> "Integer"
+....
 # Class `ZuluftGebl`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.ZuluftGebl", svg]
 ....
-class ZuluftGebl
+class "ZuluftGebl"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- ZuluftGebl
+class "M1"
+"M1" ^-- "ZuluftGebl"
 ....
 ## Methods
 #### Method: getRawData
@@ -2893,19 +3670,32 @@ String getMessage()
 |Description 2+|Getter method for message. Calls the getMessage method with INDEX as an argument.
 |Return|String|
 |===
+## Uses
+[plantuml, "name51", svg]
+....
+class ZuluftGebl
+class "java.util.List"
+"ZuluftGebl" --> "java.util.List"
+class "M1"
+"ZuluftGebl" --> "M1"
+class "String"
+"ZuluftGebl" --> "String"
+class "Integer"
+"ZuluftGebl" --> "Integer"
+....
 # Class `Zustand`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.sub.Zustand", svg]
 ....
-class Zustand
+class "Zustand"
 {
-getRawData():"int"
-getData():"String"
-getMessage():"String"
+getRawData():int
+getData():String
+getMessage():String
 }
-class M1
-M1 ^-- Zustand
+class "M1"
+"M1" ^-- "Zustand"
 ....
 ## Methods
 #### Method: getRawData
@@ -2941,17 +3731,30 @@ String getMessage()
 |Description 2+|Returns a message for this state.
 |Return|String|
 |===
+## Uses
+[plantuml, "name52", svg]
+....
+class Zustand
+class "java.util.List"
+"Zustand" --> "java.util.List"
+class "M1"
+"Zustand" --> "M1"
+class "String"
+"Zustand" --> "String"
+class "Integer"
+"Zustand" --> "Integer"
+....
 PackageWriter# Class `Acknowledge`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Acknowledge", svg]
 ....
-class Acknowledge
+class "Acknowledge"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Acknowledge
+class "ProtocolBase"
+"ProtocolBase" ^-- "Acknowledge"
 ....
 ## Methods
 #### Method: compare
@@ -2966,17 +3769,34 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name53", svg]
+....
+class Acknowledge
+interface "SerielProtocol"
+"Acknowledge" --> "SerielProtocol"
+class "java.util.List"
+"Acknowledge" --> "java.util.List"
+class "String"
+"Acknowledge" --> "String"
+class "FroelingSerielProtocol"
+"Acknowledge" --> "FroelingSerielProtocol"
+class "Integer"
+"Acknowledge" --> "Integer"
+class "ProtocolBase"
+"Acknowledge" --> "ProtocolBase"
+....
 # Class `DeselectMessMode`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.DeselectMessMode", svg]
 ....
-class DeselectMessMode
+class "DeselectMessMode"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- DeselectMessMode
+class "ProtocolBase"
+"ProtocolBase" ^-- "DeselectMessMode"
 ....
 ## Methods
 #### Method: compare
@@ -2991,6 +3811,19 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name54", svg]
+....
+class DeselectMessMode
+class "ProtocolBase"
+"DeselectMessMode" --> "ProtocolBase"
+class "java.util.List"
+"DeselectMessMode" --> "java.util.List"
+class "Integer"
+"DeselectMessMode" --> "Integer"
+interface "SerielProtocol"
+"DeselectMessMode" --> "SerielProtocol"
+....
 # Class `FroelingProtocolCatalogue`
 ## Description
 This class extends the BaseProtocolCatalogue and provides a protocol catalogue for Froeling devices.
@@ -2998,27 +3831,150 @@ This class extends the BaseProtocolCatalogue and provides a protocol catalogue f
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingProtocolCatalogue", svg]
 ....
-class FroelingProtocolCatalogue
+class "FroelingProtocolCatalogue"
 {
 }
-class BaseProtocolCatalogue
-BaseProtocolCatalogue ^-- FroelingProtocolCatalogue
+class "BaseProtocolCatalogue"
+"BaseProtocolCatalogue" ^-- "FroelingProtocolCatalogue"
 ....
 ## Methods
+## Uses
+[plantuml, "name55", svg]
+....
+class FroelingProtocolCatalogue
+class "Kesseltemp"
+"FroelingProtocolCatalogue" --> "Kesseltemp"
+class "BoardTemp"
+"FroelingProtocolCatalogue" --> "BoardTemp"
+class "PufferTempUnten"
+"FroelingProtocolCatalogue" --> "PufferTempUnten"
+class "Vorlauf2Sw"
+"FroelingProtocolCatalogue" --> "Vorlauf2Sw"
+class "RestO2"
+"FroelingProtocolCatalogue" --> "RestO2"
+class "Vorlauf1"
+"FroelingProtocolCatalogue" --> "Vorlauf1"
+class "Zustand"
+"FroelingProtocolCatalogue" --> "Zustand"
+class "Betriebsart"
+"FroelingProtocolCatalogue" --> "Betriebsart"
+class "Betriebszustand"
+"FroelingProtocolCatalogue" --> "Betriebszustand"
+class "SollKesselTemp"
+"FroelingProtocolCatalogue" --> "SollKesselTemp"
+class "FeuerraumTemp"
+"FroelingProtocolCatalogue" --> "FeuerraumTemp"
+class "BaseProtocolCatalogue"
+"FroelingProtocolCatalogue" --> "BaseProtocolCatalogue"
+class "AussenTemp"
+"FroelingProtocolCatalogue" --> "AussenTemp"
+class "Kty7_h2"
+"FroelingProtocolCatalogue" --> "Kty7_h2"
+class "Rost"
+"FroelingProtocolCatalogue" --> "Rost"
+class "BrennSt"
+"FroelingProtocolCatalogue" --> "BrennSt"
+class "Einschub"
+"FroelingProtocolCatalogue" --> "Einschub"
+class "Kty6_h2"
+"FroelingProtocolCatalogue" --> "Kty6_h2"
+class "Abgastemp"
+"FroelingProtocolCatalogue" --> "Abgastemp"
+class "Saugzug"
+"FroelingProtocolCatalogue" --> "Saugzug"
+class "Laufzeit"
+"FroelingProtocolCatalogue" --> "Laufzeit"
+class "O2Regler"
+"FroelingProtocolCatalogue" --> "O2Regler"
+class "PufferTempOben"
+"FroelingProtocolCatalogue" --> "PufferTempOben"
+class "KessStellGr"
+"FroelingProtocolCatalogue" --> "KessStellGr"
+class "ZuluftGebl"
+"FroelingProtocolCatalogue" --> "ZuluftGebl"
+class "AbgasSw"
+"FroelingProtocolCatalogue" --> "AbgasSw"
+class "Fuellst"
+"FroelingProtocolCatalogue" --> "Fuellst"
+....
+# Interface `FroelingSerielProtocol`
+## Description
+Interface for Froeling Seriel Protocol.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingSerielProtocol", svg]
+....
+interface "FroelingSerielProtocol"
+{
+getCommand():List
+getParameters():List
+similar(other: ProtocolBase):boolean
+doActionAfterCreation():void
+}
+interface "SerielProtocol"
+"SerielProtocol" ^-- "FroelingSerielProtocol"
+....
+## Methods
+#### Method: getCommand
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getCommand();
+----
+|Description 2+|Returns the command as a list of integers.
+|Return|List|
+|===
+#### Method: getParameters
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getParameters();
+----
+|Description 2+|Returns the parameters as a list of integers.
+|Return|List|
+|===
+#### Method: similar
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+boolean similar(ProtocolBase other);
+----
+|Description 2+|Checks if this protocol is similar to another protocol.
+|Return|boolean|
+|other|ProtocolBase|
+|===
+#### Method: doActionAfterCreation
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void doActionAfterCreation();
+----
+|Description 2+|Activity performed after creation.
+/
+|Return|void|
+|===
 # Class `M1`
 ## Description
 Messwerte
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.M1", svg]
 ....
-class M1
+class "M1"
 {
-compare(protocol: SerielProtocol):"boolean"
-conv2Int(index: int):"int"
-getMessage(index: int):"String"
+compare(protocol: SerielProtocol):boolean
+conv2Int(index: int):int
+getMessage(index: int):String
 }
-class ProtocolBase
-ProtocolBase ^-- M1
+class "ProtocolBase"
+"ProtocolBase" ^-- "M1"
 ....
 ## Methods
 #### Method: compare
@@ -3057,18 +4013,39 @@ String getMessage(int index)
 |Return|String|
 |index|int|
 |===
+## Uses
+[plantuml, "name56", svg]
+....
+class M1
+interface "SerielProtocol"
+"M1" --> "SerielProtocol"
+class "java.util.List"
+"M1" --> "java.util.List"
+class "String"
+"M1" --> "String"
+interface "ManagedDevice"
+"M1" --> "ManagedDevice"
+class "Froeling"
+"M1" --> "Froeling"
+class "Integer"
+"M1" --> "Integer"
+class "ProtocolBase"
+"M1" --> "ProtocolBase"
+interface "FroehlingPopulation"
+"M1" --> "FroehlingPopulation"
+....
 # Class `M2`
 ## Description
 M2 protocol class for Home Automatic devices.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.M2", svg]
 ....
-class M2
+class "M2"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- M2
+class "ProtocolBase"
+"ProtocolBase" ^-- "M2"
 ....
 ## Methods
 #### Method: compare
@@ -3083,20 +4060,33 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name57", svg]
+....
+class M2
+class "ProtocolBase"
+"M2" --> "ProtocolBase"
+class "java.util.List"
+"M2" --> "java.util.List"
+class "Integer"
+"M2" --> "Integer"
+interface "SerielProtocol"
+"M2" --> "SerielProtocol"
+....
 # Class `Ma`
 ## Description
 Text Screen
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Ma", svg]
 ....
-class Ma
+class "Ma"
 {
-compare(protocol: SerielProtocol):"boolean"
-doActionAfterCreation():"void"
-getData():"String"
+compare(protocol: SerielProtocol):boolean
+doActionAfterCreation():void
+getData():String
 }
-class ProtocolBase
-ProtocolBase ^-- Ma
+class "ProtocolBase"
+"ProtocolBase" ^-- "Ma"
 ....
 ## Methods
 #### Method: compare
@@ -3133,20 +4123,41 @@ String getData()
 |Description 2+|
 |Return|String|
 |===
+## Uses
+[plantuml, "name58", svg]
+....
+class Ma
+interface "SerielProtocol"
+"Ma" --> "SerielProtocol"
+class "java.util.List"
+"Ma" --> "java.util.List"
+class "String"
+"Ma" --> "String"
+interface "ManagedDevice"
+"Ma" --> "ManagedDevice"
+class "Froeling"
+"Ma" --> "Froeling"
+class "Integer"
+"Ma" --> "Integer"
+class "ProtocolBase"
+"Ma" --> "ProtocolBase"
+interface "FroehlingPopulation"
+"Ma" --> "FroehlingPopulation"
+....
 # Class `Mb`
 ## Description
 This Java class represents the MB protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mb", svg]
 ....
-class Mb
+class "Mb"
 {
-compare(protocol: SerielProtocol):"boolean"
-doActionAfterCreation():"void"
-getData():"String"
+compare(protocol: SerielProtocol):boolean
+doActionAfterCreation():void
+getData():String
 }
-class ProtocolBase
-ProtocolBase ^-- Mb
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mb"
 ....
 ## Methods
 #### Method: compare
@@ -3186,17 +4197,38 @@ String getData()
 the parameters.
 |Return|String|
 |===
+## Uses
+[plantuml, "name59", svg]
+....
+class Mb
+interface "SerielProtocol"
+"Mb" --> "SerielProtocol"
+class "java.util.List"
+"Mb" --> "java.util.List"
+class "String"
+"Mb" --> "String"
+interface "ManagedDevice"
+"Mb" --> "ManagedDevice"
+class "Froeling"
+"Mb" --> "Froeling"
+class "Integer"
+"Mb" --> "Integer"
+class "ProtocolBase"
+"Mb" --> "ProtocolBase"
+interface "FroehlingPopulation"
+"Mb" --> "FroehlingPopulation"
+....
 # Class `Mc`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mc", svg]
 ....
-class Mc
+class "Mc"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mc
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mc"
 ....
 ## Methods
 #### Method: compare
@@ -3211,18 +4243,31 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name60", svg]
+....
+class Mc
+class "ProtocolBase"
+"Mc" --> "ProtocolBase"
+class "java.util.List"
+"Mc" --> "java.util.List"
+class "Integer"
+"Mc" --> "Integer"
+interface "SerielProtocol"
+"Mc" --> "SerielProtocol"
+....
 # Class `Md`
 ## Description
 Text <EINSTELLUNG>-Menue incl ParamID
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Md", svg]
 ....
-class Md
+class "Md"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Md
+class "ProtocolBase"
+"ProtocolBase" ^-- "Md"
 ....
 ## Methods
 #### Method: compare
@@ -3237,18 +4282,31 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name61", svg]
+....
+class Md
+class "ProtocolBase"
+"Md" --> "ProtocolBase"
+class "java.util.List"
+"Md" --> "java.util.List"
+class "Integer"
+"Md" --> "Integer"
+interface "SerielProtocol"
+"Md" --> "SerielProtocol"
+....
 # Class `Me`
 ## Description
 Description: A class representing a ME device protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Me", svg]
 ....
-class Me
+class "Me"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Me
+class "ProtocolBase"
+"ProtocolBase" ^-- "Me"
 ....
 ## Methods
 #### Method: compare
@@ -3263,20 +4321,33 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name62", svg]
+....
+class Me
+class "ProtocolBase"
+"Me" --> "ProtocolBase"
+class "java.util.List"
+"Me" --> "java.util.List"
+class "Integer"
+"Me" --> "Integer"
+interface "SerielProtocol"
+"Me" --> "SerielProtocol"
+....
 # Class `Mf`
 ## Description
 Betriebsarten
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mf", svg]
 ....
-class Mf
+class "Mf"
 {
-compare(protocol: SerielProtocol):"boolean"
-doActionAfterCreation():"void"
-getData():"String"
+compare(protocol: SerielProtocol):boolean
+doActionAfterCreation():void
+getData():String
 }
-class ProtocolBase
-ProtocolBase ^-- Mf
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mf"
 ....
 ## Methods
 #### Method: compare
@@ -3313,18 +4384,39 @@ String getData()
 |Description 2+|
 |Return|String|
 |===
+## Uses
+[plantuml, "name63", svg]
+....
+class Mf
+interface "SerielProtocol"
+"Mf" --> "SerielProtocol"
+class "java.util.List"
+"Mf" --> "java.util.List"
+class "String"
+"Mf" --> "String"
+interface "ManagedDevice"
+"Mf" --> "ManagedDevice"
+class "Froeling"
+"Mf" --> "Froeling"
+class "Integer"
+"Mf" --> "Integer"
+class "ProtocolBase"
+"Mf" --> "ProtocolBase"
+interface "FroehlingPopulation"
+"Mf" --> "FroehlingPopulation"
+....
 # Class `Mg`
 ## Description
 Wochenprogramm Heizkreise
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mg", svg]
 ....
-class Mg
+class "Mg"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mg
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mg"
 ....
 ## Methods
 #### Method: compare
@@ -3339,17 +4431,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name64", svg]
+....
+class Mg
+class "ProtocolBase"
+"Mg" --> "ProtocolBase"
+class "java.util.List"
+"Mg" --> "java.util.List"
+class "Integer"
+"Mg" --> "Integer"
+interface "SerielProtocol"
+"Mg" --> "SerielProtocol"
+....
 # Class `Mh`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mh", svg]
 ....
-class Mh
+class "Mh"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mh
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mh"
 ....
 ## Methods
 #### Method: compare
@@ -3364,17 +4469,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name65", svg]
+....
+class Mh
+class "ProtocolBase"
+"Mh" --> "ProtocolBase"
+class "java.util.List"
+"Mh" --> "java.util.List"
+class "Integer"
+"Mh" --> "Integer"
+interface "SerielProtocol"
+"Mh" --> "SerielProtocol"
+....
 # Class `Mk`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mk", svg]
 ....
-class Mk
+class "Mk"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mk
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mk"
 ....
 ## Methods
 #### Method: compare
@@ -3389,17 +4507,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name66", svg]
+....
+class Mk
+class "ProtocolBase"
+"Mk" --> "ProtocolBase"
+class "java.util.List"
+"Mk" --> "java.util.List"
+class "Integer"
+"Mk" --> "Integer"
+interface "SerielProtocol"
+"Mk" --> "SerielProtocol"
+....
 # Class `Ml`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Ml", svg]
 ....
-class Ml
+class "Ml"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Ml
+class "ProtocolBase"
+"ProtocolBase" ^-- "Ml"
 ....
 ## Methods
 #### Method: compare
@@ -3414,17 +4545,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name67", svg]
+....
+class Ml
+class "ProtocolBase"
+"Ml" --> "ProtocolBase"
+class "java.util.List"
+"Ml" --> "java.util.List"
+class "Integer"
+"Ml" --> "Integer"
+interface "SerielProtocol"
+"Ml" --> "SerielProtocol"
+....
 # Class `Mm`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mm", svg]
 ....
-class Mm
+class "Mm"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mm
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mm"
 ....
 ## Methods
 #### Method: compare
@@ -3439,17 +4583,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name68", svg]
+....
+class Mm
+class "ProtocolBase"
+"Mm" --> "ProtocolBase"
+class "java.util.List"
+"Mm" --> "java.util.List"
+class "Integer"
+"Mm" --> "Integer"
+interface "SerielProtocol"
+"Mm" --> "SerielProtocol"
+....
 # Class `Ms`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Ms", svg]
 ....
-class Ms
+class "Ms"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Ms
+class "ProtocolBase"
+"ProtocolBase" ^-- "Ms"
 ....
 ## Methods
 #### Method: compare
@@ -3464,18 +4621,31 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name69", svg]
+....
+class Ms
+class "ProtocolBase"
+"Ms" --> "ProtocolBase"
+class "java.util.List"
+"Ms" --> "java.util.List"
+class "Integer"
+"Ms" --> "Integer"
+interface "SerielProtocol"
+"Ms" --> "SerielProtocol"
+....
 # Class `Mt`
 ## Description
 Error message texts.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mt", svg]
 ....
-class Mt
+class "Mt"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mt
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mt"
 ....
 ## Methods
 #### Method: compare
@@ -3490,18 +4660,31 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name70", svg]
+....
+class Mt
+class "ProtocolBase"
+"Mt" --> "ProtocolBase"
+class "java.util.List"
+"Mt" --> "java.util.List"
+class "Integer"
+"Mt" --> "Integer"
+interface "SerielProtocol"
+"Mt" --> "SerielProtocol"
+....
 # Class `Mu`
 ## Description
 Last error class extending ProtocolBase.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mu", svg]
 ....
-class Mu
+class "Mu"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mu
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mu"
 ....
 ## Methods
 #### Method: compare
@@ -3516,17 +4699,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name71", svg]
+....
+class Mu
+class "ProtocolBase"
+"Mu" --> "ProtocolBase"
+class "java.util.List"
+"Mu" --> "java.util.List"
+class "Integer"
+"Mu" --> "Integer"
+interface "SerielProtocol"
+"Mu" --> "SerielProtocol"
+....
 # Class `Mw`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mw", svg]
 ....
-class Mw
+class "Mw"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mw
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mw"
 ....
 ## Methods
 #### Method: compare
@@ -3541,17 +4737,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name72", svg]
+....
+class Mw
+class "ProtocolBase"
+"Mw" --> "ProtocolBase"
+class "java.util.List"
+"Mw" --> "java.util.List"
+class "Integer"
+"Mw" --> "Integer"
+interface "SerielProtocol"
+"Mw" --> "SerielProtocol"
+....
 # Class `Mz`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.Mz", svg]
 ....
-class Mz
+class "Mz"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- Mz
+class "ProtocolBase"
+"ProtocolBase" ^-- "Mz"
 ....
 ## Methods
 #### Method: compare
@@ -3566,6 +4775,19 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name73", svg]
+....
+class Mz
+class "ProtocolBase"
+"Mz" --> "ProtocolBase"
+class "java.util.List"
+"Mz" --> "java.util.List"
+class "Integer"
+"Mz" --> "Integer"
+interface "SerielProtocol"
+"Mz" --> "SerielProtocol"
+....
 # Class `NoAcknowledge`
 ## Description
 This class represents a No Acknowledge protocol in home automatic devices.
@@ -3573,12 +4795,12 @@ This class represents a No Acknowledge protocol in home automatic devices.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.NoAcknowledge", svg]
 ....
-class NoAcknowledge
+class "NoAcknowledge"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- NoAcknowledge
+class "ProtocolBase"
+"ProtocolBase" ^-- "NoAcknowledge"
 ....
 ## Methods
 #### Method: compare
@@ -3593,30 +4815,45 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name74", svg]
+....
+class NoAcknowledge
+interface "SerielProtocol"
+"NoAcknowledge" --> "SerielProtocol"
+class "java.util.List"
+"NoAcknowledge" --> "java.util.List"
+class "String"
+"NoAcknowledge" --> "String"
+class "Integer"
+"NoAcknowledge" --> "Integer"
+class "ProtocolBase"
+"NoAcknowledge" --> "ProtocolBase"
+....
 # Class `ProtocolBase`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.ProtocolBase", svg]
 ....
-class ProtocolBase
+class "ProtocolBase"
 {
-getMessage():"String"
-getIdentifier():"int"
-getRawData():"int"
-getData():"String"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
-getCommand():"List"
-getParameters():"List"
-getTimeStamp():"long"
-similar(other: ProtocolBase):"boolean"
-doActionAfterCreation():"void"
-addToLog(line: String):"void"
+getMessage():String
+getIdentifier():int
+getRawData():int
+getData():String
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
+getCommand():List
+getParameters():List
+getTimeStamp():long
+similar(other: ProtocolBase):boolean
+doActionAfterCreation():void
+addToLog(line: String):void
 }
-class FroelingFrame
-FroelingFrame ^-- ProtocolBase
-interface FroelingSerielProtocol
-FroelingSerielProtocol <|.. ProtocolBase
+class "FroelingFrame"
+"FroelingFrame" ^-- "ProtocolBase"
+interface "FroelingSerielProtocol"
+"FroelingSerielProtocol" <|.. "ProtocolBase"
 ....
 ## Methods
 #### Method: getMessage
@@ -3755,17 +4992,40 @@ void addToLog(String line)
 |Return|void|
 |line|String|
 |===
+## Uses
+[plantuml, "name75", svg]
+....
+class ProtocolBase
+interface "SerielProtocol"
+"ProtocolBase" --> "SerielProtocol"
+class "java.util.List"
+"ProtocolBase" --> "java.util.List"
+class "String"
+"ProtocolBase" --> "String"
+class "FroelingFrame"
+"ProtocolBase" --> "FroelingFrame"
+class "de.skschmid.java.homeautomatic.device.froeling.FroelingSerielProtocol"
+"ProtocolBase" --> "de.skschmid.java.homeautomatic.device.froeling.FroelingSerielProtocol"
+class "Integer"
+"ProtocolBase" --> "Integer"
+class "ProtocolBase"
+"ProtocolBase" --> "ProtocolBase"
+class "java.nio.file.Path"
+"ProtocolBase" --> "java.nio.file.Path"
+class "StringBuilder"
+"ProtocolBase" --> "StringBuilder"
+....
 # Class `SelectMessModeProt`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.SelectMessModeProt", svg]
 ....
-class SelectMessModeProt
+class "SelectMessModeProt"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- SelectMessModeProt
+class "ProtocolBase"
+"ProtocolBase" ^-- "SelectMessModeProt"
 ....
 ## Methods
 #### Method: compare
@@ -3780,6 +5040,19 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
+## Uses
+[plantuml, "name76", svg]
+....
+class SelectMessModeProt
+class "ProtocolBase"
+"SelectMessModeProt" --> "ProtocolBase"
+class "java.util.List"
+"SelectMessModeProt" --> "java.util.List"
+class "Integer"
+"SelectMessModeProt" --> "Integer"
+interface "SerielProtocol"
+"SelectMessModeProt" --> "SerielProtocol"
+....
 # Class `StartProt`
 ## Description
 The StartProt class is responsible for initializing a serial protocol.
@@ -3787,12 +5060,12 @@ The StartProt class is responsible for initializing a serial protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.StartProt", svg]
 ....
-class StartProt
+class "StartProt"
 {
-compare(protocol: SerielProtocol):"boolean"
+compare(protocol: SerielProtocol):boolean
 }
-class ProtocolBase
-ProtocolBase ^-- StartProt
+class "ProtocolBase"
+"ProtocolBase" ^-- "StartProt"
 ....
 ## Methods
 #### Method: compare
@@ -3807,304 +5080,30 @@ boolean compare(SerielProtocol protocol)
 |Return|boolean|
 |protocol|SerielProtocol|
 |===
-# Interface `FroelingSerielProtocol`
-## Description
-Interface for Froeling Seriel Protocol.
-/
-## Super interfaces
-[plantuml, "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingSerielProtocol", svg]
+## Uses
+[plantuml, "name77", svg]
 ....
-interface FroelingSerielProtocol
-{
-getCommand():"List"
-getParameters():"List"
-similar(other: ProtocolBase):"boolean"
-doActionAfterCreation():"void"
-}
-interface SerielProtocol
-SerielProtocol ^-- FroelingSerielProtocol
+class StartProt
+class "ProtocolBase"
+"StartProt" --> "ProtocolBase"
+class "java.util.List"
+"StartProt" --> "java.util.List"
+class "Integer"
+"StartProt" --> "Integer"
+interface "SerielProtocol"
+"StartProt" --> "SerielProtocol"
 ....
-## Methods
-#### Method: getCommand
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-List<Integer> getCommand();
-----
-|Description 2+|Returns the command as a list of integers.
-|Return|List|
-|===
-#### Method: getParameters
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-List<Integer> getParameters();
-----
-|Description 2+|Returns the parameters as a list of integers.
-|Return|List|
-|===
-#### Method: similar
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-boolean similar(ProtocolBase other);
-----
-|Description 2+|Checks if this protocol is similar to another protocol.
-|Return|boolean|
-|other|ProtocolBase|
-|===
-#### Method: doActionAfterCreation
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void doActionAfterCreation();
-----
-|Description 2+|Activity performed after creation.
-/
-|Return|void|
-|===
-PackageWriter# Class `Froeling`
-## Description
-This class represents a Froeling device.
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.froeling.Froeling", svg]
-....
-class Froeling
-{
-addMessage(message: String):"void"
-addProcessType(type: String):"void"
-addProcessState(state: String):"void"
-getMessage(i: int):"String"
-}
-class BaseDevice
-BaseDevice ^-- Froeling
-interface FroehlingPopulation
-FroehlingPopulation <|.. Froeling
-....
-## Methods
-#### Method: addMessage
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void addMessage(String message) 
-----
-|Description 2+|Adds a message to the device's list of messages.
-|Return|void|
-|message|String|
-|===
-#### Method: addProcessType
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void addProcessType(String type) 
-----
-|Description 2+|Adds a process type to the device's list of process types.
-|Return|void|
-|type|String|
-|===
-#### Method: addProcessState
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void addProcessState(String state) 
-----
-|Description 2+|Adds a process state to the device's list of process states.
-|Return|void|
-|state|String|
-|===
-#### Method: getMessage
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-String getMessage(int i) 
-----
-|Description 2+|Retrieves a message from the device's list of messages at the given index.
-|Return|String|
-|i|int|
-|===
-# Class `FroelingFrame`
-## Description
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroelingFrame", svg]
-....
-class FroelingFrame
-{
-calcCheckSum(parameters: List):"List"
-updateCheckSum():"void"
-updateNrParameters():"void"
-maintain():"void"
-}
-....
-## Methods
-#### Method: calcCheckSum
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-List<Integer> calcCheckSum(List<Integer> parameters) 
-----
-|Description 2+|Calculates the checksum for a given list of parameters.
-|Return|List|
-|parameters|List|
-|===
-#### Method: updateCheckSum
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void updateCheckSum() 
-----
-|Description 2+|Updates the checksum by recalculating it based on the current command and parameters.
-/
-|Return|void|
-|===
-#### Method: updateNrParameters
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void updateNrParameters() 
-----
-|Description 2+|Updates the number of parameters.
-/
-|Return|void|
-|===
-#### Method: maintain
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void maintain() 
-----
-|Description 2+|Maintains the frame by updating the number of parameters and recalculating the checksum.
-/
-|Return|void|
-|===
-# Class `FroelingFrameException`
-## Description
-Exception class for Froeling Frame-related issues.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroelingFrameException", svg]
-....
-class FroelingFrameException
-{
-}
-class RuntimeException
-RuntimeException ^-- FroelingFrameException
-....
-## Methods
-# Class `ReceiveFroelingFrame`
-## Description
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.froeling.ReceiveFroelingFrame", svg]
-....
-class ReceiveFroelingFrame
-{
-call():"Void"
-}
-class FroelingFrame
-FroelingFrame ^-- ReceiveFroelingFrame
-interface Callable<Void>
-Callable<Void> <|.. ReceiveFroelingFrame
-....
-## Methods
-#### Method: call
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-Void call() throws Exception 
-----
-|Description 2+|
-|Return|Void|
-|===
-# Class `SendFroelingFrame`
-## Description
-SendFroelingFrame class is responsible for sending frames to a Froeling device.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.froeling.SendFroelingFrame", svg]
-....
-class SendFroelingFrame
-{
-setProtocolIdentifier(identifier: int):"void"
-setData(data: int):"void"
-getFrameValues():"List"
-}
-class FroelingFrame
-FroelingFrame ^-- SendFroelingFrame
-interface SendFrame
-SendFrame <|.. SendFroelingFrame
-....
-## Methods
-#### Method: setProtocolIdentifier
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void setProtocolIdentifier(int[] identifier)    
-----
-|Description 2+|Setter method for setting the protocol identifier. Adds the identifier values to the command list and updates the checksum.
-|Return|void|
-|identifier|int|
-|===
-#### Method: setData
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void setData(int[] data)    
-----
-|Description 2+|Setter method for setting the data values. Adds the data values to the parameters list and updates the number of parameters and checksum.
-|Return|void|
-|data|int|
-|===
-#### Method: getFrameValues
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-List<Integer> getFrameValues()    
-----
-|Description 2+|Getter method for getting the frame values. Returns a list of integers containing the command, number of parameters, and checksum values.
-|Return|List|
-|===
-# Interface `FroehlingPopulation`
+PackageWriter# Interface `FroehlingPopulation`
 ## Description
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroehlingPopulation", svg]
 ....
-interface FroehlingPopulation
+interface "FroehlingPopulation"
 {
-addMessage(message: String):"void"
-addProcessType(type: String):"void"
-addProcessState(state: String):"void"
-getMessage(i: int):"String"
+addMessage(message: String):void
+addProcessType(type: String):void
+addProcessState(state: String):void
+getMessage(i: int):String
 }
 ....
 ## Methods
@@ -4158,14 +5157,326 @@ String getMessage(int i);
 |Return|String|
 |i|int|
 |===
+# Class `Froeling`
+## Description
+This class represents a Froeling device.
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.Froeling", svg]
+....
+class "Froeling"
+{
+addMessage(message: String):void
+addProcessType(type: String):void
+addProcessState(state: String):void
+getMessage(i: int):String
+}
+class "BaseDevice"
+"BaseDevice" ^-- "Froeling"
+interface "FroehlingPopulation"
+"FroehlingPopulation" <|.. "Froeling"
+....
+## Methods
+#### Method: addMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addMessage(String message) 
+----
+|Description 2+|Adds a message to the device's list of messages.
+|Return|void|
+|message|String|
+|===
+#### Method: addProcessType
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addProcessType(String type) 
+----
+|Description 2+|Adds a process type to the device's list of process types.
+|Return|void|
+|type|String|
+|===
+#### Method: addProcessState
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void addProcessState(String state) 
+----
+|Description 2+|Adds a process state to the device's list of process states.
+|Return|void|
+|state|String|
+|===
+#### Method: getMessage
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getMessage(int i) 
+----
+|Description 2+|Retrieves a message from the device's list of messages at the given index.
+|Return|String|
+|i|int|
+|===
+## Uses
+[plantuml, "name78", svg]
+....
+class Froeling
+class "java.util.List"
+"Froeling" --> "java.util.List"
+interface "ProtocolCatalogue"
+"Froeling" --> "ProtocolCatalogue"
+class "Void"
+"Froeling" --> "Void"
+class "String"
+"Froeling" --> "String"
+class "java.util.Deque"
+"Froeling" --> "java.util.Deque"
+class "BaseDevice"
+"Froeling" --> "BaseDevice"
+class "Integer"
+"Froeling" --> "Integer"
+class "FroehlingPopulation"
+"Froeling" --> "FroehlingPopulation"
+class "java.util.concurrent.Callable"
+"Froeling" --> "java.util.concurrent.Callable"
+interface "SerialPortReceiveBuffer"
+"Froeling" --> "SerialPortReceiveBuffer"
+....
+# Class `FroelingFrame`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroelingFrame", svg]
+....
+class "FroelingFrame"
+{
+calcCheckSum(parameters: List):List
+updateCheckSum():void
+updateNrParameters():void
+maintain():void
+}
+....
+## Methods
+#### Method: calcCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> calcCheckSum(List<Integer> parameters) 
+----
+|Description 2+|Calculates the checksum for a given list of parameters.
+|Return|List|
+|parameters|List|
+|===
+#### Method: updateCheckSum
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void updateCheckSum() 
+----
+|Description 2+|Updates the checksum by recalculating it based on the current command and parameters.
+/
+|Return|void|
+|===
+#### Method: updateNrParameters
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void updateNrParameters() 
+----
+|Description 2+|Updates the number of parameters.
+/
+|Return|void|
+|===
+#### Method: maintain
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void maintain() 
+----
+|Description 2+|Maintains the frame by updating the number of parameters and recalculating the checksum.
+/
+|Return|void|
+|===
+## Uses
+[plantuml, "name79", svg]
+....
+class FroelingFrame
+class "java.util.List"
+"FroelingFrame" --> "java.util.List"
+class "Integer"
+"FroelingFrame" --> "Integer"
+....
+# Class `FroelingFrameException`
+## Description
+Exception class for Froeling Frame-related issues.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.FroelingFrameException", svg]
+....
+class "FroelingFrameException"
+{
+}
+class "RuntimeException"
+"RuntimeException" ^-- "FroelingFrameException"
+....
+## Methods
+## Uses
+[plantuml, "name80", svg]
+....
+class FroelingFrameException
+class "RuntimeException"
+"FroelingFrameException" --> "RuntimeException"
+class "Throwable"
+"FroelingFrameException" --> "Throwable"
+class "String"
+"FroelingFrameException" --> "String"
+....
+# Class `ReceiveFroelingFrame`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.ReceiveFroelingFrame", svg]
+....
+class "ReceiveFroelingFrame"
+{
+call():Void
+}
+class "FroelingFrame"
+"FroelingFrame" ^-- "ReceiveFroelingFrame"
+interface "Callable<Void>"
+"Callable<Void>" <|.. "ReceiveFroelingFrame"
+....
+## Methods
+#### Method: call
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Void call() throws Exception 
+----
+|Description 2+|
+|Return|Void|
+|===
+## Uses
+[plantuml, "name81", svg]
+....
+class ReceiveFroelingFrame
+class "SerielProtocol"
+"ReceiveFroelingFrame" --> "SerielProtocol"
+class "java.util.List"
+"ReceiveFroelingFrame" --> "java.util.List"
+interface "ProtocolCatalogue"
+"ReceiveFroelingFrame" --> "ProtocolCatalogue"
+class "Void"
+"ReceiveFroelingFrame" --> "Void"
+class "java.util.Deque"
+"ReceiveFroelingFrame" --> "java.util.Deque"
+class "Factory"
+"ReceiveFroelingFrame" --> "Factory"
+class "FroelingFrame"
+"ReceiveFroelingFrame" --> "FroelingFrame"
+interface "FroelingSerielProtocol"
+"ReceiveFroelingFrame" --> "FroelingSerielProtocol"
+class "Integer"
+"ReceiveFroelingFrame" --> "Integer"
+class "java.util.concurrent.Callable"
+"ReceiveFroelingFrame" --> "java.util.concurrent.Callable"
+class "java.util.Set"
+"ReceiveFroelingFrame" --> "java.util.Set"
+interface "SerialPortReceiveBuffer"
+"ReceiveFroelingFrame" --> "SerialPortReceiveBuffer"
+....
+# Class `SendFroelingFrame`
+## Description
+SendFroelingFrame class is responsible for sending frames to a Froeling device.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.froeling.SendFroelingFrame", svg]
+....
+class "SendFroelingFrame"
+{
+setProtocolIdentifier(identifier: int):void
+setData(data: int):void
+getFrameValues():List
+}
+class "FroelingFrame"
+"FroelingFrame" ^-- "SendFroelingFrame"
+interface "SendFrame"
+"SendFrame" <|.. "SendFroelingFrame"
+....
+## Methods
+#### Method: setProtocolIdentifier
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setProtocolIdentifier(int[] identifier)    
+----
+|Description 2+|Setter method for setting the protocol identifier. Adds the identifier values to the command list and updates the checksum.
+|Return|void|
+|identifier|int|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setData(int[] data)    
+----
+|Description 2+|Setter method for setting the data values. Adds the data values to the parameters list and updates the number of parameters and checksum.
+|Return|void|
+|data|int|
+|===
+#### Method: getFrameValues
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+List<Integer> getFrameValues()    
+----
+|Description 2+|Getter method for getting the frame values. Returns a list of integers containing the command, number of parameters, and checksum values.
+|Return|List|
+|===
+## Uses
+[plantuml, "name82", svg]
+....
+class SendFroelingFrame
+class "java.util.List"
+"SendFroelingFrame" --> "java.util.List"
+class "FroelingFrame"
+"SendFroelingFrame" --> "FroelingFrame"
+class "Integer"
+"SendFroelingFrame" --> "Integer"
+interface "SendFrame"
+"SendFroelingFrame" --> "SendFrame"
+class "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingSerialProtocol"
+"SendFroelingFrame" --> "de.skschmid.java.homeautomatic.device.froeling.protocol.FroelingSerialProtocol"
+....
 PackageWriter# Class `Client`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.client.Client", svg]
 ....
-class Client
+class "Client"
 {
-main(args: String):"void"
+main(args: String):void
 }
 ....
 ## Methods
@@ -4181,6 +5492,19 @@ void main(String[] args)
 |Return|void|
 |args|String|
 |===
+## Uses
+[plantuml, "name83", svg]
+....
+class Client
+class "java.io.BufferedReader"
+"Client" --> "java.io.BufferedReader"
+class "java.io.PrintStream"
+"Client" --> "java.io.PrintStream"
+class "java.net.Socket"
+"Client" --> "java.net.Socket"
+class "String"
+"Client" --> "String"
+....
 # Class `ClientException`
 ## Description
 ClientException class represents custom exceptions for the Vallox client.
@@ -4188,13 +5512,24 @@ ClientException class represents custom exceptions for the Vallox client.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.client.ClientException", svg]
 ....
-class ClientException
+class "ClientException"
 {
 }
-class RuntimeException
-RuntimeException ^-- ClientException
+class "RuntimeException"
+"RuntimeException" ^-- "ClientException"
 ....
 ## Methods
+## Uses
+[plantuml, "name84", svg]
+....
+class ClientException
+class "RuntimeException"
+"ClientException" --> "RuntimeException"
+class "Throwable"
+"ClientException" --> "Throwable"
+class "String"
+"ClientException" --> "String"
+....
 PackageWriter# Class `RequestAndGet`
 ## Description
 This class extends the SequenceImpl and implements ManagedReceiveDeviceSequence.
@@ -4203,14 +5538,14 @@ It is used to request a frame from a device, wait for the data, and get the seri
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.sequence.RequestAndGet", svg]
 ....
-class RequestAndGet
+class "RequestAndGet"
 {
-getProtocol(device: Device):"SerielProtocol"
+getProtocol(device: Device):SerielProtocol
 }
-class SequenceImpl
-SequenceImpl ^-- RequestAndGet
-interface ManagedReceiveDeviceSequence
-ManagedReceiveDeviceSequence <|.. RequestAndGet
+class "SequenceImpl"
+"SequenceImpl" ^-- "RequestAndGet"
+interface "ManagedReceiveDeviceSequence"
+"ManagedReceiveDeviceSequence" <|.. "RequestAndGet"
 ....
 ## Methods
 #### Method: getProtocol
@@ -4225,6 +5560,27 @@ SerielProtocol getProtocol(Device device)
 |Return|SerielProtocol|
 |device|Device|
 |===
+## Uses
+[plantuml, "name85", svg]
+....
+class RequestAndGet
+interface "SerielProtocol"
+"RequestAndGet" --> "SerielProtocol"
+class "String"
+"RequestAndGet" --> "String"
+interface "Device"
+"RequestAndGet" --> "Device"
+interface "ManagedDevice"
+"RequestAndGet" --> "ManagedDevice"
+class "SequenceImpl"
+"RequestAndGet" --> "SequenceImpl"
+class "Integer"
+"RequestAndGet" --> "Integer"
+interface "SendFrame"
+"RequestAndGet" --> "SendFrame"
+interface "ManagedReceiveDeviceSequence"
+"RequestAndGet" --> "ManagedReceiveDeviceSequence"
+....
 # Class `TransmitAndGet`
 ## Description
 This class represents a sequence that transmits a given frame and waits for the response.
@@ -4232,14 +5588,14 @@ This class represents a sequence that transmits a given frame and waits for the 
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.sequence.TransmitAndGet", svg]
 ....
-class TransmitAndGet
+class "TransmitAndGet"
 {
-setData(device: Deviceparameter: String):"String"
+setData(device: Deviceparameter: String):String
 }
-class SequenceImpl
-SequenceImpl ^-- TransmitAndGet
-interface ManagedTransmitDeviceSequence
-ManagedTransmitDeviceSequence <|.. TransmitAndGet
+class "SequenceImpl"
+"SequenceImpl" ^-- "TransmitAndGet"
+interface "ManagedTransmitDeviceSequence"
+"ManagedTransmitDeviceSequence" <|.. "TransmitAndGet"
 ....
 ## Methods
 #### Method: setData
@@ -4255,21 +5611,42 @@ String setData(Device device, String parameter)
 |device|Device|
 |parameter|String|
 |===
+## Uses
+[plantuml, "name86", svg]
+....
+class TransmitAndGet
+interface "SerielProtocol"
+"TransmitAndGet" --> "SerielProtocol"
+class "String"
+"TransmitAndGet" --> "String"
+class "ManagedTransmitDeviceSequence"
+"TransmitAndGet" --> "ManagedTransmitDeviceSequence"
+interface "ManagedDevice"
+"TransmitAndGet" --> "ManagedDevice"
+class "SequenceImpl"
+"TransmitAndGet" --> "SequenceImpl"
+interface "Device"
+"TransmitAndGet" --> "Device"
+class "Class"
+"TransmitAndGet" --> "Class"
+interface "SendFrame"
+"TransmitAndGet" --> "SendFrame"
+....
 PackageWriter# Class `Co2AdjustState`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.Co2AdjustState", svg]
 ....
-class Co2AdjustState
+class "Co2AdjustState"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- Co2AdjustState
+class "ProtocolBase"
+"ProtocolBase" ^-- "Co2AdjustState"
 ....
 ## Methods
 #### Method: calc
@@ -4329,6 +5706,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name87", svg]
+....
+class Co2AdjustState
+class "java.util.List"
+"Co2AdjustState" --> "java.util.List"
+class "String"
+"Co2AdjustState" --> "String"
+class "StringBuffer"
+"Co2AdjustState" --> "StringBuffer"
+class "Integer"
+"Co2AdjustState" --> "Integer"
+class "ProtocolBase"
+"Co2AdjustState" --> "ProtocolBase"
+....
 # Class `ExhaustTemp`
 ## Description
 Class that extends Temperator and handles exhaust temperature data.
@@ -4336,13 +5728,13 @@ Class that extends Temperator and handles exhaust temperature data.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ExhaustTemp", svg]
 ....
-class ExhaustTemp
+class "ExhaustTemp"
 {
-getMessage():"String"
-getIdentifier():"int"
+getMessage():String
+getIdentifier():int
 }
-class Temperator
-Temperator ^-- ExhaustTemp
+class "Temperator"
+"Temperator" ^-- "ExhaustTemp"
 ....
 ## Methods
 #### Method: getMessage
@@ -4367,21 +5759,34 @@ int getIdentifier()
 |Description 2+|Returns an identifier for this device. This is a constant value of 0x33.
 |Return|int|
 |===
+## Uses
+[plantuml, "name88", svg]
+....
+class ExhaustTemp
+class "java.util.List"
+"ExhaustTemp" --> "java.util.List"
+class "Temperator"
+"ExhaustTemp" --> "Temperator"
+class "String"
+"ExhaustTemp" --> "String"
+class "Integer"
+"ExhaustTemp" --> "Integer"
+....
 # Class `FanSpeed`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.FanSpeed", svg]
 ....
-class FanSpeed
+class "FanSpeed"
 {
-init():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+init():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- FanSpeed
+class "ProtocolBase"
+"ProtocolBase" ^-- "FanSpeed"
 ....
 ## Methods
 #### Method: init
@@ -4440,21 +5845,38 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name89", svg]
+....
+class FanSpeed
+class "java.util.List"
+"FanSpeed" --> "java.util.List"
+class "java.util.Map.Entry"
+"FanSpeed" --> "java.util.Map.Entry"
+class "String"
+"FanSpeed" --> "String"
+class "java.util.Map"
+"FanSpeed" --> "java.util.Map"
+class "Integer"
+"FanSpeed" --> "Integer"
+class "ProtocolBase"
+"FanSpeed" --> "ProtocolBase"
+....
 # Class `FaultIndicator`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.FaultIndicator", svg]
 ....
-class FaultIndicator
+class "FaultIndicator"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- FaultIndicator
+class "ProtocolBase"
+"ProtocolBase" ^-- "FaultIndicator"
 ....
 ## Methods
 #### Method: calc
@@ -4513,6 +5935,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name90", svg]
+....
+class FaultIndicator
+class "java.util.List"
+"FaultIndicator" --> "java.util.List"
+class "String"
+"FaultIndicator" --> "String"
+class "StringBuffer"
+"FaultIndicator" --> "StringBuffer"
+class "Integer"
+"FaultIndicator" --> "Integer"
+class "ProtocolBase"
+"FaultIndicator" --> "ProtocolBase"
+....
 # Class `FilterguardIndicator`
 ## Description
 This class represents a filter guard indicator protocol.
@@ -4520,16 +5957,16 @@ This class represents a filter guard indicator protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.FilterguardIndicator", svg]
 ....
-class FilterguardIndicator
+class "FilterguardIndicator"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- FilterguardIndicator
+class "ProtocolBase"
+"ProtocolBase" ^-- "FilterguardIndicator"
 ....
 ## Methods
 #### Method: calc
@@ -4589,21 +6026,36 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name91", svg]
+....
+class FilterguardIndicator
+class "java.util.List"
+"FilterguardIndicator" --> "java.util.List"
+class "String"
+"FilterguardIndicator" --> "String"
+class "StringBuffer"
+"FilterguardIndicator" --> "StringBuffer"
+class "Integer"
+"FilterguardIndicator" --> "Integer"
+class "ProtocolBase"
+"FilterguardIndicator" --> "ProtocolBase"
+....
 # Class `HeatingIndicator`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.HeatingIndicator", svg]
 ....
-class HeatingIndicator
+class "HeatingIndicator"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- HeatingIndicator
+class "ProtocolBase"
+"ProtocolBase" ^-- "HeatingIndicator"
 ....
 ## Methods
 #### Method: calc
@@ -4662,21 +6114,36 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name92", svg]
+....
+class HeatingIndicator
+class "java.util.List"
+"HeatingIndicator" --> "java.util.List"
+class "String"
+"HeatingIndicator" --> "String"
+class "StringBuffer"
+"HeatingIndicator" --> "StringBuffer"
+class "Integer"
+"HeatingIndicator" --> "Integer"
+class "ProtocolBase"
+"HeatingIndicator" --> "ProtocolBase"
+....
 # Class `HeatingState`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.HeatingState", svg]
 ....
-class HeatingState
+class "HeatingState"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- HeatingState
+class "ProtocolBase"
+"ProtocolBase" ^-- "HeatingState"
 ....
 ## Methods
 #### Method: calc
@@ -4736,18 +6203,33 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name93", svg]
+....
+class HeatingState
+class "java.util.List"
+"HeatingState" --> "java.util.List"
+class "String"
+"HeatingState" --> "String"
+class "StringBuffer"
+"HeatingState" --> "StringBuffer"
+class "Integer"
+"HeatingState" --> "Integer"
+class "ProtocolBase"
+"HeatingState" --> "ProtocolBase"
+....
 # Class `IncomingTemp`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.IncomingTemp", svg]
 ....
-class IncomingTemp
+class "IncomingTemp"
 {
-getMessage():"String"
-getIdentifier():"int"
+getMessage():String
+getIdentifier():int
 }
-class Temperator
-Temperator ^-- IncomingTemp
+class "Temperator"
+"Temperator" ^-- "IncomingTemp"
 ....
 ## Methods
 #### Method: getMessage
@@ -4772,18 +6254,31 @@ int getIdentifier()
 |Description 2+|
 |Return|int|
 |===
+## Uses
+[plantuml, "name94", svg]
+....
+class IncomingTemp
+class "java.util.List"
+"IncomingTemp" --> "java.util.List"
+class "Temperator"
+"IncomingTemp" --> "Temperator"
+class "String"
+"IncomingTemp" --> "String"
+class "Integer"
+"IncomingTemp" --> "Integer"
+....
 # Class `InsideTemp`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.InsideTemp", svg]
 ....
-class InsideTemp
+class "InsideTemp"
 {
-getMessage():"String"
-getIdentifier():"int"
+getMessage():String
+getIdentifier():int
 }
-class Temperator
-Temperator ^-- InsideTemp
+class "Temperator"
+"Temperator" ^-- "InsideTemp"
 ....
 ## Methods
 #### Method: getMessage
@@ -4808,6 +6303,19 @@ int getIdentifier()
 |Description 2+|
 |Return|int|
 |===
+## Uses
+[plantuml, "name95", svg]
+....
+class InsideTemp
+class "java.util.List"
+"InsideTemp" --> "java.util.List"
+class "Temperator"
+"InsideTemp" --> "Temperator"
+class "String"
+"InsideTemp" --> "String"
+class "Integer"
+"InsideTemp" --> "Integer"
+....
 # Class `OutSideTemp`
 ## Description
 Represents an outside temperature sensor.
@@ -4815,13 +6323,13 @@ Represents an outside temperature sensor.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.OutSideTemp", svg]
 ....
-class OutSideTemp
+class "OutSideTemp"
 {
-getMessage():"String"
-getIdentifier():"int"
+getMessage():String
+getIdentifier():int
 }
-class Temperator
-Temperator ^-- OutSideTemp
+class "Temperator"
+"Temperator" ^-- "OutSideTemp"
 ....
 ## Methods
 #### Method: getMessage
@@ -4846,21 +6354,34 @@ int getIdentifier()
 |Description 2+|
 |Return|int|
 |===
+## Uses
+[plantuml, "name96", svg]
+....
+class OutSideTemp
+class "java.util.List"
+"OutSideTemp" --> "java.util.List"
+class "Temperator"
+"OutSideTemp" --> "Temperator"
+class "String"
+"OutSideTemp" --> "String"
+class "Integer"
+"OutSideTemp" --> "Integer"
+....
 # Class `PowerState`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.PowerState", svg]
 ....
-class PowerState
+class "PowerState"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- PowerState
+class "ProtocolBase"
+"ProtocolBase" ^-- "PowerState"
 ....
 ## Methods
 #### Method: calc
@@ -4920,6 +6441,21 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name97", svg]
+....
+class PowerState
+class "java.util.List"
+"PowerState" --> "java.util.List"
+class "String"
+"PowerState" --> "String"
+class "StringBuffer"
+"PowerState" --> "StringBuffer"
+class "Integer"
+"PowerState" --> "Integer"
+class "ProtocolBase"
+"PowerState" --> "ProtocolBase"
+....
 # Class `ProtocolBase`
 ## Description
 Abstract base class for home automatic devices' protocols.
@@ -4927,14 +6463,14 @@ Abstract base class for home automatic devices' protocols.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ProtocolBase", svg]
 ....
-class ProtocolBase
+class "ProtocolBase"
 {
-getRawData():"int"
-compare(protocol: SerielProtocol):"boolean"
-getTimeStamp():"long"
+getRawData():int
+compare(protocol: SerielProtocol):boolean
+getTimeStamp():long
 }
-interface SerielProtocol
-SerielProtocol <|.. ProtocolBase
+interface "SerielProtocol"
+"SerielProtocol" <|.. "ProtocolBase"
 ....
 ## Methods
 #### Method: getRawData
@@ -4971,21 +6507,28 @@ long getTimeStamp()
 |Description 2+|Gets the timestamp of when this protocol was created.
 |Return|long|
 |===
+## Uses
+[plantuml, "name98", svg]
+....
+class ProtocolBase
+interface "SerielProtocol"
+"ProtocolBase" --> "SerielProtocol"
+....
 # Class `RhAdjustState`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.RhAdjustState", svg]
 ....
-class RhAdjustState
+class "RhAdjustState"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- RhAdjustState
+class "ProtocolBase"
+"ProtocolBase" ^-- "RhAdjustState"
 ....
 ## Methods
 #### Method: calc
@@ -5045,21 +6588,36 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name99", svg]
+....
+class RhAdjustState
+class "java.util.List"
+"RhAdjustState" --> "java.util.List"
+class "String"
+"RhAdjustState" --> "String"
+class "StringBuffer"
+"RhAdjustState" --> "StringBuffer"
+class "Integer"
+"RhAdjustState" --> "Integer"
+class "ProtocolBase"
+"RhAdjustState" --> "ProtocolBase"
+....
 # Class `ServicReminder`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ServicReminder", svg]
 ....
-class ServicReminder
+class "ServicReminder"
 {
-calc():"void"
-getMessage():"String"
-getIdentifier():"int"
-getData():"String"
-setData(setValue: String):"void"
+calc():void
+getMessage():String
+getIdentifier():int
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- ServicReminder
+class "ProtocolBase"
+"ProtocolBase" ^-- "ServicReminder"
 ....
 ## Methods
 #### Method: calc
@@ -5118,20 +6676,35 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name100", svg]
+....
+class ServicReminder
+class "java.util.List"
+"ServicReminder" --> "java.util.List"
+class "String"
+"ServicReminder" --> "String"
+class "StringBuffer"
+"ServicReminder" --> "StringBuffer"
+class "Integer"
+"ServicReminder" --> "Integer"
+class "ProtocolBase"
+"ServicReminder" --> "ProtocolBase"
+....
 # Class `Temperator`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.Temperator", svg]
 ....
-class Temperator
+class "Temperator"
 {
-rawValueToTemp(rawValue: int):"int"
-compare(protocol: SerielProtocol):"boolean"
-getData():"String"
-setData(setValue: String):"void"
+rawValueToTemp(rawValue: int):int
+compare(protocol: SerielProtocol):boolean
+getData():String
+setData(setValue: String):void
 }
-class ProtocolBase
-ProtocolBase ^-- Temperator
+class "ProtocolBase"
+"ProtocolBase" ^-- "Temperator"
 ....
 ## Methods
 #### Method: rawValueToTemp
@@ -5181,6 +6754,23 @@ void setData(String setValue)
 |Return|void|
 |setValue|String|
 |===
+## Uses
+[plantuml, "name101", svg]
+....
+class Temperator
+class "SerielProtocol"
+"Temperator" --> "SerielProtocol"
+class "java.util.Map.Entry"
+"Temperator" --> "java.util.Map.Entry"
+class "String"
+"Temperator" --> "String"
+class "java.util.Map"
+"Temperator" --> "java.util.Map"
+class "Integer"
+"Temperator" --> "Integer"
+class "ProtocolBase"
+"Temperator" --> "ProtocolBase"
+....
 # Class `ValloxProtocolCatalogue`
 ## Description
 Class responsible for managing and storing protocol classes for Vallox devices.
@@ -5188,22 +6778,55 @@ Class responsible for managing and storing protocol classes for Vallox devices.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.protocol.ValloxProtocolCatalogue", svg]
 ....
-class ValloxProtocolCatalogue
+class "ValloxProtocolCatalogue"
 {
 }
-class BaseProtocolCatalogue
-BaseProtocolCatalogue ^-- ValloxProtocolCatalogue
+class "BaseProtocolCatalogue"
+"BaseProtocolCatalogue" ^-- "ValloxProtocolCatalogue"
 ....
 ## Methods
+## Uses
+[plantuml, "name102", svg]
+....
+class ValloxProtocolCatalogue
+class "PowerState"
+"ValloxProtocolCatalogue" --> "PowerState"
+class "HeatingState"
+"ValloxProtocolCatalogue" --> "HeatingState"
+class "OutSideTemp"
+"ValloxProtocolCatalogue" --> "OutSideTemp"
+class "BaseProtocolCatalogue"
+"ValloxProtocolCatalogue" --> "BaseProtocolCatalogue"
+class "FaultIndicator"
+"ValloxProtocolCatalogue" --> "FaultIndicator"
+class "ExhaustTemp"
+"ValloxProtocolCatalogue" --> "ExhaustTemp"
+class "HeatingIndicator"
+"ValloxProtocolCatalogue" --> "HeatingIndicator"
+class "InsideTemp"
+"ValloxProtocolCatalogue" --> "InsideTemp"
+class "FilterguardIndicator"
+"ValloxProtocolCatalogue" --> "FilterguardIndicator"
+class "RhAdjustState"
+"ValloxProtocolCatalogue" --> "RhAdjustState"
+class "ServicReminder"
+"ValloxProtocolCatalogue" --> "ServicReminder"
+class "IncomingTemp"
+"ValloxProtocolCatalogue" --> "IncomingTemp"
+class "FanSpeed"
+"ValloxProtocolCatalogue" --> "FanSpeed"
+class "Co2AdjustState"
+"ValloxProtocolCatalogue" --> "Co2AdjustState"
+....
 PackageWriter# Class `ReflectionUtil`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.util.ReflectionUtil", svg]
 ....
-class ReflectionUtil
+class "ReflectionUtil"
 {
-getAllClasses():"List"
-getAnnotatedClasses(annotationClass: Class):"List"
+getAllClasses():List
+getAnnotatedClasses(annotationClass: Class):List
 }
 ....
 ## Methods
@@ -5230,6 +6853,23 @@ List<Class<?>> getAnnotatedClasses(Class<Annotation> annotationClass)
 |Return|List|
 |annotationClass|Class|
 |===
+## Uses
+[plantuml, "name103", svg]
+....
+class ReflectionUtil
+class "java.util.List"
+"ReflectionUtil" --> "java.util.List"
+class "ClassLoader"
+"ReflectionUtil" --> "ClassLoader"
+class "Class"
+"ReflectionUtil" --> "Class"
+class "java.util.Vector"
+"ReflectionUtil" --> "java.util.Vector"
+class "java.lang.reflect.Field"
+"ReflectionUtil" --> "java.lang.reflect.Field"
+class "java.lang.annotation.Annotation"
+"ReflectionUtil" --> "java.lang.annotation.Annotation"
+....
 # Class `ReflectionUtilException`
 ## Description
 This class represents a custom exception type used in the ReflectionUtil.
@@ -5237,29 +6877,40 @@ This class represents a custom exception type used in the ReflectionUtil.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.util.ReflectionUtilException", svg]
 ....
-class ReflectionUtilException
+class "ReflectionUtilException"
 {
 }
-class RuntimeException
-RuntimeException ^-- ReflectionUtilException
+class "RuntimeException"
+"RuntimeException" ^-- "ReflectionUtilException"
 ....
 ## Methods
+## Uses
+[plantuml, "name104", svg]
+....
+class ReflectionUtilException
+class "RuntimeException"
+"ReflectionUtilException" --> "RuntimeException"
+class "Throwable"
+"ReflectionUtilException" --> "Throwable"
+class "String"
+"ReflectionUtilException" --> "String"
+....
 PackageWriter# Class `ReceiveValloxFrame`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.ReceiveValloxFrame", svg]
 ....
-class ReceiveValloxFrame
+class "ReceiveValloxFrame"
 {
-goOn():"boolean"
-call():"Void"
-frameRecognized(validFrame: List):"void"
-checkCheckSum(frameElements: Deque):"List"
+goOn():boolean
+call():Void
+frameRecognized(validFrame: List):void
+checkCheckSum(frameElements: Deque):List
 }
-class ValloxFrame
-ValloxFrame ^-- ReceiveValloxFrame
-interface Callable<Void>
-Callable<Void> <|.. ReceiveValloxFrame
+class "ValloxFrame"
+"ValloxFrame" ^-- "ReceiveValloxFrame"
+interface "Callable<Void>"
+"Callable<Void>" <|.. "ReceiveValloxFrame"
 ....
 ## Methods
 #### Method: goOn
@@ -5308,6 +6959,35 @@ List<Integer> checkCheckSum(Deque<Integer> frameElements)
 |Return|List|
 |frameElements|Deque|
 |===
+## Uses
+[plantuml, "name105", svg]
+....
+class ReceiveValloxFrame
+interface "SerielProtocol"
+"ReceiveValloxFrame" --> "SerielProtocol"
+class "java.util.List"
+"ReceiveValloxFrame" --> "java.util.List"
+interface "ProtocolCatalogue"
+"ReceiveValloxFrame" --> "ProtocolCatalogue"
+class "Void"
+"ReceiveValloxFrame" --> "Void"
+class "java.util.Deque"
+"ReceiveValloxFrame" --> "java.util.Deque"
+class "Factory"
+"ReceiveValloxFrame" --> "Factory"
+class "Mode"
+"ReceiveValloxFrame" --> "Mode"
+class "Integer"
+"ReceiveValloxFrame" --> "Integer"
+class "java.util.concurrent.Callable"
+"ReceiveValloxFrame" --> "java.util.concurrent.Callable"
+class "java.util.Set"
+"ReceiveValloxFrame" --> "java.util.Set"
+class "ValloxFrame"
+"ReceiveValloxFrame" --> "ValloxFrame"
+interface "SerialPortReceiveBuffer"
+"ReceiveValloxFrame" --> "SerialPortReceiveBuffer"
+....
 # Class `SendValoxFrame`
 ## Description
 This class represents a send frame for the Valox device.
@@ -5315,16 +6995,16 @@ This class represents a send frame for the Valox device.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.SendValoxFrame", svg]
 ....
-class SendValoxFrame
+class "SendValoxFrame"
 {
-setProtocolIdentifier(identifier: int):"void"
-setData(data: int):"void"
-getFrameValues():"List"
+setProtocolIdentifier(identifier: int):void
+setData(data: int):void
+getFrameValues():List
 }
-class ValloxFrame
-ValloxFrame ^-- SendValoxFrame
-interface SendFrame
-SendFrame <|.. SendValoxFrame
+class "ValloxFrame"
+"ValloxFrame" ^-- "SendValoxFrame"
+interface "SendFrame"
+"SendFrame" <|.. "SendValoxFrame"
 ....
 ## Methods
 #### Method: setProtocolIdentifier
@@ -5362,6 +7042,21 @@ List<Integer> getFrameValues()
 |Description 2+|Returns a list of frame values, including domain, sender, receiver, and frame variable.
 |Return|List|
 |===
+## Uses
+[plantuml, "name106", svg]
+....
+class SendValoxFrame
+interface "SerielProtocol"
+"SendValoxFrame" --> "SerielProtocol"
+class "java.util.List"
+"SendValoxFrame" --> "java.util.List"
+class "Integer"
+"SendValoxFrame" --> "Integer"
+interface "SendFrame"
+"SendValoxFrame" --> "SendFrame"
+class "ValloxFrame"
+"SendValoxFrame" --> "ValloxFrame"
+....
 # Class `Vallox`
 ## Description
 This Java class represents a Vallox device in the Home Automatic system.
@@ -5369,13 +7064,34 @@ This Java class represents a Vallox device in the Home Automatic system.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.Vallox", svg]
 ....
-class Vallox
+class "Vallox"
 {
 }
-class BaseDevice
-BaseDevice ^-- Vallox
+class "BaseDevice"
+"BaseDevice" ^-- "Vallox"
 ....
 ## Methods
+## Uses
+[plantuml, "name107", svg]
+....
+class Vallox
+interface "ProtocolCatalogue"
+"Vallox" --> "ProtocolCatalogue"
+class "Void"
+"Vallox" --> "Void"
+class "String"
+"Vallox" --> "String"
+class "java.util.Deque"
+"Vallox" --> "java.util.Deque"
+class "BaseDevice"
+"Vallox" --> "BaseDevice"
+class "Integer"
+"Vallox" --> "Integer"
+class "java.util.concurrent.Callable"
+"Vallox" --> "java.util.concurrent.Callable"
+interface "SerialPortReceiveBuffer"
+"Vallox" --> "SerialPortReceiveBuffer"
+....
 # Class `ValloxFrame`
 ## Description
 This class represents a VALLOX frame, which is used in home automation.
@@ -5383,10 +7099,10 @@ This class represents a VALLOX frame, which is used in home automation.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.ValloxFrame", svg]
 ....
-class ValloxFrame
+class "ValloxFrame"
 {
-calcCheckSum(values: List):"int"
-updateCheckSum():"void"
+calcCheckSum(values: List):int
+updateCheckSum():void
 }
 ....
 ## Methods
@@ -5414,6 +7130,15 @@ void updateCheckSum()
 /
 |Return|void|
 |===
+## Uses
+[plantuml, "name108", svg]
+....
+class ValloxFrame
+class "java.util.List"
+"ValloxFrame" --> "java.util.List"
+class "Integer"
+"ValloxFrame" --> "Integer"
+....
 # Class `ValloxFrameException`
 ## Description
 The ValloxFrameException class represents an exception that occurs when interacting with a Vallox device.
@@ -5421,13 +7146,24 @@ The ValloxFrameException class represents an exception that occurs when interact
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.vallox.ValloxFrameException", svg]
 ....
-class ValloxFrameException
+class "ValloxFrameException"
 {
 }
-class RuntimeException
-RuntimeException ^-- ValloxFrameException
+class "RuntimeException"
+"RuntimeException" ^-- "ValloxFrameException"
 ....
 ## Methods
+## Uses
+[plantuml, "name109", svg]
+....
+class ValloxFrameException
+class "RuntimeException"
+"ValloxFrameException" --> "RuntimeException"
+class "Throwable"
+"ValloxFrameException" --> "Throwable"
+class "String"
+"ValloxFrameException" --> "String"
+....
 PackageWriter# Class `BaseDevice`
 ## Description
 Abstract base class for devices that use the home automatic protocol.
@@ -5435,28 +7171,28 @@ Abstract base class for devices that use the home automatic protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.device.BaseDevice", svg]
 ....
-class BaseDevice
+class "BaseDevice"
 {
-init():"void"
-getSerialPortSendBuffer():"SerialPortSendBuffer"
-getSerialPortReceiveBuffer():"SerialPortReceiveBuffer"
-getProtocolClazzes():"Set"
-getData(protClazz: Class):"SerielProtocol"
-getData(className: String):"SerielProtocol"
-send(sendProtocol: SendFrame):"void"
-getProtocolIdentifier(className: String):"Integer"
-getProtocolClazz(className: String):"Class"
-sendWaitGetData(sendProtocol: SendFrameprotClazzName: Stringdeadline: long):"SerielProtocol"
-sendWaitGetData(sendProtocol: SendFramedeadline: long):"SerielProtocol"
-getConsecutiveData(predecessor: SerielProtocoldeadline: long):"SerielProtocol"
-registerCallBack(callBack: ReceivedMessageCallBack):"void"
-deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
-received(detectedProtocol: SerielProtocol):"void"
+init():void
+getSerialPortSendBuffer():SerialPortSendBuffer
+getSerialPortReceiveBuffer():SerialPortReceiveBuffer
+getProtocolClazzes():Set
+getData(protClazz: Class):SerielProtocol
+getData(className: String):SerielProtocol
+send(sendProtocol: SendFrame):void
+getProtocolIdentifier(className: String):Integer
+getProtocolClazz(className: String):Class
+sendWaitGetData(sendProtocol: SendFrameprotClazzName: Stringdeadline: long):SerielProtocol
+sendWaitGetData(sendProtocol: SendFramedeadline: long):SerielProtocol
+getConsecutiveData(predecessor: SerielProtocoldeadline: long):SerielProtocol
+registerCallBack(callBack: ReceivedMessageCallBack):void
+deRegisterCallBack(callBack: ReceivedMessageCallBack):void
+received(detectedProtocol: SerielProtocol):void
 }
-interface Device
-Device <|.. BaseDevice
-interface ReceivedMessageCallBack
-ReceivedMessageCallBack <|.. BaseDevice
+interface "Device"
+"Device" <|.. "BaseDevice"
+interface "ReceivedMessageCallBack"
+"ReceivedMessageCallBack" <|.. "BaseDevice"
 ....
 ## Methods
 #### Method: init
@@ -5639,137 +7375,43 @@ void received(SerielProtocol detectedProtocol)
 |Return|void|
 |detectedProtocol|SerielProtocol|
 |===
-# Class `DeviceException`
-## Description
-Custom exception class for handling device-related errors.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.DeviceException", svg]
+## Uses
+[plantuml, "name110", svg]
 ....
-class DeviceException
-{
-}
-class RuntimeException
-RuntimeException ^-- DeviceException
+class BaseDevice
+interface "SerielProtocol"
+"BaseDevice" --> "SerielProtocol"
+interface "SerialPortSendBuffer"
+"BaseDevice" --> "SerialPortSendBuffer"
+interface "SerialPortReceiveBuffer"
+"BaseDevice" --> "SerialPortReceiveBuffer"
+interface "ProtocolCatalogue"
+"BaseDevice" --> "ProtocolCatalogue"
+class "String"
+"BaseDevice" --> "String"
+class "Device"
+"BaseDevice" --> "Device"
+class "Class"
+"BaseDevice" --> "Class"
+interface "ReceiveFrameFactory"
+"BaseDevice" --> "ReceiveFrameFactory"
+interface "SerialPortEventDispatcher"
+"BaseDevice" --> "SerialPortEventDispatcher"
+interface "SerialPortSend"
+"BaseDevice" --> "SerialPortSend"
+class "Integer"
+"BaseDevice" --> "Integer"
+interface "ReceivedMessageCallBack"
+"BaseDevice" --> "ReceivedMessageCallBack"
+interface "SendFrame"
+"BaseDevice" --> "SendFrame"
+class "java.util.Set"
+"BaseDevice" --> "java.util.Set"
+interface "SerialPortReceive"
+"BaseDevice" --> "SerialPortReceive"
+class "jssc.SerialPort"
+"BaseDevice" --> "jssc.SerialPort"
 ....
-## Methods
-# Class `DeviceStore`
-## Description
-This class serves as a central store for devices in a home automation system.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.DeviceStore", svg]
-....
-class DeviceStore
-{
-getInstance():"DeviceStore"
-register(device: Device):"void"
-get(device: Class):"Device"
-getMangedDevice(device: Class):"ManagedDevice"
-}
-....
-## Methods
-#### Method: getInstance
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-DeviceStore getInstance() 
-----
-|Description 2+|Returns the sole instance of this class.
-|Return|DeviceStore|
-|===
-#### Method: register
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void register(Device device) 
-----
-|Description 2+|Registers a device and its managed equivalent in the store.
-|Return|void|
-|device|Device|
-|===
-#### Method: get
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-Device get(Class<? extends Device> device) 
-----
-|Description 2+|Retrieves the managed device equivalent for a given device class.
-|Return|Device|
-|device|Class|
-|===
-#### Method: getMangedDevice
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-ManagedDevice getMangedDevice(Class<? extends Device> device) 
-----
-|Description 2+|Retrieves the managed device instance for a given device class.
-|Return|ManagedDevice|
-|device|Class|
-|===
-# Class `ManagedDeviceImp`
-## Description
-ManagedDeviceImp is an implementation of the ManagedDevice interface.
-It manages a Device instance and provides methods to set data and retrieve serial protocols.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.device.ManagedDeviceImp", svg]
-....
-class ManagedDeviceImp
-{
-getDevice():"Device"
-setData(managedDeviceSequence: ManagedTransmitDeviceSequenceparameter: String):"String"
-getProtocol(managedDeviceSequence: ManagedReceiveDeviceSequence):"SerielProtocol"
-}
-interface ManagedDevice
-ManagedDevice <|.. ManagedDeviceImp
-....
-## Methods
-#### Method: getDevice
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-Device getDevice() 
-----
-|Description 2+|Returns the managed Device instance.
-|Return|Device|
-|===
-#### Method: setData
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-String setData(ManagedTransmitDeviceSequence managedDeviceSequence, String parameter) 
-----
-|Description 2+|Sets data for the managed Device using a ManagedTransmitDeviceSequence and a parameter.
-|Return|String|
-|managedDeviceSequence|ManagedTransmitDeviceSequence|
-|parameter|String|
-|===
-#### Method: getProtocol
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-SerielProtocol getProtocol(ManagedReceiveDeviceSequence managedDeviceSequence) 
-----
-|Description 2+|Retrieves a SerielProtocol for the managed Device using a ManagedReceiveDeviceSequence.
-|Return|SerielProtocol|
-|managedDeviceSequence|ManagedReceiveDeviceSequence|
-|===
 # Interface `Device`
 ## Description
 Interface for devices that communicate via serial protocol.
@@ -5777,21 +7419,21 @@ Interface for devices that communicate via serial protocol.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.device.Device", svg]
 ....
-interface Device
+interface "Device"
 {
-getSerialPortSendBuffer():"SerialPortSendBuffer"
-getSerialPortReceiveBuffer():"SerialPortReceiveBuffer"
-getProtocolClazzes():"Set"
-getData(protClazz: Class):"SerielProtocol"
-getData(className: String):"SerielProtocol"
-getConsecutiveData(predecessor: SerielProtocoldeadline: long):"SerielProtocol"
-getProtocolIdentifier(className: String):"Integer"
-send(sendProtocol: SendFrame):"void"
-getProtocolClazz(className: String):"Class"
-sendWaitGetData(sendProtocol: SendFrameprotClazzName: Stringdeadline: long):"SerielProtocol"
-sendWaitGetData(sendProtocol: SendFramedeadline: long):"SerielProtocol"
-registerCallBack(callBack: ReceivedMessageCallBack):"void"
-deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
+getSerialPortSendBuffer():SerialPortSendBuffer
+getSerialPortReceiveBuffer():SerialPortReceiveBuffer
+getProtocolClazzes():Set
+getData(protClazz: Class):SerielProtocol
+getData(className: String):SerielProtocol
+getConsecutiveData(predecessor: SerielProtocoldeadline: long):SerielProtocol
+getProtocolIdentifier(className: String):Integer
+send(sendProtocol: SendFrame):void
+getProtocolClazz(className: String):Class
+sendWaitGetData(sendProtocol: SendFrameprotClazzName: Stringdeadline: long):SerielProtocol
+sendWaitGetData(sendProtocol: SendFramedeadline: long):SerielProtocol
+registerCallBack(callBack: ReceivedMessageCallBack):void
+deRegisterCallBack(callBack: ReceivedMessageCallBack):void
 }
 ....
 ## Methods
@@ -5952,6 +7594,109 @@ void deRegisterCallBack(ReceivedMessageCallBack callBack);
 |Return|void|
 |callBack|ReceivedMessageCallBack|
 |===
+# Class `DeviceException`
+## Description
+Custom exception class for handling device-related errors.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.DeviceException", svg]
+....
+class "DeviceException"
+{
+}
+class "RuntimeException"
+"RuntimeException" ^-- "DeviceException"
+....
+## Methods
+## Uses
+[plantuml, "name111", svg]
+....
+class DeviceException
+class "RuntimeException"
+"DeviceException" --> "RuntimeException"
+class "Throwable"
+"DeviceException" --> "Throwable"
+class "String"
+"DeviceException" --> "String"
+....
+# Class `DeviceStore`
+## Description
+This class serves as a central store for devices in a home automation system.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.DeviceStore", svg]
+....
+class "DeviceStore"
+{
+getInstance():DeviceStore
+register(device: Device):void
+get(device: Class):Device
+getMangedDevice(device: Class):ManagedDevice
+}
+....
+## Methods
+#### Method: getInstance
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+DeviceStore getInstance() 
+----
+|Description 2+|Returns the sole instance of this class.
+|Return|DeviceStore|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device) 
+----
+|Description 2+|Registers a device and its managed equivalent in the store.
+|Return|void|
+|device|Device|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Device get(Class<? extends Device> device) 
+----
+|Description 2+|Retrieves the managed device equivalent for a given device class.
+|Return|Device|
+|device|Class|
+|===
+#### Method: getMangedDevice
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+ManagedDevice getMangedDevice(Class<? extends Device> device) 
+----
+|Description 2+|Retrieves the managed device instance for a given device class.
+|Return|ManagedDevice|
+|device|Class|
+|===
+## Uses
+[plantuml, "name112", svg]
+....
+class DeviceStore
+class "java.util.Map"
+"DeviceStore" --> "java.util.Map"
+class "Class"
+"DeviceStore" --> "Class"
+class "ManagedDevice"
+"DeviceStore" --> "ManagedDevice"
+class "Device"
+"DeviceStore" --> "Device"
+class "DeviceStore"
+"DeviceStore" --> "DeviceStore"
+....
 # Interface `ManagedDevice`
 ## Description
 This interface represents a managed device in the home automatic system.
@@ -5959,11 +7704,11 @@ This interface represents a managed device in the home automatic system.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.device.ManagedDevice", svg]
 ....
-interface ManagedDevice
+interface "ManagedDevice"
 {
-getDevice():"Device"
-setData(managedDeviceSequence: ManagedTransmitDeviceSequenceparameter: String):"String"
-getProtocol(managedDeviceSequence: ManagedReceiveDeviceSequence):"SerielProtocol"
+getDevice():Device
+setData(managedDeviceSequence: ManagedTransmitDeviceSequenceparameter: String):String
+getProtocol(managedDeviceSequence: ManagedReceiveDeviceSequence):SerielProtocol
 }
 ....
 ## Methods
@@ -6003,6 +7748,79 @@ SerielProtocol getProtocol(ManagedReceiveDeviceSequence managedDeviceSequence);
 |Return|SerielProtocol|
 |managedDeviceSequence|ManagedReceiveDeviceSequence|
 |===
+# Class `ManagedDeviceImp`
+## Description
+ManagedDeviceImp is an implementation of the ManagedDevice interface.
+It manages a Device instance and provides methods to set data and retrieve serial protocols.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.device.ManagedDeviceImp", svg]
+....
+class "ManagedDeviceImp"
+{
+getDevice():Device
+setData(managedDeviceSequence: ManagedTransmitDeviceSequenceparameter: String):String
+getProtocol(managedDeviceSequence: ManagedReceiveDeviceSequence):SerielProtocol
+}
+interface "ManagedDevice"
+"ManagedDevice" <|.. "ManagedDeviceImp"
+....
+## Methods
+#### Method: getDevice
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Device getDevice() 
+----
+|Description 2+|Returns the managed Device instance.
+|Return|Device|
+|===
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(ManagedTransmitDeviceSequence managedDeviceSequence, String parameter) 
+----
+|Description 2+|Sets data for the managed Device using a ManagedTransmitDeviceSequence and a parameter.
+|Return|String|
+|managedDeviceSequence|ManagedTransmitDeviceSequence|
+|parameter|String|
+|===
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getProtocol(ManagedReceiveDeviceSequence managedDeviceSequence) 
+----
+|Description 2+|Retrieves a SerielProtocol for the managed Device using a ManagedReceiveDeviceSequence.
+|Return|SerielProtocol|
+|managedDeviceSequence|ManagedReceiveDeviceSequence|
+|===
+## Uses
+[plantuml, "name113", svg]
+....
+class ManagedDeviceImp
+interface "SerielProtocol"
+"ManagedDeviceImp" --> "SerielProtocol"
+class "String"
+"ManagedDeviceImp" --> "String"
+class "Object"
+"ManagedDeviceImp" --> "Object"
+class "Device"
+"ManagedDeviceImp" --> "Device"
+class "ManagedDevice"
+"ManagedDeviceImp" --> "ManagedDevice"
+class "ManagedTransmitDeviceSequence"
+"ManagedDeviceImp" --> "ManagedTransmitDeviceSequence"
+class "ManagedReceiveDeviceSequence"
+"ManagedDeviceImp" --> "ManagedReceiveDeviceSequence"
+....
 # Interface `ManagedReceiveDeviceSequence`
 ## Description
 This interface defines a managed receive device sequence.
@@ -6010,12 +7828,12 @@ This interface defines a managed receive device sequence.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.device.ManagedReceiveDeviceSequence", svg]
 ....
-interface ManagedReceiveDeviceSequence
+interface "ManagedReceiveDeviceSequence"
 {
-getProtocol(device: Device):"SerielProtocol"
+getProtocol(device: Device):SerielProtocol
 }
-interface ReceiveSequence
-ReceiveSequence ^-- ManagedReceiveDeviceSequence
+interface "ReceiveSequence"
+"ReceiveSequence" ^-- "ManagedReceiveDeviceSequence"
 ....
 ## Methods
 #### Method: getProtocol
@@ -6037,12 +7855,12 @@ ManagedTransmitDeviceSequence interface extends TransmitSequence and provides me
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.device.ManagedTransmitDeviceSequence", svg]
 ....
-interface ManagedTransmitDeviceSequence
+interface "ManagedTransmitDeviceSequence"
 {
-setData(device: Deviceparameter: String):"String"
+setData(device: Deviceparameter: String):String
 }
-interface TransmitSequence
-TransmitSequence ^-- ManagedTransmitDeviceSequence
+interface "TransmitSequence"
+"TransmitSequence" ^-- "ManagedTransmitDeviceSequence"
 ....
 ## Methods
 #### Method: setData
@@ -6065,9 +7883,9 @@ REST endpoint for DeltaSole devices.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.rest.DeltaSoleProtocol", svg]
 ....
-class DeltaSoleProtocol
+class "DeltaSoleProtocol"
 {
-getValue(className: String):"String"
+getValue(className: String):String
 }
 ....
 ## Methods
@@ -6083,19 +7901,32 @@ String getValue(@PathParam("className") String className)
 |Return|String|
 |className|String|
 |===
+## Uses
+[plantuml, "name114", svg]
+....
+class DeltaSoleProtocol
+interface "Device"
+"DeltaSoleProtocol" --> "Device"
+class "DeltaSole"
+"DeltaSoleProtocol" --> "DeltaSole"
+class "String"
+"DeltaSoleProtocol" --> "String"
+interface "SerielProtocol"
+"DeltaSoleProtocol" --> "SerielProtocol"
+....
 # Class `Jersey`
 ## Description
 Jersey server implementation.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.rest.Jersey", svg]
 ....
-class Jersey
+class "Jersey"
 {
-register(device: Device):"void"
-start():"void"
+register(device: Device):void
+start():void
 }
-interface Server
-Server <|.. Jersey
+interface "Server"
+"Server" <|.. "Jersey"
 ....
 ## Methods
 #### Method: register
@@ -6122,6 +7953,19 @@ void start()
 /
 |Return|void|
 |===
+## Uses
+[plantuml, "name115", svg]
+....
+class Jersey
+interface "Device"
+"Jersey" --> "Device"
+class "java.util.Set"
+"Jersey" --> "java.util.Set"
+interface "Server"
+"Jersey" --> "Server"
+class "com.sun.net.httpserver.HttpServer"
+"Jersey" --> "com.sun.net.httpserver.HttpServer"
+....
 # Class `JerseyException`
 ## Description
 Custom exception class for Jersey RESTful services.
@@ -6129,22 +7973,33 @@ Custom exception class for Jersey RESTful services.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.rest.JerseyException", svg]
 ....
-class JerseyException
+class "JerseyException"
 {
 }
-class RuntimeException
-RuntimeException ^-- JerseyException
+class "RuntimeException"
+"RuntimeException" ^-- "JerseyException"
 ....
 ## Methods
+## Uses
+[plantuml, "name116", svg]
+....
+class JerseyException
+class "RuntimeException"
+"JerseyException" --> "RuntimeException"
+class "Throwable"
+"JerseyException" --> "Throwable"
+class "String"
+"JerseyException" --> "String"
+....
 # Class `ValloxProtocol`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.rest.ValloxProtocol", svg]
 ....
-class ValloxProtocol
+class "ValloxProtocol"
 {
-getValue(className: String):"String"
-postMessage(className: Stringparameter: String):"Response"
+getValue(className: String):String
+postMessage(className: Stringparameter: String):Response
 }
 ....
 ## Methods
@@ -6173,6 +8028,27 @@ Response postMessage(@PathParam("className") String className, @PathParam("param
 |className|String|
 |parameter|String|
 |===
+## Uses
+[plantuml, "name117", svg]
+....
+class ValloxProtocol
+interface "SerielProtocol"
+"ValloxProtocol" --> "SerielProtocol"
+class "String"
+"ValloxProtocol" --> "String"
+interface "Device"
+"ValloxProtocol" --> "Device"
+interface "ManagedDevice"
+"ValloxProtocol" --> "ManagedDevice"
+class "javax.ws.rs.core.Response"
+"ValloxProtocol" --> "javax.ws.rs.core.Response"
+class "Vallox"
+"ValloxProtocol" --> "Vallox"
+interface "TransmitSequence"
+"ValloxProtocol" --> "TransmitSequence"
+interface "ReceiveSequence"
+"ValloxProtocol" --> "ReceiveSequence"
+....
 # Class `ValloxSummary`
 ## Description
 Handles REST requests for Vallox devices.
@@ -6180,9 +8056,9 @@ Handles REST requests for Vallox devices.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.rest.ValloxSummary", svg]
 ....
-class ValloxSummary
+class "ValloxSummary"
 {
-getValue():"String"
+getValue():String
 }
 ....
 ## Methods
@@ -6197,18 +8073,122 @@ String getValue()
 |Description 2+|Returns a plain text representation of the protocols supported by the Vallox device.
 |Return|String|
 |===
-PackageWriter# Class `NetProtocol2SerProtocolImpl`
+## Uses
+[plantuml, "name118", svg]
+....
+class ValloxSummary
+interface "SerielProtocol"
+"ValloxSummary" --> "SerielProtocol"
+class "String"
+"ValloxSummary" --> "String"
+interface "Device"
+"ValloxSummary" --> "Device"
+class "Class"
+"ValloxSummary" --> "Class"
+class "Vallox"
+"ValloxSummary" --> "Vallox"
+class "StringBuilder"
+"ValloxSummary" --> "StringBuilder"
+....
+PackageWriter# Interface `NetProtocol`
+## Description
+This interface defines a network protocol that handles TCP-based communication.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol", svg]
+....
+interface "NetProtocol"
+{
+getDirection():DIRECTION
+getCommand():String
+getSetValue():String
+}
+....
+## Methods
+#### Method: getDirection
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+DIRECTION getDirection();
+----
+|Description 2+|Retrieves the direction of the current network packet.
+|Return|DIRECTION|
+|===
+#### Method: getCommand
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getCommand();
+----
+|Description 2+|Gets the command associated with the current network packet.
+|Return|String|
+|===
+#### Method: getSetValue
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String getSetValue();
+----
+|Description 2+|Retrieves the set value associated with the current network packet.
+|Return|String|
+|===
+# Interface `NetProtocol2SerProtocol`
+## Description
+This interface defines the NetProtocol2SerProtocol, which is responsible for mapping
+network protocol identifiers to SerielProtocol classes and registering devices.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol2SerProtocol", svg]
+....
+interface "NetProtocol2SerProtocol"
+{
+getProtocolClass(identifier: String):Entry
+register(device: Device):void
+}
+....
+## Methods
+#### Method: getProtocolClass
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Entry<Class<? extends SerielProtocol>, Device> getProtocolClass(String identifier);
+----
+|Description 2+|Returns an entry in a map that maps a class implementing SerielProtocol to a Device.
+|Return|Entry|
+|identifier|String|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(Device device);
+----
+|Description 2+|Registers a device with this NetProtocol2SerProtocol.
+|Return|void|
+|device|Device|
+|===
+# Class `NetProtocol2SerProtocolImpl`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol2SerProtocolImpl", svg]
 ....
-class NetProtocol2SerProtocolImpl
+class "NetProtocol2SerProtocolImpl"
 {
-getProtocolClass(identifier: String):"Entry"
-register(device: Device):"void"
+getProtocolClass(identifier: String):Entry
+register(device: Device):void
 }
-interface NetProtocol2SerProtocol
-NetProtocol2SerProtocol <|.. NetProtocol2SerProtocolImpl
+interface "NetProtocol2SerProtocol"
+"NetProtocol2SerProtocol" <|.. "NetProtocol2SerProtocolImpl"
 ....
 ## Methods
 #### Method: getProtocolClass
@@ -6235,17 +8215,61 @@ void register(Device device)
 |Return|void|
 |device|Device|
 |===
+## Uses
+[plantuml, "name119", svg]
+....
+class NetProtocol2SerProtocolImpl
+interface "SerielProtocol"
+"NetProtocol2SerProtocolImpl" --> "SerielProtocol"
+class "java.util.Map.Entry"
+"NetProtocol2SerProtocolImpl" --> "java.util.Map.Entry"
+class "java.util.Map"
+"NetProtocol2SerProtocolImpl" --> "java.util.Map"
+class "String"
+"NetProtocol2SerProtocolImpl" --> "String"
+class "Class"
+"NetProtocol2SerProtocolImpl" --> "Class"
+interface "Device"
+"NetProtocol2SerProtocolImpl" --> "Device"
+class "NetProtocol2SerProtocol"
+"NetProtocol2SerProtocolImpl" --> "NetProtocol2SerProtocol"
+....
+# Interface `NetProtocolDecoder`
+## Description
+Defines an interface for decoding network protocols.
+/
+## Super interfaces
+[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolDecoder", svg]
+....
+interface "NetProtocolDecoder"
+{
+getProtocol(inString: String):NetProtocol
+}
+....
+## Methods
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+NetProtocol getProtocol(String inString);
+----
+|Description 2+|Decodes a given string into a specific protocol object.
+|Return|NetProtocol|
+|inString|String|
+|===
 # Class `NetProtocolDecoderImpl`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolDecoderImpl", svg]
 ....
-class NetProtocolDecoderImpl
+class "NetProtocolDecoderImpl"
 {
-getProtocol(inString: String):"NetProtocol"
+getProtocol(inString: String):NetProtocol
 }
-interface NetProtocolDecoder
-NetProtocolDecoder <|.. NetProtocolDecoderImpl
+interface "NetProtocolDecoder"
+"NetProtocolDecoder" <|.. "NetProtocolDecoderImpl"
 ....
 ## Methods
 #### Method: getProtocol
@@ -6260,6 +8284,17 @@ NetProtocol getProtocol(String inString)
 |Return|NetProtocol|
 |inString|String|
 |===
+## Uses
+[plantuml, "name120", svg]
+....
+class NetProtocolDecoderImpl
+class "NetProtocol"
+"NetProtocolDecoderImpl" --> "NetProtocol"
+class "String"
+"NetProtocolDecoderImpl" --> "String"
+class "NetProtocolDecoder"
+"NetProtocolDecoderImpl" --> "NetProtocolDecoder"
+....
 # Class `NetProtocolImpl`
 ## Description
 This class implements the NetProtocol interface.
@@ -6268,14 +8303,14 @@ It provides methods to get and set direction, command, and set value.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolImpl", svg]
 ....
-class NetProtocolImpl
+class "NetProtocolImpl"
 {
-getDirection():"DIRECTION"
-getCommand():"String"
-getSetValue():"String"
+getDirection():DIRECTION
+getCommand():String
+getSetValue():String
 }
-interface NetProtocol
-NetProtocol <|.. NetProtocolImpl
+interface "NetProtocol"
+"NetProtocol" <|.. "NetProtocolImpl"
 ....
 ## Methods
 #### Method: getDirection
@@ -6311,6 +8346,17 @@ String getSetValue()
 |Description 2+|Getter for the set value.
 |Return|String|
 |===
+## Uses
+[plantuml, "name121", svg]
+....
+class NetProtocolImpl
+class "NetProtocol"
+"NetProtocolImpl" --> "NetProtocol"
+class "String"
+"NetProtocolImpl" --> "String"
+class "DIRECTION"
+"NetProtocolImpl" --> "DIRECTION"
+....
 # Class `TcpServer`
 ## Description
 This class represents a TCP server that handles incoming and outgoing
@@ -6318,18 +8364,18 @@ messages according to the home automatic protocol.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.TcpServer", svg]
 ....
-class TcpServer
+class "TcpServer"
 {
-run():"void"
-error(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):"void"
-out2client(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):"void"
-inFromClient(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):"void"
-register(device: Device):"void"
+run():void
+error(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):void
+out2client(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):void
+inFromClient(netProtocol: NetProtocolin: BufferedReaderout: PrintStream):void
+register(device: Device):void
 }
-class Thread
-Thread ^-- TcpServer
-interface Server
-Server <|.. TcpServer
+class "Thread"
+"Thread" ^-- "TcpServer"
+interface "Server"
+"Server" <|.. "TcpServer"
 ....
 ## Methods
 #### Method: run
@@ -6397,143 +8443,54 @@ void register(Device device)
 |Return|void|
 |device|Device|
 |===
-# Interface `NetProtocol`
-## Description
-This interface defines a network protocol that handles TCP-based communication.
-/
-## Super interfaces
-[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol", svg]
+## Uses
+[plantuml, "name122", svg]
 ....
-interface NetProtocol
-{
-getDirection():"DIRECTION"
-getCommand():"String"
-getSetValue():"String"
-}
+class TcpServer
+interface "SerielProtocol"
+"TcpServer" --> "SerielProtocol"
+class "NetProtocol"
+"TcpServer" --> "NetProtocol"
+class "java.util.Map.Entry"
+"TcpServer" --> "java.util.Map.Entry"
+class "java.io.PrintStream"
+"TcpServer" --> "java.io.PrintStream"
+class "Thread"
+"TcpServer" --> "Thread"
+class "String"
+"TcpServer" --> "String"
+interface "Device"
+"TcpServer" --> "Device"
+class "Class"
+"TcpServer" --> "Class"
+interface "Server"
+"TcpServer" --> "Server"
+class "java.net.Socket"
+"TcpServer" --> "java.net.Socket"
+class "NetProtocolDecoder"
+"TcpServer" --> "NetProtocolDecoder"
+class "java.net.ServerSocket"
+"TcpServer" --> "java.net.ServerSocket"
+interface "SendFrame"
+"TcpServer" --> "SendFrame"
+class "java.util.Set"
+"TcpServer" --> "java.util.Set"
+class "NetProtocol2SerProtocol"
+"TcpServer" --> "NetProtocol2SerProtocol"
+class "java.io.BufferedReader"
+"TcpServer" --> "java.io.BufferedReader"
 ....
-## Methods
-#### Method: getDirection
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-DIRECTION getDirection();
-----
-|Description 2+|Retrieves the direction of the current network packet.
-|Return|DIRECTION|
-|===
-#### Method: getCommand
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-String getCommand();
-----
-|Description 2+|Gets the command associated with the current network packet.
-|Return|String|
-|===
-#### Method: getSetValue
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-String getSetValue();
-----
-|Description 2+|Retrieves the set value associated with the current network packet.
-|Return|String|
-|===
-# Interface `NetProtocol2SerProtocol`
-## Description
-This interface defines the NetProtocol2SerProtocol, which is responsible for mapping
-network protocol identifiers to SerielProtocol classes and registering devices.
-/
-## Super interfaces
-[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocol2SerProtocol", svg]
-....
-interface NetProtocol2SerProtocol
-{
-getProtocolClass(identifier: String):"Entry"
-register(device: Device):"void"
-}
-....
-## Methods
-#### Method: getProtocolClass
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-Entry<Class<? extends SerielProtocol>, Device> getProtocolClass(String identifier);
-----
-|Description 2+|Returns an entry in a map that maps a class implementing SerielProtocol to a Device.
-|Return|Entry|
-|identifier|String|
-|===
-#### Method: register
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void register(Device device);
-----
-|Description 2+|Registers a device with this NetProtocol2SerProtocol.
-|Return|void|
-|device|Device|
-|===
-# Interface `NetProtocolDecoder`
-## Description
-Defines an interface for decoding network protocols.
-/
-## Super interfaces
-[plantuml, "de.skschmid.java.homeautomatic.server.tcpserver.NetProtocolDecoder", svg]
-....
-interface NetProtocolDecoder
-{
-getProtocol(inString: String):"NetProtocol"
-}
-....
-## Methods
-#### Method: getProtocol
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-NetProtocol getProtocol(String inString);
-----
-|Description 2+|Decodes a given string into a specific protocol object.
-|Return|NetProtocol|
-|inString|String|
-|===
-PackageWriter# Class `ServerException`
-## Description
-This class represents a custom exception for the home automation server.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.server.ServerException", svg]
-....
-class ServerException
-{
-}
-class RuntimeException
-RuntimeException ^-- ServerException
-....
-## Methods
-# Interface `Server`
+PackageWriter# Interface `Server`
 ## Description
 Interface representing a home automatic server that manages devices.
 /
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.server.Server", svg]
 ....
-interface Server
+interface "Server"
 {
-register(device: Device):"void"
-start():"void"
+register(device: Device):void
+start():void
 }
 ....
 ## Methods
@@ -6561,6 +8518,31 @@ void start();
 /
 |Return|void|
 |===
+# Class `ServerException`
+## Description
+This class represents a custom exception for the home automation server.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.server.ServerException", svg]
+....
+class "ServerException"
+{
+}
+class "RuntimeException"
+"RuntimeException" ^-- "ServerException"
+....
+## Methods
+## Uses
+[plantuml, "name123", svg]
+....
+class ServerException
+class "RuntimeException"
+"ServerException" --> "RuntimeException"
+class "Throwable"
+"ServerException" --> "Throwable"
+class "String"
+"ServerException" --> "String"
+....
 PackageWriter# Class `BaseProtocolCatalogue`
 ## Description
 Base protocol catalogue class that implements ProtocolCatalogue.
@@ -6568,12 +8550,12 @@ Base protocol catalogue class that implements ProtocolCatalogue.
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.BaseProtocolCatalogue", svg]
 ....
-class BaseProtocolCatalogue
+class "BaseProtocolCatalogue"
 {
-getProtocolClazzes():"Set"
+getProtocolClazzes():Set
 }
-interface ProtocolCatalogue
-ProtocolCatalogue <|.. BaseProtocolCatalogue
+interface "ProtocolCatalogue"
+"ProtocolCatalogue" <|.. "BaseProtocolCatalogue"
 ....
 ## Methods
 #### Method: getProtocolClazzes
@@ -6587,14 +8569,27 @@ Set<Class<? extends SerialProtocol>> getProtocolClazzes()
 |Description 2+|
 |Return|Set|
 |===
+## Uses
+[plantuml, "name124", svg]
+....
+class BaseProtocolCatalogue
+class "Class"
+"BaseProtocolCatalogue" --> "Class"
+class "java.util.Set"
+"BaseProtocolCatalogue" --> "java.util.Set"
+class "ProtocolCatalogue"
+"BaseProtocolCatalogue" --> "ProtocolCatalogue"
+class "SerialProtocol"
+"BaseProtocolCatalogue" --> "SerialProtocol"
+....
 # Class `Factory`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.Factory", svg]
 ....
-class Factory
+class "Factory"
 {
-get(identifier: intframe: List):"Set"
+get(identifier: intframe: List):Set
 }
 ....
 ## Methods
@@ -6611,14 +8606,35 @@ Set<SerielProtocol> get(int identifier, List<Integer> frame)
 |identifier|int|
 |frame|List|
 |===
+## Uses
+[plantuml, "name125", svg]
+....
+class Factory
+class "SerielProtocol"
+"Factory" --> "SerielProtocol"
+class "java.util.List"
+"Factory" --> "java.util.List"
+class "ProtocolCatalogue"
+"Factory" --> "ProtocolCatalogue"
+class "java.util.Map"
+"Factory" --> "java.util.Map"
+class "Class"
+"Factory" --> "Class"
+class "Integer"
+"Factory" --> "Integer"
+class "java.util.Set"
+"Factory" --> "java.util.Set"
+class "java.lang.reflect.Constructor"
+"Factory" --> "java.lang.reflect.Constructor"
+....
 # Class `HomeAutoMatic`
 ## Description
 ## Super Classes
 [plantuml, "de.skschmid.java.homeautomatic.HomeAutoMatic", svg]
 ....
-class HomeAutoMatic
+class "HomeAutoMatic"
 {
-main(args: String):"void"
+main(args: String):void
 }
 ....
 ## Methods
@@ -6634,367 +8650,29 @@ void main(String[] args)
 |Return|void|
 |args|String|
 |===
-# Class `ProtocolException`
-## Description
-Class representing a ProtocolException, which extends the RuntimeException class.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.ProtocolException", svg]
+## Uses
+[plantuml, "name126", svg]
 ....
-class ProtocolException
-{
-}
-class RuntimeException
-RuntimeException ^-- ProtocolException
+class HomeAutoMatic
+class "HomeAutoMatic"
+"HomeAutoMatic" --> "HomeAutoMatic"
+class "UpdateData"
+"HomeAutoMatic" --> "UpdateData"
+class "String"
+"HomeAutoMatic" --> "String"
+interface "ManagedDevice"
+"HomeAutoMatic" --> "ManagedDevice"
+class "Froeling"
+"HomeAutoMatic" --> "Froeling"
 ....
-## Methods
-# Class `SequenceException`
-## Description
-This class represents a sequence exception that can be thrown in home automation scenarios.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SequenceException", svg]
-....
-class SequenceException
-{
-}
-class RuntimeException
-RuntimeException ^-- SequenceException
-....
-## Methods
-# Class `SequenceImpl`
-## Description
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SequenceImpl", svg]
-....
-class SequenceImpl
-{
-setData(parameter: String):"String"
-getProtocol():"SerialProtocol"
-}
-....
-## Methods
-#### Method: setData
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-String setData(String parameter) 
-----
-|Description 2+|Sets data using the managed device's setData method, passing the current sequence as a parameter.
-|Return|String|
-|parameter|String|
-|===
-#### Method: getProtocol
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-SerialProtocol getProtocol() 
-----
-|Description 2+|Retrieves the serial protocol from the managed device using the getProtocol method, passing the current sequence as a parameter.
-|Return|SerialProtocol|
-|===
-# Class `SerialPortEventDispatcherImpl`
-## Description
-Serial Port Event Dispatcher Implementation.
-This class implements the SerialPortEventDispatcher interface and 
-provides event handling for serial port events. It also registers 
-send and receive handlers to process incoming and outgoing data.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SerialPortEventDispatcherImpl", svg]
-....
-class SerialPortEventDispatcherImpl
-{
-serialEvent(serialPortEvent: SerialPortEvent):"void"
-register(portSend: SerialPortSend):"void"
-register(portReceive: SerialPortReceive):"void"
-}
-interface SerialPortEventDispatcher
-SerialPortEventDispatcher <|.. SerialPortEventDispatcherImpl
-interface SerialPortEventListener
-SerialPortEventListener <|.. SerialPortEventDispatcherImpl
-....
-## Methods
-#### Method: serialEvent
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void serialEvent(SerialPortEvent serialPortEvent) 
-----
-|Description 2+|
-|Return|void|
-|serialPortEvent|SerialPortEvent|
-|===
-#### Method: register
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void register(SerialPortSend portSend) 
-----
-|Description 2+|
-|Return|void|
-|portSend|SerialPortSend|
-|===
-#### Method: register
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void register(SerialPortReceive portReceive) 
-----
-|Description 2+|
-|Return|void|
-|portReceive|SerialPortReceive|
-|===
-# Class `SerialPortReceiveBufferImpl`
-## Description
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveBufferImpl", svg]
-....
-class SerialPortReceiveBufferImpl
-{
-add(detectedProtocol: SerielProtocol):"void"
-get(clazz: Class):"SerielProtocol"
-getByName(className: String):"SerielProtocol"
-getClassByName(className: String):"Class"
-get():"SerielProtocol"
-getSuccessor(predecessor: SerielProtocol):"SerielProtocol"
-registerCallBack(callBack: ReceivedMessageCallBack):"void"
-deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
-}
-interface SerialPortReceiveBuffer
-SerialPortReceiveBuffer <|.. SerialPortReceiveBufferImpl
-....
-## Methods
-#### Method: add
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void add(SerielProtocol detectedProtocol) 
-----
-|Description 2+|
-|Return|void|
-|detectedProtocol|SerielProtocol|
-|===
-#### Method: get
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-SerielProtocol get(Class<? extends SerielProtocol> clazz) 
-----
-|Description 2+|
-|Return|SerielProtocol|
-|clazz|Class|
-|===
-#### Method: getByName
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-SerielProtocol getByName(String className) 
-----
-|Description 2+|
-|Return|SerielProtocol|
-|className|String|
-|===
-#### Method: getClassByName
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-Class<? extends SerielProtocol> getClassByName(String className) 
-----
-|Description 2+|
-|Return|Class|
-|className|String|
-|===
-#### Method: get
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-SerielProtocol get() 
-----
-|Description 2+|
-|Return|SerielProtocol|
-|===
-#### Method: getSuccessor
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-SerielProtocol getSuccessor(SerielProtocol predecessor) 
-----
-|Description 2+|
-|Return|SerielProtocol|
-|predecessor|SerielProtocol|
-|===
-#### Method: registerCallBack
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void registerCallBack(ReceivedMessageCallBack callBack) 
-----
-|Description 2+|
-|Return|void|
-|callBack|ReceivedMessageCallBack|
-|===
-#### Method: deRegisterCallBack
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void deRegisterCallBack(ReceivedMessageCallBack callBack) 
-----
-|Description 2+|
-|Return|void|
-|callBack|ReceivedMessageCallBack|
-|===
-# Class `SerialPortReceiveImpl`
-## Description
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveImpl", svg]
-....
-class SerialPortReceiveImpl
-{
-serialEvent(event: SerialPortEvent):"void"
-setBuffer(serialPortReceiveBuffer: SerialPortReceiveBuffer):"void"
-run():"void"
-}
-interface SerialPortReceive
-SerialPortReceive <|.. SerialPortReceiveImpl
-interface Runnable
-Runnable <|.. SerialPortReceiveImpl
-....
-## Methods
-#### Method: serialEvent
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void serialEvent(SerialPortEvent event) 
-----
-|Description 2+|
-|Return|void|
-|event|SerialPortEvent|
-|===
-#### Method: setBuffer
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void setBuffer(SerialPortReceiveBuffer serialPortReceiveBuffer) 
-----
-|Description 2+|
-|Return|void|
-|serialPortReceiveBuffer|SerialPortReceiveBuffer|
-|===
-#### Method: run
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void run() 
-----
-|Description 2+|
-|Return|void|
-|===
-# Class `SerialPortSendBufferImpl`
-## Description
-Implements a send buffer for serial port communication.
-/
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendBufferImpl", svg]
-....
-class SerialPortSendBufferImpl
-{
-send(sendFrame: SendFrame):"void"
-}
-interface SerialPortSendBuffer
-SerialPortSendBuffer <|.. SerialPortSendBufferImpl
-....
-## Methods
-#### Method: send
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void send(SendFrame sendFrame) 
-----
-|Description 2+|Sends a send frame through the serial port.
-|Return|void|
-|sendFrame|SendFrame|
-|===
-# Class `SerialPortSendImpl`
-## Description
-## Super Classes
-[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendImpl", svg]
-....
-class SerialPortSendImpl
-{
-serialEvent(event: SerialPortEvent):"void"
-send(frame: SendFrame):"void"
-}
-interface SerialPortSend
-SerialPortSend <|.. SerialPortSendImpl
-....
-## Methods
-#### Method: serialEvent
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void serialEvent(SerialPortEvent event) 
-----
-|Description 2+|
-|Return|void|
-|event|SerialPortEvent|
-|===
-#### Method: send
-[cols="s,a,a"]
-|===
-|Code 2+| 
-[source,java]
-----
-void send(SendFrame frame) 
-----
-|Description 2+|
-|Return|void|
-|frame|SendFrame|
-|===
 # Interface `ProtocolCatalogue`
 ## Description
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.ProtocolCatalogue", svg]
 ....
-interface ProtocolCatalogue
+interface "ProtocolCatalogue"
 {
-getProtocolClazzes():"Set"
+getProtocolClazzes():Set
 }
 ....
 ## Methods
@@ -7009,14 +8687,39 @@ Set<Class<? extends SerialProtocol>> getProtocolClazzes();
 |Description 2+|Returns the protocol class.
 |Return|Set|
 |===
+# Class `ProtocolException`
+## Description
+Class representing a ProtocolException, which extends the RuntimeException class.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.ProtocolException", svg]
+....
+class "ProtocolException"
+{
+}
+class "RuntimeException"
+"RuntimeException" ^-- "ProtocolException"
+....
+## Methods
+## Uses
+[plantuml, "name127", svg]
+....
+class ProtocolException
+class "RuntimeException"
+"ProtocolException" --> "RuntimeException"
+class "Throwable"
+"ProtocolException" --> "Throwable"
+class "String"
+"ProtocolException" --> "String"
+....
 # Interface `ReceivedMessageCallBack`
 ## Description
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.ReceivedMessageCallBack", svg]
 ....
-interface ReceivedMessageCallBack
+interface "ReceivedMessageCallBack"
 {
-received(detectedProtocol: SerielProtocol):"void"
+received(detectedProtocol: SerielProtocol):void
 }
 ....
 ## Methods
@@ -7037,9 +8740,9 @@ void received(SerielProtocol detectedProtocol);
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.ReceiveFrameFactory", svg]
 ....
-interface ReceiveFrameFactory
+interface "ReceiveFrameFactory"
 {
-create(inputBuffer: DequedataContainer: SerialPortReceiveBufferprotocolCatalogue: ProtocolCatalogue):"Callable"
+create(inputBuffer: DequedataContainer: SerialPortReceiveBufferprotocolCatalogue: ProtocolCatalogue):Callable
 }
 ....
 ## Methods
@@ -7064,9 +8767,9 @@ This interface represents a receive sequence.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.ReceiveSequence", svg]
 ....
-interface ReceiveSequence
+interface "ReceiveSequence"
 {
-getProtocol():"SerielProtocol"
+getProtocol():SerielProtocol
 }
 ....
 ## Methods
@@ -7086,11 +8789,11 @@ SerielProtocol getProtocol();
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SendFrame", svg]
 ....
-interface SendFrame
+interface "SendFrame"
 {
-setProtocolIdentifier(identifier: int):"void"
-setData(data: int):"void"
-getFrameValues():"List"
+setProtocolIdentifier(identifier: int):void
+setData(data: int):void
+getFrameValues():List
 }
 ....
 ## Methods
@@ -7129,6 +8832,81 @@ List<Integer> getFrameValues();
 |Description 2+|Returns the values of the frame, which can be sent.
 |Return|List|
 |===
+# Class `SequenceException`
+## Description
+This class represents a sequence exception that can be thrown in home automation scenarios.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SequenceException", svg]
+....
+class "SequenceException"
+{
+}
+class "RuntimeException"
+"RuntimeException" ^-- "SequenceException"
+....
+## Methods
+## Uses
+[plantuml, "name128", svg]
+....
+class SequenceException
+class "RuntimeException"
+"SequenceException" --> "RuntimeException"
+class "Throwable"
+"SequenceException" --> "Throwable"
+class "String"
+"SequenceException" --> "String"
+....
+# Class `SequenceImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SequenceImpl", svg]
+....
+class "SequenceImpl"
+{
+setData(parameter: String):String
+getProtocol():SerialProtocol
+}
+....
+## Methods
+#### Method: setData
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+String setData(String parameter) 
+----
+|Description 2+|Sets data using the managed device's setData method, passing the current sequence as a parameter.
+|Return|String|
+|parameter|String|
+|===
+#### Method: getProtocol
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerialProtocol getProtocol() 
+----
+|Description 2+|Retrieves the serial protocol from the managed device using the getProtocol method, passing the current sequence as a parameter.
+|Return|SerialProtocol|
+|===
+## Uses
+[plantuml, "name129", svg]
+....
+class SequenceImpl
+class "String"
+"SequenceImpl" --> "String"
+class "SerialProtocol"
+"SequenceImpl" --> "SerialProtocol"
+interface "ManagedTransmitDeviceSequence"
+"SequenceImpl" --> "ManagedTransmitDeviceSequence"
+interface "ManagedDevice"
+"SequenceImpl" --> "ManagedDevice"
+interface "ManagedReceiveDeviceSequence"
+"SequenceImpl" --> "ManagedReceiveDeviceSequence"
+....
 # Interface `SerialPortEventDispatcher`
 ## Description
 SerialPortEventDispatcher interface provides methods to register Send and Receive events.
@@ -7136,10 +8914,10 @@ SerialPortEventDispatcher interface provides methods to register Send and Receiv
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SerialPortEventDispatcher", svg]
 ....
-interface SerialPortEventDispatcher
+interface "SerialPortEventDispatcher"
 {
-register(portSend: SerialPortSend):"void"
-register(portReceive: SerialPortReceive):"void"
+register(portSend: SerialPortSend):void
+register(portReceive: SerialPortReceive):void
 }
 ....
 ## Methods
@@ -7167,6 +8945,81 @@ void register(SerialPortReceive portReceive);
 |Return|void|
 |portReceive|SerialPortReceive|
 |===
+# Class `SerialPortEventDispatcherImpl`
+## Description
+Serial Port Event Dispatcher Implementation.
+This class implements the SerialPortEventDispatcher interface and 
+provides event handling for serial port events. It also registers 
+send and receive handlers to process incoming and outgoing data.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortEventDispatcherImpl", svg]
+....
+class "SerialPortEventDispatcherImpl"
+{
+serialEvent(serialPortEvent: SerialPortEvent):void
+register(portSend: SerialPortSend):void
+register(portReceive: SerialPortReceive):void
+}
+interface "SerialPortEventDispatcher"
+"SerialPortEventDispatcher" <|.. "SerialPortEventDispatcherImpl"
+interface "SerialPortEventListener"
+"SerialPortEventListener" <|.. "SerialPortEventDispatcherImpl"
+....
+## Methods
+#### Method: serialEvent
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void serialEvent(SerialPortEvent serialPortEvent) 
+----
+|Description 2+|
+|Return|void|
+|serialPortEvent|SerialPortEvent|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(SerialPortSend portSend) 
+----
+|Description 2+|
+|Return|void|
+|portSend|SerialPortSend|
+|===
+#### Method: register
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void register(SerialPortReceive portReceive) 
+----
+|Description 2+|
+|Return|void|
+|portReceive|SerialPortReceive|
+|===
+## Uses
+[plantuml, "name130", svg]
+....
+class SerialPortEventDispatcherImpl
+class "jssc.SerialPortEventListener"
+"SerialPortEventDispatcherImpl" --> "jssc.SerialPortEventListener"
+class "SerialPortSend"
+"SerialPortEventDispatcherImpl" --> "SerialPortSend"
+class "SerialPortEventDispatcher"
+"SerialPortEventDispatcherImpl" --> "SerialPortEventDispatcher"
+class "SerialPortReceive"
+"SerialPortEventDispatcherImpl" --> "SerialPortReceive"
+class "jssc.SerialPort"
+"SerialPortEventDispatcherImpl" --> "jssc.SerialPort"
+class "SerialPortEvent"
+"SerialPortEventDispatcherImpl" --> "SerialPortEvent"
+....
 # Interface `SerialPortReceive`
 ## Description
 Interface for receiving data through a serial port.
@@ -7174,12 +9027,12 @@ Interface for receiving data through a serial port.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SerialPortReceive", svg]
 ....
-interface SerialPortReceive
+interface "SerialPortReceive"
 {
-setBuffer(serialPortReceiveBuffer: SerialPortReceiveBuffer):"void"
+setBuffer(serialPortReceiveBuffer: SerialPortReceiveBuffer):void
 }
-interface SerialPortEventListener
-SerialPortEventListener ^-- SerialPortReceive
+interface "SerialPortEventListener"
+"SerialPortEventListener" ^-- "SerialPortReceive"
 ....
 ## Methods
 #### Method: setBuffer
@@ -7201,16 +9054,16 @@ This interface represents a buffer for serial port receive data.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveBuffer", svg]
 ....
-interface SerialPortReceiveBuffer
+interface "SerialPortReceiveBuffer"
 {
-add(detectedProtocol: SerielProtocol):"void"
-get(clazz: Class):"SerielProtocol"
-getByName(className: String):"SerielProtocol"
-getClassByName(className: String):"Class"
-get():"SerielProtocol"
-getSuccessor(predecessor: SerielProtocol):"SerielProtocol"
-registerCallBack(callBack: ReceivedMessageCallBack):"void"
-deRegisterCallBack(callBack: ReceivedMessageCallBack):"void"
+add(detectedProtocol: SerielProtocol):void
+get(clazz: Class):SerielProtocol
+getByName(className: String):SerielProtocol
+getClassByName(className: String):Class
+get():SerielProtocol
+getSuccessor(predecessor: SerielProtocol):SerielProtocol
+registerCallBack(callBack: ReceivedMessageCallBack):void
+deRegisterCallBack(callBack: ReceivedMessageCallBack):void
 }
 ....
 ## Methods
@@ -7309,6 +9162,227 @@ void deRegisterCallBack(ReceivedMessageCallBack callBack);
 |Return|void|
 |callBack|ReceivedMessageCallBack|
 |===
+# Class `SerialPortReceiveBufferImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveBufferImpl", svg]
+....
+class "SerialPortReceiveBufferImpl"
+{
+add(detectedProtocol: SerielProtocol):void
+get(clazz: Class):SerielProtocol
+getByName(className: String):SerielProtocol
+getClassByName(className: String):Class
+get():SerielProtocol
+getSuccessor(predecessor: SerielProtocol):SerielProtocol
+registerCallBack(callBack: ReceivedMessageCallBack):void
+deRegisterCallBack(callBack: ReceivedMessageCallBack):void
+}
+interface "SerialPortReceiveBuffer"
+"SerialPortReceiveBuffer" <|.. "SerialPortReceiveBufferImpl"
+....
+## Methods
+#### Method: add
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void add(SerielProtocol detectedProtocol) 
+----
+|Description 2+|
+|Return|void|
+|detectedProtocol|SerielProtocol|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol get(Class<? extends SerielProtocol> clazz) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|clazz|Class|
+|===
+#### Method: getByName
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getByName(String className) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|className|String|
+|===
+#### Method: getClassByName
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+Class<? extends SerielProtocol> getClassByName(String className) 
+----
+|Description 2+|
+|Return|Class|
+|className|String|
+|===
+#### Method: get
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol get() 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|===
+#### Method: getSuccessor
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+SerielProtocol getSuccessor(SerielProtocol predecessor) 
+----
+|Description 2+|
+|Return|SerielProtocol|
+|predecessor|SerielProtocol|
+|===
+#### Method: registerCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void registerCallBack(ReceivedMessageCallBack callBack) 
+----
+|Description 2+|
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+#### Method: deRegisterCallBack
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void deRegisterCallBack(ReceivedMessageCallBack callBack) 
+----
+|Description 2+|
+|Return|void|
+|callBack|ReceivedMessageCallBack|
+|===
+## Uses
+[plantuml, "name131", svg]
+....
+class SerialPortReceiveBufferImpl
+class "SerielProtocol"
+"SerialPortReceiveBufferImpl" --> "SerielProtocol"
+class "java.util.List"
+"SerialPortReceiveBufferImpl" --> "java.util.List"
+class "java.util.Map"
+"SerialPortReceiveBufferImpl" --> "java.util.Map"
+class "String"
+"SerialPortReceiveBufferImpl" --> "String"
+class "Class"
+"SerialPortReceiveBufferImpl" --> "Class"
+class "Bundle"
+"SerialPortReceiveBufferImpl" --> "Bundle"
+class "ReceivedMessageCallBack"
+"SerialPortReceiveBufferImpl" --> "ReceivedMessageCallBack"
+class "SerialPortReceive"
+"SerialPortReceiveBufferImpl" --> "SerialPortReceive"
+class "SerialPortReceiveBuffer"
+"SerialPortReceiveBufferImpl" --> "SerialPortReceiveBuffer"
+class "Long"
+"SerialPortReceiveBufferImpl" --> "Long"
+....
+# Class `SerialPortReceiveImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortReceiveImpl", svg]
+....
+class "SerialPortReceiveImpl"
+{
+serialEvent(event: SerialPortEvent):void
+setBuffer(serialPortReceiveBuffer: SerialPortReceiveBuffer):void
+run():void
+}
+interface "SerialPortReceive"
+"SerialPortReceive" <|.. "SerialPortReceiveImpl"
+interface "Runnable"
+"Runnable" <|.. "SerialPortReceiveImpl"
+....
+## Methods
+#### Method: serialEvent
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void serialEvent(SerialPortEvent event) 
+----
+|Description 2+|
+|Return|void|
+|event|SerialPortEvent|
+|===
+#### Method: setBuffer
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void setBuffer(SerialPortReceiveBuffer serialPortReceiveBuffer) 
+----
+|Description 2+|
+|Return|void|
+|serialPortReceiveBuffer|SerialPortReceiveBuffer|
+|===
+#### Method: run
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void run() 
+----
+|Description 2+|
+|Return|void|
+|===
+## Uses
+[plantuml, "name132", svg]
+....
+class SerialPortReceiveImpl
+class "SerialPortReceiveBuffer"
+"SerialPortReceiveImpl" --> "SerialPortReceiveBuffer"
+class "ProtocolCatalogue"
+"SerialPortReceiveImpl" --> "ProtocolCatalogue"
+class "java.util.Deque"
+"SerialPortReceiveImpl" --> "java.util.Deque"
+class "java.util.concurrent.ExecutorService"
+"SerialPortReceiveImpl" --> "java.util.concurrent.ExecutorService"
+class "ReceiveFrameFactory"
+"SerialPortReceiveImpl" --> "ReceiveFrameFactory"
+class "java.util.concurrent.ScheduledFuture"
+"SerialPortReceiveImpl" --> "java.util.concurrent.ScheduledFuture"
+class "Integer"
+"SerialPortReceiveImpl" --> "Integer"
+class "Runnable"
+"SerialPortReceiveImpl" --> "Runnable"
+class "SerialPortReceive"
+"SerialPortReceiveImpl" --> "SerialPortReceive"
+class "jssc.SerialPortEvent"
+"SerialPortReceiveImpl" --> "jssc.SerialPortEvent"
+class "java.util.concurrent.ScheduledExecutorService"
+"SerialPortReceiveImpl" --> "java.util.concurrent.ScheduledExecutorService"
+class "jssc.SerialPort"
+"SerialPortReceiveImpl" --> "jssc.SerialPort"
+....
 # Interface `SerialPortSend`
 ## Description
 Interface for sending frames over a serial connection.
@@ -7316,12 +9390,12 @@ Interface for sending frames over a serial connection.
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SerialPortSend", svg]
 ....
-interface SerialPortSend
+interface "SerialPortSend"
 {
-send(frame: SendFrame):"void"
+send(frame: SendFrame):void
 }
-interface SerialPortEventListener
-SerialPortEventListener ^-- SerialPortSend
+interface "SerialPortEventListener"
+"SerialPortEventListener" ^-- "SerialPortSend"
 ....
 ## Methods
 #### Method: send
@@ -7341,9 +9415,9 @@ void send(SendFrame frame);
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SerialPortSendBuffer", svg]
 ....
-interface SerialPortSendBuffer
+interface "SerialPortSendBuffer"
 {
-send(sendFrame: SendFrame):"void"
+send(sendFrame: SendFrame):void
 }
 ....
 ## Methods
@@ -7359,20 +9433,117 @@ void send(SendFrame sendFrame);
 |Return|void|
 |sendFrame|SendFrame|
 |===
+# Class `SerialPortSendBufferImpl`
+## Description
+Implements a send buffer for serial port communication.
+/
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendBufferImpl", svg]
+....
+class "SerialPortSendBufferImpl"
+{
+send(sendFrame: SendFrame):void
+}
+interface "SerialPortSendBuffer"
+"SerialPortSendBuffer" <|.. "SerialPortSendBufferImpl"
+....
+## Methods
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame sendFrame) 
+----
+|Description 2+|Sends a send frame through the serial port.
+|Return|void|
+|sendFrame|SendFrame|
+|===
+## Uses
+[plantuml, "name133", svg]
+....
+class SerialPortSendBufferImpl
+class "SendFrame"
+"SerialPortSendBufferImpl" --> "SendFrame"
+class "SerialPortSendBuffer"
+"SerialPortSendBufferImpl" --> "SerialPortSendBuffer"
+class "SerialPortSend"
+"SerialPortSendBufferImpl" --> "SerialPortSend"
+....
+# Class `SerialPortSendImpl`
+## Description
+## Super Classes
+[plantuml, "de.skschmid.java.homeautomatic.SerialPortSendImpl", svg]
+....
+class "SerialPortSendImpl"
+{
+serialEvent(event: SerialPortEvent):void
+send(frame: SendFrame):void
+}
+interface "SerialPortSend"
+"SerialPortSend" <|.. "SerialPortSendImpl"
+....
+## Methods
+#### Method: serialEvent
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void serialEvent(SerialPortEvent event) 
+----
+|Description 2+|
+|Return|void|
+|event|SerialPortEvent|
+|===
+#### Method: send
+[cols="s,a,a"]
+|===
+|Code 2+| 
+[source,java]
+----
+void send(SendFrame frame) 
+----
+|Description 2+|
+|Return|void|
+|frame|SendFrame|
+|===
+## Uses
+[plantuml, "name134", svg]
+....
+class SerialPortSendImpl
+class "java.util.List"
+"SerialPortSendImpl" --> "java.util.List"
+class "java.util.Deque"
+"SerialPortSendImpl" --> "java.util.Deque"
+class "SerialPortSend"
+"SerialPortSendImpl" --> "SerialPortSend"
+class "Integer"
+"SerialPortSendImpl" --> "Integer"
+class "java.util.concurrent.atomic.AtomicBoolean"
+"SerialPortSendImpl" --> "java.util.concurrent.atomic.AtomicBoolean"
+class "SendFrame"
+"SerialPortSendImpl" --> "SendFrame"
+class "jssc.SerialPort"
+"SerialPortSendImpl" --> "jssc.SerialPort"
+class "jssc.SerialPortEvent"
+"SerialPortSendImpl" --> "jssc.SerialPortEvent"
+....
 # Interface `SerielProtocol`
 ## Description
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.SerielProtocol", svg]
 ....
-interface SerielProtocol
+interface "SerielProtocol"
 {
-getMessage():"String"
-getIdentifier():"int"
-getRawData():"int"
-getData():"String"
-compare(protocol: SerielProtocol):"boolean"
-setData(setValue: String):"void"
-getTimeStamp():"long"
+getMessage():String
+getIdentifier():int
+getRawData():int
+getData():String
+compare(protocol: SerielProtocol):boolean
+setData(setValue: String):void
+getTimeStamp():long
 }
 ....
 ## Methods
@@ -7460,9 +9631,9 @@ long getTimeStamp();
 ## Super interfaces
 [plantuml, "de.skschmid.java.homeautomatic.TransmitSequence", svg]
 ....
-interface TransmitSequence
+interface "TransmitSequence"
 {
-setData(parameter: String):"String"
+setData(parameter: String):String
 }
 ....
 ## Methods

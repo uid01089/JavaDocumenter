@@ -1,27 +1,26 @@
 from __future__ import annotations
 from pathlib import Path
 from typing import Dict, List
-from JavaParser.ClassDeclarationIf import ClassDeclarationIf
-from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
+from JavaParser.JavaFileIf import JavaFileIf
 from JavaParser.JavaPackageIf import JavaPackageIf
 from JavaParser.JavaTreeElement import JavaTreeElement
-from PythonLib.FileUtil import FileOperations
 from JavaParser.JavaParserContextIf import JavaParserContextIf
 from JavaParser.JavaProjectIf import JavaProjectIf
 from JavaParser.JavaTreeElementIf import JavaTreeElementIf
+from PythonLib.FileUtil import FileOperations
 from PythonLib.Stream import Stream
 
 
 class JavaProject(JavaTreeElement, JavaProjectIf):
 
     def __init__(self, context: JavaParserContextIf) -> None:
-        JavaTreeElement.__init__(self, None)
+        JavaTreeElement.__init__(self, None, None)
 
         self.pathCollection: List[Path] = []
+        self.javaFiles: List[JavaFileIf] = []
         self.context = context
         self.rootPackage = context.createJavaPackage("")
-        self.allClasses: Dict[str, ClassDeclarationIf] = {}
-        self.allInterfaces: Dict[str, InterfaceDeclarationIf] = {}
+        self.allJavaElements: Dict[str, JavaTreeElementIf] = {}
 
     def addClassPath(self, directory: Path) -> JavaProjectIf:
         self.pathCollection.append(directory)
@@ -29,34 +28,39 @@ class JavaProject(JavaTreeElement, JavaProjectIf):
 
     def parse(self) -> JavaProjectIf:
 
-        for path in self.pathCollection:
-            FileOperations.treeWalker(path, self._fileVisitor)
-        return self
+        this = self
 
-    def _fileVisitor(self, path: Path) -> None:
-        if path.suffix.lower() == ".java":
-            reader = self.context.createJavaFile(self)
+        def __createJavaFile(this: JavaTreeElementIf, path: Path) -> JavaFileIf:
             print("Open " + str(path))
-            javaFile = reader.parse(path)
+            return this.context.createJavaFile(this).parse(path)
 
-            # build up java package structure
+        self.javaFiles = Stream(self.pathCollection) \
+            .flatMap(lambda path: Stream(FileOperations.getAllFilesNested(path))) \
+            .filter(lambda path: path.suffix.lower() == ".java") \
+            .map(lambda path: __createJavaFile(this, path)) \
+            .collectToList()
+
+        for javaFile in self.javaFiles:
+
+            # build up java package tree
             runningPackage = self.rootPackage
             for package in javaFile.getPackageDeclaration().split("."):
                 runningPackage = runningPackage.addPackage(package, runningPackage)
+            runningPackage.addJavaFile(javaFile)
 
-            classes = javaFile.getClassDeclarations()
-            for clazz in classes:
-                self.allClasses[clazz.getFullQualifiedName()] = clazz
-            runningPackage.addClassDeclarations(classes)
+            # Create index
+            for clazz in javaFile.getClassDeclarations():
+                self.allJavaElements[clazz.getFullQualifiedName()] = clazz
+            for interface in javaFile.getInterfaceDeclaration():
+                self.allJavaElements[interface.getFullQualifiedName()] = interface
 
-            interfaces = javaFile.getInterfaceDeclaration()
-            for interface in interfaces:
-                self.allInterfaces[interface.getFullQualifiedName()] = interface
-
-            runningPackage.addInterfaceDeclarations(interfaces)
+        return self
 
     def getRootPackage(self) -> JavaPackageIf:
         return self.rootPackage
 
     def getChildren(self) -> List[JavaTreeElementIf]:
         return [self.rootPackage]
+
+    def getElementByFullQualName(self, fullQualName: str) -> JavaTreeElementIf:
+        return self.allJavaElements.get(fullQualName)

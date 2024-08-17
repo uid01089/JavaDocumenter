@@ -1,6 +1,5 @@
 from typing import Dict, List, Optional
-from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
-from JavaParser.ClassDeclarationIf import ClassDeclarationIf
+from JavaParser.JavaFileIf import JavaFileIf
 from JavaParser.JavaPackageIf import JavaPackageIf
 from JavaParser.JavaParserContextIf import JavaParserContextIf
 from JavaParser.JavaTreeElement import JavaTreeElement
@@ -9,14 +8,13 @@ from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 
 class JavaPackage(JavaTreeElement, JavaPackageIf):
     def __init__(self, name: str, context: JavaParserContextIf, parent: JavaTreeElementIf) -> None:
-        JavaTreeElement.__init__(self, parent)
+        JavaTreeElement.__init__(self, None, parent)
 
         self.name = name
         self.context = context
 
-        self.subPackages: Dict[str, JavaPackage] = {}
-        self.classDeclarations: List[ClassDeclarationIf] = []
-        self.interfaceDeclarations: List[InterfaceDeclarationIf] = []
+        self.subPackages: Dict[str, JavaPackageIf] = {}
+        self.javaFiles: List[JavaFileIf] = []
 
     def addPackage(self, name: str, root: JavaPackageIf) -> JavaPackageIf:
 
@@ -27,13 +25,8 @@ class JavaPackage(JavaTreeElement, JavaPackageIf):
             self.subPackages[name] = newPackage
             return newPackage
 
-    def addClassDeclarations(self, classDeclarations: List[ClassDeclarationIf]) -> JavaPackageIf:
-        self.classDeclarations = self.classDeclarations + classDeclarations
-        return self
-
-    def addInterfaceDeclarations(self, interfaceDeclarations: List[InterfaceDeclarationIf]) -> JavaPackageIf:
-        self.interfaceDeclarations = self.interfaceDeclarations + interfaceDeclarations
-        return self
+    def addJavaFile(self, javaFile: JavaFileIf) -> None:
+        self.javaFiles.append(javaFile)
 
     def getChildren(self) -> List[JavaTreeElementIf]:
-        return list(self.subPackages.values()) + self.classDeclarations + self.interfaceDeclarations
+        return list(self.subPackages.values()) + self.javaFiles

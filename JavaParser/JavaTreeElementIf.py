@@ -18,3 +18,7 @@ class JavaTreeElementIf(ABC):
     @abstractmethod
     def getParentElement(self, classType: Type[T]) -> Optional[T]:
         pass
+
+    @abstractmethod
+    def getUsedTypes(self) -> List[str]:
+        pass

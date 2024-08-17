@@ -1,10 +1,11 @@
 from abc import ABC, abstractmethod
 from typing import List
 
+from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 
 
-class ClassOrInterfaceDeclarationIf(ABC):
+class ClassOrInterfaceDeclarationIf(JavaTreeElementIf):
 
     @abstractmethod
     def getShortName(self) -> str:

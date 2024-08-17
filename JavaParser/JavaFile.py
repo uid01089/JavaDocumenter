@@ -15,7 +15,7 @@ from JavaParser.antlr.JavaParser import JavaParser
 
 class JavaFile(JavaTreeElement, JavaFileIf):
     def __init__(self, parent: JavaTreeElementIf, context: JavaParserContextIf) -> None:
-        JavaTreeElement.__init__(self, parent)
+        JavaTreeElement.__init__(self, None, parent)
 
         self.context = context
         self.compilationUnit: CompilationUnit = None

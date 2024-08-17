@@ -4,9 +4,10 @@ from pathlib import Path
 from typing import List
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
+from JavaParser.JavaTreeElementIf import JavaTreeElementIf
 
 
-class JavaFileIf(ABC):
+class JavaFileIf(JavaTreeElementIf):
 
     @abstractmethod
     def parse(self, filePath: Path) -> JavaFileIf:

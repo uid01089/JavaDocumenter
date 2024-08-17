@@ -46,5 +46,9 @@ class JavaParserContextIf(JavaDocContextIf):
         pass
 
     @abstractmethod
+    def getJavaProject(self) -> JavaProjectIf:
+        pass
+
+    @abstractmethod
     def createJavaPackage(self, name: str, root: Optional[JavaPackageIf] = None) -> JavaPackageIf:
         pass
