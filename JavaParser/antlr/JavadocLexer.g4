@@ -52,7 +52,7 @@ SLASH: '/';
 
 JAVADOC_START: '/**' STAR*;
 
-JAVADOC_END: SPACE? STAR* '*/';
+JAVADOC_END: [\r\n]? SPACE? STAR* '*/';
 
 INLINE_TAG_START: '{@';
 
