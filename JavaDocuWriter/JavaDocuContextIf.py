@@ -1,8 +1,11 @@
 from abc import ABC, abstractmethod
 
+from JavaDocuWriter import ClassDiagramsIf
 from JavaDocuWriter.AsciiDocIf import AsciiDocIf
 from JavaDocuWriter.ClassWriterIf import ClassWriterIf
+from JavaDocuWriter.DecompDiagramIf import DecompDiagramIf
 from JavaDocuWriter.DocWriterIf import DocWriterIf
+from JavaDocuWriter.InterfaceDiagramsIf import InterfaceDiagramsIf
 from JavaDocuWriter.InterfaceWriterIf import InterfaceWriterIf
 from JavaDocuWriter.MethodWriterIf import MethodWriterIf
 from JavaDocuWriter.PackageWriterIf import PackageWriterIf
@@ -28,7 +31,7 @@ class JavaDocuContextIf(ABC):
         pass
 
     @abstractmethod
-    def createPackageWriter(self, javaPackage: JavaPackageIf) -> PackageWriterIf:
+    def createPackageWriter(self, javaPackage: JavaPackageIf, level: int) -> PackageWriterIf:
         pass
 
     @abstractmethod
@@ -41,4 +44,16 @@ class JavaDocuContextIf(ABC):
 
     @abstractmethod
     def getAsciiDoc(self) -> AsciiDocIf:
+        pass
+
+    @abstractmethod
+    def createDecompDiagram(self, rootPackage: JavaPackageIf) -> DecompDiagramIf:
+        pass
+
+    @abstractmethod
+    def createInterfaceDiagrams(self, rootPackage: JavaPackageIf) -> InterfaceDiagramsIf:
+        pass
+
+    @abstractmethod
+    def createClassDiagrams(self, rootPackage: JavaPackageIf) -> ClassDiagramsIf:
         pass

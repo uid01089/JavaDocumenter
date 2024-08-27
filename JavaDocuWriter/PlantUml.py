@@ -1,9 +1,10 @@
-from typing import Set
+from typing import List, Set
 from JavaDocuWriter.JavaDocuContextIf import JavaDocuContextIf
 from JavaDocuWriter.PlantUmlIf import PlantUmlIf
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
 from JavaParser.ClassOrInterfaceDeclarationIf import ClassOrInterfaceDeclarationIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
+from JavaParser.JavaPackageIf import JavaPackageIf
 from JavaParser.MethodDeclarationIf import MethodDeclarationIf
 from PythonLib.Stream import Stream
 from PythonLib.StringUtil import StringUtil
@@ -44,9 +45,15 @@ class PlantUml(PlantUmlIf):
             .map(lambda method: self.getMethod(method)) \
             .collectToList()
 
+        fieldStr = ""
+        for field in javaClass.getFields():
+            for identifier in field.getIdentifiers():
+                fieldStr = fieldStr + f'{identifier}:{field.getType()}\n'
+
         doc = StringUtil.dedent(f'''
         class "{javaClass.getShortName()}"
         {{
+            {fieldStr}
             {"\n".join(methods)}
         }}
         ''')
@@ -69,26 +76,35 @@ class PlantUml(PlantUmlIf):
         usedTypes = javaElement.getUsedTypes()
         javaProject = self.context.getJavaProject()
 
-        thisShortName = javaElement.getShortName()
         useString = ""
+
+        match (javaElement):
+            case ClassDeclarationIf():
+                useString = useString + 'set namespaceSeparator none\n'
+                useString = useString + f'class "{javaElement.getShortName()}"\n'
+            case InterfaceDeclarationIf():
+                useString = useString + 'set namespaceSeparator none\n'
+                useString = useString + f'interface "{javaElement.getShortName()}"\n'
+
         for usedType in usedTypes:
             javaTreeElement = javaProject.getElementByFullQualName(usedType)
 
             match (javaTreeElement):
                 case ClassDeclarationIf():
+                    useString = useString + 'set namespaceSeparator none\n'
                     useString = useString + f'class "{javaTreeElement.getShortName()}"\n'
-                    useString = useString + f'"{thisShortName}" --> "{javaTreeElement.getShortName()}"\n'
+                    useString = useString + f'"{javaElement.getShortName()}" --> "{javaTreeElement.getShortName()}" : use\n'
                 case InterfaceDeclarationIf():
+                    useString = useString + 'set namespaceSeparator none\n'
                     useString = useString + f'interface "{javaTreeElement.getShortName()}"\n'
-                    useString = useString + f'"{thisShortName}" --> "{javaTreeElement.getShortName()}"\n'
+                    useString = useString + f'"{javaElement.getShortName()}" --> "{javaTreeElement.getShortName()}" : use\n'
                 case _:
-                    useString = useString + f'class "{usedType}"\n'
-                    useString = useString + f'"{thisShortName}" --> "{usedType}"\n'
+                    useString = useString + f'entity "{usedType}"\n'
+                    useString = useString + f'"{javaElement.getShortName()}" --> "{usedType}" : use\n'
 
         doc = StringUtil.dedent(f'''
         [plantuml, "{self.getValidPictureName(javaElement.getFullQualifiedName())}", svg]
         ....
-        class {javaElement.getShortName()}
         {useString}
         ....
 
@@ -102,6 +118,7 @@ class PlantUml(PlantUmlIf):
 
         superInterfaces = ""
         for interfaze in javaInterface.getImplementedClasses():
+            superInterfaces = superInterfaces + 'set namespaceSeparator none\n'
             superInterfaces = superInterfaces + f'interface "{interfaze}"\n'
             superInterfaces = superInterfaces + f'"{interfaze}" ^-- "{thisShortName}"\n'
 
@@ -123,11 +140,13 @@ class PlantUml(PlantUmlIf):
         superClass = javaClass.getSuperClass()
         superClassesStr = ""
         if superClass:
+            superClassesStr = superClassesStr + 'set namespaceSeparator none\n'
             superClassesStr = superClassesStr + f'class "{superClass}"\n'
             superClassesStr = superClassesStr + f'"{superClass}" ^-- "{thisShortName}"\n'
 
         implementedInterfaces = ''
         for interfaze in javaClass.getImplementedClasses():
+            implementedInterfaces = implementedInterfaces + 'set namespaceSeparator none\n'
             implementedInterfaces = implementedInterfaces + f'interface "{interfaze}"\n'
             implementedInterfaces = implementedInterfaces + f'"{interfaze}" <|.. "{thisShortName}"\n'
 
@@ -137,6 +156,27 @@ class PlantUml(PlantUmlIf):
         {thisClass}
         {superClassesStr}
         {implementedInterfaces}
+        ....
+
+        ''')
+
+        return doc
+
+    def getPackageDiagram(self, allClassOrInterfaces: List[ClassOrInterfaceDeclarationIf]) -> str:
+
+        javaElements = ""
+        for javaElement in allClassOrInterfaces:
+            match javaElement:
+                case InterfaceDeclarationIf():
+                    javaElements = javaElements + f"interface {javaElement.getFullQualifiedName()} {{}}\n"
+                case ClassDeclarationIf():
+                    javaElements = javaElements + f"class {javaElement.getFullQualifiedName()} {{}}\n"
+
+        doc = StringUtil.dedent(f'''
+        [plantuml, "{self.getValidPictureName("PackageDiagram")}", svg]
+        ....
+        {javaElements}
+
         ....
 
         ''')

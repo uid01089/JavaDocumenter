@@ -1,6 +1,7 @@
 from JavaDocuWriter.InterfaceWriterIf import InterfaceWriterIf
 from JavaDocuWriter.JavaDocuContextIf import JavaDocuContextIf
 from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
+from PythonLib.Stream import Stream
 from PythonLib.StringUtil import StringUtil
 
 
@@ -10,23 +11,37 @@ class InterfaceWriter(InterfaceWriterIf):
         self.context = context
 
     def getDocu(self) -> str:
+
+        superClasses = Stream(self.javaInterface.getImplementedClasses()) \
+            .map(lambda classStr: self.context.getJavaProject().getElementByFullQualName(classStr)) \
+            .collectToList()
+
+        usedTypes = Stream(self.javaInterface.getUsedTypes()) \
+            .map(lambda classStr: self.context.getJavaProject().getElementByFullQualName(classStr)) \
+            .collectToList()
+
         doc = StringUtil.dedent(f'''
 
-        # Interface `{self.javaInterface.getShortName()}`
+        [[{self.javaInterface.getFullQualifiedName()}]]
+        == Interface `{self.javaInterface.getShortName()}`
 
-        ## Description
+        === Description
 
         {self.javaInterface.getDescription()}
 
-        ## Super interfaces
+        === Uml diagram
 
         {self.context.getPlantUml().getSuperInterfaceDiagram(self.javaInterface)}
+        {self.context.getAsciiDoc().getDescriptionTable(superClasses)}
 
-        ## Methods
+        === Methods
 
         {self.context.getAsciiDoc().getMethodTable(self.javaInterface.getMethods())}
 
+        === Uses
 
+        {self.context.getPlantUml().getUsedTypesDiagram(self.javaInterface)}
+        {self.context.getAsciiDoc().getDescriptionTable(usedTypes)}
 
         ''')
         return doc

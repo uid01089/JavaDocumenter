@@ -2,7 +2,7 @@ from ContextIf import ContextIf
 from JavaDocuWriter.ClassWriterIf import ClassWriterIf
 from JavaDocuWriter.JavaDocuContextIf import JavaDocuContextIf
 from JavaParser.ClassDeclarationIf import ClassDeclarationIf
-from JavaParser.InterfaceDeclarationIf import InterfaceDeclarationIf
+from PythonLib.Stream import Stream
 from PythonLib.StringUtil import StringUtil
 
 
@@ -12,25 +12,42 @@ class ClassWriter(ClassWriterIf):
         self.context: ContextIf = context
 
     def getDocu(self) -> str:
+
+        superClasses = Stream.of(self.javaClass.getSuperClass()) \
+            .map(lambda classStr: self.context.getJavaProject().getElementByFullQualName(classStr)) \
+            .collectToList()
+
+        usedTypes = Stream(self.javaClass.getUsedTypes()) \
+            .map(lambda classStr: self.context.getJavaProject().getElementByFullQualName(classStr)) \
+            .collectToList()
+
         doc = StringUtil.dedent(f'''
 
-        # Class `{self.javaClass.getShortName()}`
+        [[{self.javaClass.getFullQualifiedName()}]]
+        == Class `{self.javaClass.getShortName()}`
 
-        ## Description
+        === Description
 
         {self.javaClass.getDescription()}
 
-        ## Super Classes
+        === Uml diagram
 
         {self.context.getPlantUml().getSuperClassesDiagram(self.javaClass)}
+        {self.context.getAsciiDoc().getDescriptionTable(superClasses)}
 
-        ## Methods
+        === Fields
+
+        {self.context.getAsciiDoc().getFieldTable(self.javaClass.getFields())}
+
+
+        === Methods
 
         {self.context.getAsciiDoc().getMethodTable(self.javaClass.getMethods())}
 
-        ## Uses
+        === Uses
 
         {self.context.getPlantUml().getUsedTypesDiagram(self.javaClass)}
+        {self.context.getAsciiDoc().getDescriptionTable(usedTypes)}
 
 
 

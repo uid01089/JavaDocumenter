@@ -3,6 +3,17 @@ from JavaParser.JavaDoc.JavaDocContext import JavaDocContext
 context = JavaDocContext()
 
 
+def test() -> None:
+    javaDocStr = '''/**
+* A description text.
+*/
+'''
+
+    javaDoc = context.createJavaDoc(javaDocStr)
+    description = javaDoc.parse().getDescription()
+    assert description == 'This is the first line\n a 2nd line\n End of description'
+
+
 def test1() -> None:
     javaDocStr = '''/**
         * This is the first line
