@@ -2,6 +2,7 @@
 from pathlib import Path
 from Context import Context
 from ContextIf import ContextIf
+import argparse
 
 
 class JavaDocCreator:
@@ -20,8 +21,14 @@ class JavaDocCreator:
 def main():
 
     context = Context()
+
+    # Setup argument parser for command-line interface
+    parser = argparse.ArgumentParser(description="Document Java Project")
+    parser.add_argument("--dir", "-d", help="Path to be documented", type=str, required=True)
+    args = parser.parse_args()
+
     javaDocCreator = JavaDocCreator(context)
-    javaDocCreator.parse(Path("./javaModelDb"))
+    javaDocCreator.parse(Path(args.dir))
 
     print()
 
