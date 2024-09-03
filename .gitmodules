@@ -3,4 +3,4 @@
 	url = https://github.com/uid01089/PythonLib.git
 [submodule "JavaParser"]
 	path = JavaParser
-	url = git@github.com:uid01089/JavaParser.git
+	url = https://github.com/uid01089/JavaParser.git
